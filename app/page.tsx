@@ -1,8 +1,16 @@
+import Image from "next/image";
+import logo from "../public/logo-transparent-webcreatis-reunion.webp";
+
 export default function Home() {
   return (
     <div>
-      <header className="fixed w-full h-[100px]">
+      <header className="fixed w-full h-[12.5em] p-9">
         <div className="flex justify-between items-center overflow-hidden pb-2 h-full">
+          <Image
+            src={logo}
+            alt="Logo de l'agence digitale webcreatis"
+            className="w-[12.5em] h-[12.5em]"
+          />
           <button className="flex justify-center items-center bg-darkWhite text-[.875em] uppercase h-[3.2em] cursor-pointer p-[1.125em] rounded-[6.25em]">
             <div className="flex justify-center items-center overflow-hidden gap-[.625em]">
               <span className="font-raleway font-semibold">Menu</span>
