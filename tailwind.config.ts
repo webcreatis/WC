@@ -16,8 +16,9 @@ const config: Config = {
         raleway: ['var(--font-raleway)'],
       },
       colors: {
-        background: "#1B0B35",
-        white:"#F9F9F9"
+        green:"#7BE0AD",
+        white:"#F9F9F9",
+        darkWhite:"#e4e6ef"
       },
     },
   },
