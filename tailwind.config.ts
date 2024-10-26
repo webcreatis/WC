@@ -8,9 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      scale: {
+        'custom': '1 1.4',
+      },
+      fontFamily: {
+        jaapokki: ['var(--font-jaapokki-sans)'],
+        raleway: ['var(--font-raleway)'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#1B0B35",
+        white:"#F9F9F9"
       },
     },
   },
