@@ -79,6 +79,9 @@ export default function Home() {
           <div className="absolute bottom-0 flex w-full justify-between p-5">
             <CrossIcon />
             <CrossIcon />
+            <span className="uppercase text-white font-raleway">
+              scroll to explore
+            </span>
             <CrossIcon />
             <CrossIcon />
           </div>
