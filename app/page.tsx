@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "../public/logo-transparent-webcreatis-reunion.webp";
 import Button from "./ui/Button";
+import CrossIcon from "./ui/CrossIcon";
 
 export default function Home() {
   return (
@@ -74,6 +75,12 @@ export default function Home() {
             <span className="block opacity-100">
               le design et le développement.
             </span>
+          </div>
+          <div className="absolute bottom-0 flex w-full justify-between p-5">
+            <CrossIcon />
+            <CrossIcon />
+            <CrossIcon />
+            <CrossIcon />
           </div>
         </div>
       </main>

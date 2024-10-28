@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'cross': 'clamp(0.875rem, 1vw, 2rem)',
+      },
       animation: {
         rotateMouseEnter: 'rotateMouseEnter .3s ease-in-out forwards',
         rotateMouseOut: 'rotateMouseout .3s ease-in-out forwards',
