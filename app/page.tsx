@@ -6,6 +6,7 @@ import CrossIcon from "./ui/CrossIcon";
 export default function Home() {
   return (
     <div>
+      <canvas className="absolute w-full"></canvas>
       <header className="fixed w-full h-[12.5em] p-9">
         <div className="flex justify-between items-center overflow-hidden pb-2 h-full">
           <Image
@@ -76,7 +77,7 @@ export default function Home() {
               le design et le développement.
             </span>
           </div>
-          <div className="absolute bottom-0 flex w-full justify-between p-5">
+          <div className="absolute bottom-5 flex w-full justify-between p-5">
             <CrossIcon />
             <CrossIcon />
             <span className="uppercase text-white font-raleway">
