@@ -8,6 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        rotateMouseEnter: 'rotateMouseEnter .3s ease-in-out forwards',
+        rotateMouseOut: 'rotateMouseout .3s ease-in-out forwards',
+      },
+      keyframes: {
+        rotateMouseEnter: {
+          'from': { transform: 'rotate(0deg)' },
+          'to': { transform: 'rotate(90deg)' },
+        },
+        rotateMouseout: {
+          'from': { transform: 'rotate(90deg)' },
+          'to': { transform: 'rotate(0deg)' },
+        }
+      },
       scale: {
         'custom': '1 1.4',
       },

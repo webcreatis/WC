@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../public/logo-transparent-webcreatis-reunion.webp";
+import Button from "./ui/Button";
 
 export default function Home() {
   return (
@@ -11,15 +12,19 @@ export default function Home() {
             alt="Logo de l'agence digitale webcreatis"
             className="w-[12.5em] h-[12.5em]"
           />
-          <button className="flex justify-center items-center bg-darkWhite text-[.875em] uppercase h-[3.2em] cursor-pointer p-[1.125em] rounded-[6.25em]">
-            <div className="flex justify-center items-center overflow-hidden gap-[.625em]">
-              <span className="font-raleway font-semibold">Menu</span>
-              <div className="flex items-center relative w-[1.15em] h-[1.15em] text-black gap-1">
+          <div className="flex gap-5">
+            <Button
+              text="un projet ?"
+              bg="bg-darkWhite"
+              color="text-black"
+            ></Button>
+            <Button text="Menu" bg="bg-darkWhite" color="text-black">
+              <div className="dots flex items-center relative w-[1.15em] h-[1.15em] text-black gap-1">
                 <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
                 <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
               </div>
-            </div>
-          </button>
+            </Button>
+          </div>
         </div>
       </header>
       <main>
