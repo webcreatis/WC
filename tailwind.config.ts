@@ -14,6 +14,8 @@ const config: Config = {
       animation: {
         rotateMouseEnter: 'rotateMouseEnter .3s ease-in-out forwards',
         rotateMouseOut: 'rotateMouseout .3s ease-in-out forwards',
+        fadeIn: "fadeIn 0.8s ease-out forwards",
+
       },
       keyframes: {
         rotateMouseEnter: {
@@ -23,7 +25,11 @@ const config: Config = {
         rotateMouseout: {
           'from': { transform: 'rotate(90deg)' },
           'to': { transform: 'rotate(0deg)' },
-        }
+        },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       scale: {
         'custom': '1 1.4',

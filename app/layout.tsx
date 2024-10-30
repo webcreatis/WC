@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
-import Script from "next/script";
 import "./globals.css";
 
 // Fonts
@@ -35,7 +34,7 @@ export default function RootLayout({
         className={`${jaapokkiSans.variable} ${raleway.variable} antialiased bg-background`}
       >
         {children}
-        <Script src="Cursor.js"></Script>
+        {/* <Script src="Cursor.js"></Script> */}
       </body>
     </html>
   );

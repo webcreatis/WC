@@ -2,11 +2,12 @@ import Image from "next/image";
 import logo from "../public/logo-transparent-webcreatis-reunion.webp";
 import Button from "./ui/Button";
 import CrossIcon from "./ui/CrossIcon";
+import CanvasTrail from "./ui/Cursor";
 
 export default function Home() {
   return (
     <div>
-      <canvas className="absolute w-full"></canvas>
+      <CanvasTrail />
       <header className="fixed w-full h-[12.5em] p-9">
         <div className="flex justify-between items-center overflow-hidden pb-2 h-full">
           <Image
@@ -30,8 +31,8 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <div className="hero-section w-full h-screen flex flex-col justify-center items-center">
-          <h1 className="text-9xl uppercase font-bold tracking-wide text-white font-jaapokki">
+        <section className="hero-section w-full h-screen flex flex-col justify-center items-center">
+          <h1 className="text-9xl uppercase font-bold tracking-wide text-white font-jaapokki animate-fadeIn">
             <div className="flex space-x-1">
               <span className="letter inline-block min-w-[3vw] text-[10vw] transform transition-all duration-300 ease-in-out">
                 w
@@ -86,7 +87,10 @@ export default function Home() {
             <CrossIcon />
             <CrossIcon />
           </div>
-        </div>
+        </section>
+        <section className="works w-full h-screen">
+          <h2>works</h2>
+        </section>
       </main>
       <footer></footer>
     </div>
