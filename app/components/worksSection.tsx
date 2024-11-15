@@ -1,5 +1,6 @@
 import { TrafficCone } from "lucide-react";
 import vivierPics from "../assets/images/site-dr-julien-vivier.webp";
+import lavalPics from "../assets/images/site-dr-laval.webp";
 import envergurePics from "../assets/images/site-envergure.webp";
 import seaIntensePics from "../assets/images/site-seaintense.webp";
 import sofiaPics from "../assets/images/site-sofia-piccirilli.webp";
@@ -64,6 +65,16 @@ export default function WorksSection() {
           skillTwo="Tailwind CSS"
           skillThree="Directus CMS"
           pics={sofiaPics}
+        />
+        <CardWork
+          title="Docteur Valérie Laval"
+          desc="Medicine & Aesthetics"
+          number="05"
+          titleMarquee="DR VALERIE LAVAL"
+          link="https://lyon-esthetique-dr-laval.com/"
+          skillOne="Wordpress"
+          skillTwo="Elementor"
+          pics={lavalPics}
         />
       </ul>
     </section>
