@@ -22,7 +22,8 @@ html {
 }
 
 .hero-section,
-.works {
+.works,
+.services {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,
