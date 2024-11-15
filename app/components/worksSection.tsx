@@ -2,6 +2,7 @@ import { TrafficCone } from "lucide-react";
 import vivierPics from "../assets/images/site-dr-julien-vivier.webp";
 import envergurePics from "../assets/images/site-envergure.webp";
 import seaIntensePics from "../assets/images/site-seaintense.webp";
+import sofiaPics from "../assets/images/site-sofia-piccirilli.webp";
 import CardWork from "../ui/CardWork";
 
 export default function WorksSection() {
@@ -52,6 +53,17 @@ export default function WorksSection() {
           skillOne="Astro JS"
           skillTwo="Tailwind CSS"
           pics={envergurePics}
+        />
+        <CardWork
+          title="VILLA SURYA"
+          desc="Massage & Hosting"
+          number="04"
+          titleMarquee="VILLA SURYA"
+          link="https://sofiapiccirilli.com/"
+          skillOne="Next JS"
+          skillTwo="Tailwind CSS"
+          skillThree="Directus CMS"
+          pics={sofiaPics}
         />
       </ul>
     </section>
