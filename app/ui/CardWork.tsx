@@ -64,7 +64,7 @@ export default function CardWork({
           <Image
             src={pics}
             alt={`image du site ${title}`}
-            className="rounded-xl"
+            className="rounded-xl transition ease-out group-hover:scale-110 group-hover:animate-fadeIn"
             width={450}
             height={450}
             // blurDataURL="data:..." automatically provided

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "../public/logo-transparent-webcreatis-reunion.webp";
-import WorksSection from "./components/worksSection";
+import WorksSection from "./components/WorksSection";
 import Button from "./ui/Button";
 import CrossIcon from "./ui/CrossIcon";
 import CanvasTrail from "./ui/Cursor";
