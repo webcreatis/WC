@@ -16,7 +16,8 @@ const config: Config = {
         rotateMouseOut: 'rotateMouseout .3s ease-in-out forwards',
         fadeIn: "fadeIn 0.8s ease-out forwards",
         bgHover:"background-color ease-out .4s",
-        marquee:"marquee 4s linear infinite"
+        marquee:"marquee 4s linear infinite",
+        scalePics: "scalePics 0.4s ease-in-out forwards",
 
       },
       keyframes: {
@@ -35,6 +36,9 @@ const config: Config = {
         fadeIn: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        scalePics: {
+          "100%": { transform: "scale(1)" },
         },
       },
       scale: {
