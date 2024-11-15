@@ -1,5 +1,6 @@
 import { TrafficCone } from "lucide-react";
 import vivierPics from "../assets/images/site-dr-julien-vivier.webp";
+import envergurePics from "../assets/images/site-envergure.webp";
 import seaIntensePics from "../assets/images/site-seaintense.webp";
 import CardWork from "../ui/CardWork";
 
@@ -41,6 +42,16 @@ export default function WorksSection() {
           skillTwo="Tailwind CSS"
           skillThree="Directus CMS"
           pics={seaIntensePics}
+        />
+        <CardWork
+          title="Envergure"
+          desc="Training & Environment"
+          number="03"
+          titleMarquee="ENVERGURE"
+          link="https://www.envergure.re/"
+          skillOne="Astro JS"
+          skillTwo="Tailwind CSS"
+          pics={envergurePics}
         />
       </ul>
     </section>
