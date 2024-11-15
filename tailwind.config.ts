@@ -15,9 +15,15 @@ const config: Config = {
         rotateMouseEnter: 'rotateMouseEnter .3s ease-in-out forwards',
         rotateMouseOut: 'rotateMouseout .3s ease-in-out forwards',
         fadeIn: "fadeIn 0.8s ease-out forwards",
+        bgHover:"background-color ease-out .4s",
+        marquee:"marquee 4s linear infinite"
 
       },
       keyframes: {
+        marquee: {
+          "0%": {transform: 'translateX(0%)'},
+          "100%": {transform: 'translateX(-100%)'}
+        },
         rotateMouseEnter: {
           'from': { transform: 'rotate(0deg)' },
           'to': { transform: 'rotate(90deg)' },
