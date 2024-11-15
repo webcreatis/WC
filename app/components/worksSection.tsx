@@ -1,5 +1,6 @@
 import { TrafficCone } from "lucide-react";
 import vivierPics from "../assets/images/site-dr-julien-vivier.webp";
+import seaIntensePics from "../assets/images/site-seaintense.webp";
 import CardWork from "../ui/CardWork";
 
 export default function WorksSection() {
@@ -29,6 +30,17 @@ export default function WorksSection() {
           skillOne="Wordpress"
           skillTwo="Elementor"
           pics={vivierPics}
+        />
+        <CardWork
+          title="Sea Intense"
+          desc="Diving & Cetaceans"
+          number="02"
+          titleMarquee="SEA INTENSE"
+          link="https://www.seaintense.re/"
+          skillOne="Astro JS"
+          skillTwo="Tailwind CSS"
+          skillThree="Directus CMS"
+          pics={seaIntensePics}
         />
       </ul>
     </section>

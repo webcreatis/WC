@@ -9,6 +9,7 @@ type cardWoksProps = {
   link: string;
   skillOne: string;
   skillTwo: string;
+  skillThree?: string;
   pics: StaticImageData | string;
 };
 
@@ -20,11 +21,12 @@ export default function CardWork({
   link,
   skillOne,
   skillTwo,
+  skillThree,
   pics,
 }: cardWoksProps) {
   return (
     <>
-      <li className="flex justify-between items-center h-[21.25rem] transition ease-out border-t-[1px] border-b-[1px] border-white hover:bg-green hover:border-t-green hover:border-b-green cursor-pointer overflow-hidden whitespace-nowrap relative group">
+      <li className="flex justify-between items-center h-[21.25rem] transition ease-out border-t-[1px] border-white hover:bg-green hover:border-t-green hover:border-b-green cursor-pointer overflow-hidden whitespace-nowrap relative group">
         <Link href={link}>
           <span className="w-full invisible uppercase inline-block text-white text-[2000%] font-extrabold font-raleway absolute -top-[4rem] group-hover:visible group-hover:animate-marquee group-hover:opacity-20">
             {titleMarquee}
@@ -48,15 +50,23 @@ export default function CardWork({
               <span className="inline-block text-sm bg-white bg-opacity-25 group-hover:bg-opacity-100 p-2 rounded-md">
                 {skillTwo}
               </span>
+              {skillThree ? (
+                <span className="inline-block text-sm bg-white bg-opacity-25 group-hover:bg-opacity-100 p-2 rounded-md">
+                  {skillThree}
+                </span>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </div>
-        <div className="w-[30%] height-[78%] mr-3 z-20">
+        <div className="w-[30%] mr-3 z-20">
           <Image
             src={pics}
-            alt="Picture of the author"
-            className="rounded-xl object-cover"
-            height={250}
+            alt={`image du site ${title}`}
+            className="rounded-xl"
+            width={450}
+            height={450}
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
