@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* Global CSS */
-
+* {
+  cursor: none;
+}
 *,
 :before,
 :after {
@@ -22,12 +24,23 @@ html {
 }
 
 .hero-section,
-.works,
-.services {
+.works {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,
     rgba(20, 20, 20, 1) 0%,
     rgba(35, 78, 67, 1) 90%
   );
+}
+.services {
+  background: rgba(35, 78, 67, 1);
+}
+
+/* Cursor style */
+.cursor {
+  transition: scale 300ms;
+}
+.cursorGrow {
+  scale: 10;
+  width: 100px;
 }
