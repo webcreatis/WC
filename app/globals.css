@@ -41,6 +41,6 @@ html {
   transition: scale 300ms;
 }
 .cursorGrow {
-  scale: 10;
-  width: 100px;
+  scale: 15;
+  width: 150px;
 }

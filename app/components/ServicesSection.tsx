@@ -199,7 +199,7 @@ export default function ServicesSection() {
       </div>
       <div
         ref={cursorRef}
-        className="cursor w-[20px] h-[20px] rounded-full bg-green border-2 border-white border-solid fixed pointer-events-none bg-contain bg-center"
+        className="cursor w-[20px] h-[20px] rounded-full bg-green fixed pointer-events-none bg-contain bg-center"
       ></div>
     </section>
   );
