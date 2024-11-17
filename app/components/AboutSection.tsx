@@ -20,27 +20,36 @@ export default function AboutSection() {
           </span>
         </h2>
       </div>
-      <div className="flex justify-between">
-        <div className="w-[50%] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all ease-in-out delay-150">
-          <Image
-            src={patrickPics}
-            alt={`portrait de patrick développeur front end chez webcreatis`}
-            className="hover:scale-110 object-cover h-[650px]"
-            placeholder="blur"
-          />
+      <div className="flex w-full">
+        <div className="flex flex-col w-[50%] justify-between">
+          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all ease-in-out delay-150">
+            <Image
+              src={patrickPics}
+              alt={`portrait de patrick développeur front end chez webcreatis`}
+              className="hover:scale-110 object-cover"
+              placeholder="blur"
+            />
+          </div>
           <div className="flex flex-col">
-            <p className="text-center">
+            <p className="text-center text-white pt-10 font-raleway">
               Besoin d’un site internet ou refondre l’existant ?
             </p>
           </div>
         </div>
-        <div className="w-[50%] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transitio-all ease-in-out delay-150">
-          <Image
-            src={patriciaPics}
-            alt={`portrait de patricia webdesigner chez webcreatis`}
-            className="hover:scale-110 object-cover h-[650px]"
-            placeholder="blur"
-          />
+        <div className="flex flex-col w-[50%] justify-between">
+          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transitio-all ease-in-out delay-150">
+            <Image
+              src={patriciaPics}
+              alt={`portrait de patricia webdesigner chez webcreatis`}
+              className="hover:scale-110 object-cover"
+              placeholder="blur"
+            />
+          </div>
+          <div className="flex flex-col">
+            <p className="text-center text-white pt-10 font-raleway">
+              Je peux vous aider à améliorer votre présence digitale
+            </p>
+          </div>
         </div>
       </div>
     </section>
