@@ -32,7 +32,8 @@ html {
     rgba(35, 78, 67, 1) 90%
   );
 }
-.services {
+.services,
+.about {
   background: rgba(35, 78, 67, 1);
 }
 

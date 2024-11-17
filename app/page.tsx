@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../public/logo-transparent-webcreatis-reunion.webp";
+import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import WorksSection from "./components/WorkSection";
 import Button from "./ui/Button";
@@ -92,6 +93,7 @@ export default function Home() {
         </section>
         <WorksSection />
         <ServicesSection />
+        <AboutSection />
       </main>
       <footer></footer>
     </div>

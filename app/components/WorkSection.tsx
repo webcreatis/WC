@@ -18,8 +18,8 @@ export default function WorksSection() {
           <span className="text-white font-raleway italic text-6xl pr-3">
             Our
           </span>
-          <span className="text-white text-5xl font-jaapokki font-bold upper">
-            Work
+          <span className="text-white text-5xl font-jaapokki font-bold uppercase">
+            Works
           </span>
         </h2>
       </div>
