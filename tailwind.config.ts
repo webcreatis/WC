@@ -18,9 +18,19 @@ const config: Config = {
   			fadeIn: 'fadeIn 0.8s ease-out forwards',
   			bgHover: 'background-color ease-out .4s',
   			marquee: 'marquee 4s linear infinite',
-  			scalePics: 'scalePics 0.4s ease-in-out forwards'
+  			scalePics: 'scalePics 0.4s ease-in-out forwards',
+				marqueeText: 'marqueeOne 30s linear infinite',
+        'marquee-reverse': 'marqueeTwo 30s linear infinite',
   		},
   		keyframes: {
+				marqueeOne: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marqueeTwo: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
   			marquee: {
   				'0%': {
   					transform: 'translateX(0%)'
@@ -70,6 +80,7 @@ const config: Config = {
   		},
   		colors: {
   			green: '#7BE0AD',
+				darkGreen: "#234E42",
   			white: '#F9F9F9',
   			darkWhite: '#e4e6ef',
   			background: 'hsl(var(--background))',

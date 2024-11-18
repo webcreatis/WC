@@ -33,7 +33,8 @@ html {
   );
 }
 .services,
-.about {
+.about,
+.marquee {
   background: rgba(35, 78, 67, 1);
 }
 
@@ -106,5 +107,18 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Marquee Text style */
+@layer utilities {
+  .marqueeText {
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: transparent;
   }
 }

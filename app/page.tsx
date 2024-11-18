@@ -6,6 +6,7 @@ import WorksSection from "./components/WorkSection";
 import Button from "./ui/Button";
 import CrossIcon from "./ui/CrossIcon";
 import CanvasTrail from "./ui/Cursor";
+import MarqueeText from "./ui/MarqueeText";
 
 export default function Home() {
   return (
@@ -94,6 +95,7 @@ export default function Home() {
         <WorksSection />
         <ServicesSection />
         <AboutSection />
+        <MarqueeText />
       </main>
       <footer></footer>
     </div>

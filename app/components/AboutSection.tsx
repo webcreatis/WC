@@ -7,7 +7,7 @@ import patrickPics from "../assets/images/patrick-developpeur-front-end-webcreat
 
 export default function AboutSection() {
   return (
-    <section className="about w-full h-auto flex flex-col pb-60">
+    <section className="about w-full h-auto flex flex-col pb-28">
       <div
         id="services-header"
         className="flex justify-center items-center pt-32 pb-32"
