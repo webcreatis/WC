@@ -3,9 +3,8 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
-import logoReunionPortage from "../assets/images/logo-reunion-portage.webp";
+import logo6w2h from "../assets/images/logo-6w2h-webcreatis.webp";
 import logoSeaIntense from "../assets/images/logo-sea-intense-reunion.webp";
-import logoSimplon from "../assets/images/logo-simplon-reunion.webp";
 import logoSurya from "../assets/images/logo-villa-surya-sophie-piccirilli-reunion.webp";
 
 const AnimatedLogos = () => {
@@ -53,9 +52,23 @@ const AnimatedLogos = () => {
     const logos = [];
     const logoPaths = [
       logoSeaIntense.src,
-      logoSimplon.src,
+      logo6w2h.src,
       logoSurya.src,
-      logoReunionPortage.src,
+      logoSeaIntense.src,
+      logo6w2h.src,
+      logoSurya.src,
+      logoSeaIntense.src,
+      logo6w2h.src,
+      logoSurya.src,
+      logoSeaIntense.src,
+      logo6w2h.src,
+      logoSurya.src,
+      logoSeaIntense.src,
+      logo6w2h.src,
+      logoSurya.src,
+      logoSeaIntense.src,
+      logo6w2h.src,
+      logoSurya.src,
     ];
 
     // Créer plusieurs logos
