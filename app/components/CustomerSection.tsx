@@ -1,4 +1,5 @@
 import { Target } from "lucide-react";
+import AnimatedLogos from "../components/AnimatedLogos";
 
 export default function CustomerSection() {
   return (
@@ -17,7 +18,9 @@ export default function CustomerSection() {
       <h3 className="text-3xl text-white font-raleway text-center pb-10">
         Ils nous font confiance
       </h3>
-      <div className="w-1/2 h-[400px] m-auto border-2 border-solid border-red-700 mb-28"></div>
+      <div className="hidden md:block w-1/2 h-[614px] m-auto border-2 border-solid border-white mb-28 bg-transparent relative overflow-hidden">
+        <AnimatedLogos />
+      </div>
     </section>
   );
 }

@@ -11,7 +11,7 @@ import MarqueeText from "./ui/MarqueeText";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <CanvasTrail />
       <header className="fixed w-full h-[12.5em] p-9">
         <div className="flex justify-between items-center overflow-hidden pb-2 h-full">
@@ -100,6 +100,6 @@ export default function Home() {
         <CustomerSection />
       </main>
       <footer></footer>
-    </div>
+    </>
   );
 }
