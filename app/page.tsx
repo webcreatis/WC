@@ -11,7 +11,7 @@ import MarqueeText from "./ui/MarqueeText";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <CanvasTrail />
       <Header />
       <main>
@@ -24,6 +24,6 @@ export default function Home() {
         <CustomerSection />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
