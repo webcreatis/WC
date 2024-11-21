@@ -2,6 +2,7 @@ import AboutSection from "./components/AboutSection";
 import CustomerSection from "./components/CustomerSection";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import KapNumerikCTA from "./components/KapNumerikCTA";
 import ServicesSection from "./components/ServicesSection";
 import WorksSection from "./components/WorkSection";
 import CanvasTrail from "./ui/Cursor";
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <KapNumerikCTA />
         <WorksSection />
         <ServicesSection />
         <AboutSection />

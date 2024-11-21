@@ -16,8 +16,9 @@ export default function Header() {
             text="un projet ?"
             bg="bg-darkWhite"
             color="text-black"
+            link=""
           ></Button>
-          <Button text="Menu" bg="bg-darkWhite" color="text-black">
+          <Button text="Menu" bg="bg-darkWhite" color="text-black" link="">
             <div className="dots flex items-center relative w-[1.15em] h-[1.15em] text-black gap-1">
               <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
               <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
