@@ -1,5 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import CustomerSection from "./components/CustomerSection";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import KapNumerikCTA from "./components/KapNumerikCTA";
@@ -22,7 +23,7 @@ export default function Home() {
         <MarqueeText />
         <CustomerSection />
       </main>
-      <footer></footer>
+      <Footer />
     </div>
   );
 }

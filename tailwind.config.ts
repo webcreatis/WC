@@ -83,6 +83,7 @@ const config: Config = {
 				darkGreen: "#234E42",
   			white: '#F9F9F9',
   			darkWhite: '#e4e6ef',
+				black:'#18181B',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
