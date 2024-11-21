@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="bg-black w-full h-[500px] flex flex-col">
       <div className="flex">
         <Meteo />
-        <Meteo />
       </div>
     </footer>
   );
