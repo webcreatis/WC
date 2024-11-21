@@ -84,6 +84,7 @@ const config: Config = {
   			white: '#F9F9F9',
   			darkWhite: '#e4e6ef',
 				black:'#18181B',
+				'bg-brand': 'rgb(29 78 216)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
