@@ -8,7 +8,10 @@ import CardWork from "../ui/CardWork";
 
 export default function WorksSection() {
   return (
-    <section className="works w-full h-auto flex-col justify-start items-start">
+    <section
+      className="works w-full h-auto flex-col justify-start items-start"
+      id="projects"
+    >
       <div
         id="work-header"
         className="flex justify-center items-center pt-32 pb-32"

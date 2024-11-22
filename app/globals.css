@@ -123,3 +123,29 @@ html {
     -webkit-text-fill-color: transparent;
   }
 }
+
+/* FOOTER style */
+.bg-site-envergure {
+  position: relative;
+}
+
+.bg-site-envergure::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Couvre tout l'élément */
+  background-image: url("/site-envergure.webp");
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease; /* Animation pour un effet fluide */
+  opacity: 0.5; /* Niveau de luminosité initial */
+  z-index: 0;
+}
+
+.bg-site-envergure:hover::before {
+  opacity: 0.2; /* Rend l'image plus sombre au survol */
+}
+
+.bg-site-envergure > * {
+  position: relative;
+  z-index: 1; /* Le contenu reste au-dessus */
+}
