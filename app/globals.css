@@ -149,3 +149,51 @@ html {
   position: relative;
   z-index: 1; /* Le contenu reste au-dessus */
 }
+
+.circular-gradient {
+  background: radial-gradient(circle, #fff 0, hsla(0, 0%, 100%, 0) 50%);
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
+}
+
+.gradient-border {
+  position: relative;
+}
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #373b44,
+    #4286f4,
+    #3886ca,
+    #373b44,
+    #4286f4,
+    #3886ca,
+    #373b44,
+    #4286f4
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

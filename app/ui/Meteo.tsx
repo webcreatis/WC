@@ -42,7 +42,7 @@ export default function Meteo() {
   }, []);
 
   return (
-    <div className="w-full clock border-[1px] border-[#3f3f46] rounded-xl overflow-hidden gap-7 p-5 text-white font-michroma shadow-[0_5px_5px_-5px_rgba(212,212,212,0.2),0_5px_5px_-6px_rgba(212,212,212,0.2)] bg-[radial-gradient(circle,hsla(0,0%,100%,0.1) 0,hsla(0,0%,100%,0) 50%)] xs:hidden tablet:flex">
+    <div className="w-full h-auto clock border-[1px] border-[#3f3f46] rounded-xl overflow-hidden gap-7 p-5 text-white font-michroma shadow-[0_5px_5px_-5px_rgba(212,212,212,0.2),0_5px_5px_-6px_rgba(212,212,212,0.2)] bg-[radial-gradient(circle,hsla(0,0%,100%,0.1) 0,hsla(0,0%,100%,0) 50%)] xs:hidden tablet:flex">
       <p className="flex justify-center pb-5 gap-5 font-raleway text-xl uppercase">
         Our local Time{" "}
         <span className="bg-bg-brand bg-opacity-20 uppercase font-jaapokki rounded-xl text-[#2563eb] px-[0.625rem] py-[0.125rem]">

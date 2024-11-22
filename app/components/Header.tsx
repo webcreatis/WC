@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 export default function Header() {
   return (
-    <header className="fixed w-full h-[12.5em] p-9">
+    <header className="absolute top-0 left-0 w-full h-[12.5em] p-9">
       <div className="flex justify-between items-center overflow-hidden pb-2 h-full">
         <Image
           src={logo}
