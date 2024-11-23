@@ -3,7 +3,7 @@ import AnimatedLogos from "../components/AnimatedLogos";
 
 export default function CustomerSection() {
   return (
-    <section className="customer  w-full flex flex-col justify-center">
+    <section className="customer w-full flex flex-col justify-center">
       <div className="flex justify-center items-center pt-32 pb-10">
         <Target size={36} color="#7BE0AD" />
         <h2>
