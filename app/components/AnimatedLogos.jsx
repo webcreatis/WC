@@ -26,6 +26,7 @@ const AnimatedLogos = () => {
 
     // Configuration de base
     const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x18181b); // Noir
     const camera = new THREE.PerspectiveCamera(
       75,
       clientWidth / clientHeight,
@@ -45,7 +46,7 @@ const AnimatedLogos = () => {
     camera.position.z = 5;
 
     // Lumières
-    const light = new THREE.AmbientLight(0xffffff, 0.5); // Lumière douce
+    const light = new THREE.AmbientLight(0x18181b, 1); // Lumière douce
     scene.add(light);
 
     // Loader pour les textures des logos
@@ -83,8 +84,9 @@ const AnimatedLogos = () => {
         color: 0xffffff,
         transparent: true, // Permet à la texture d'avoir des zones transparentes
         opacity: 1,
+        blending: THREE.NormalBlending,
       });
-      const geometry = new THREE.PlaneGeometry(1.4, 1.4); // Taille initiale des logos
+      const geometry = new THREE.PlaneGeometry(1.6, 1.6); // Taille initiale des logos
       const logo = new THREE.Mesh(geometry, material);
 
       // Position et mouvement aléatoires
@@ -198,6 +200,8 @@ const AnimatedLogos = () => {
         if (container) {
           container.removeChild(renderer.domElement);
           container.removeEventListener("click", onMouseClick);
+          container.removeEventListener("mousemove", onMouseMove);
+          container.removeEventListener("click", onClick);
         }
       }
     };
