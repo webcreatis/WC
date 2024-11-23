@@ -34,8 +34,6 @@ const AnimatedLogos = () => {
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
-    console.log("renderer", renderer);
-
     // Attacher le canvas au DOM
     renderer.setSize(clientWidth, clientHeight, false);
     renderer.domElement.style.width = "100%";
@@ -139,20 +137,7 @@ const AnimatedLogos = () => {
       requestAnimationFrame(animate);
 
       // Mettre à jour les positions des logos
-      // logos.forEach((logo) => {
-      //   logo.position.x += logo.userData.dx;
-      //   logo.position.y += logo.userData.dy;
-
-      //   if (logo.position.x > 5 || logo.position.x < -5) {
-      //     logo.userData.dx *= -1;
-      //   }
-      //   if (logo.position.y > 3 || logo.position.y < -3) {
-      //     logo.userData.dy *= -1;
-      //   }
-      // });
       logos.forEach((logo) => {
-        console.log("hover", logo.userData.isHovered);
-
         if (!logo.userData.isHovered) {
           logo.position.x += logo.userData.dx;
           logo.position.y += logo.userData.dy;

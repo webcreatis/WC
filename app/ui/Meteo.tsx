@@ -22,12 +22,8 @@ export default function Meteo() {
           `https://api.tomorrow.io/v4/weather/realtime?location=-20.926399,55.335800&apikey=${apiKey}`
         ).then((res) => res.json());
 
-        console.log("infos", infos);
-
         setWeatherCode(infos.data.values.weatherCode);
         setWeatherCodeNight(infos.data.values.weatherCodeNight);
-
-        console.log("weatherCode", weatherCode);
 
         setTemperature(Math.round(infos.data.values.temperature));
       } catch (error) {
