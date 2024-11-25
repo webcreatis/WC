@@ -14,10 +14,10 @@ export default function AboutSection() {
       >
         <Users size={36} color="#7BE0AD" />
         <h2>
-          <span className="text-white font-raleway italic text-6xl pr-3 xs:text-4xl">
+          <span className="text-white font-raleway italic text-6xl pr-3 xs:text-4xl tablet:text-6xl">
             Our
           </span>
-          <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-4xl">
+          <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-4xl tablet:text-6xl">
             Team
           </span>
         </h2>
@@ -32,11 +32,11 @@ export default function AboutSection() {
               placeholder="blur"
             />
           </div>
-          <div className="flex flex-col w-full items-center gap-8">
-            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl">
+          <div className="flex flex-col w-full items-center gap-8 tablet:pb-10">
+            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl tablet:text-2xl">
               Création de site Web sur mesure
             </p>
-            <div className="w-full flex justify-center gap-5 xs:flex-col xs:items-center">
+            <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
               <Button variant="outline" className="w-[150px] font-jaapokki">
                 Contactez-moi
               </Button>
@@ -50,7 +50,7 @@ export default function AboutSection() {
               </Button>
               <Button
                 variant="outline"
-                className="w-[150px] font-jaapokki xs:mb-7"
+                className="w-[150px] font-jaapokki xs:mb-7 tablet:mb-0"
               >
                 <Link href="https://github.com/webcreatis">Github</Link>
               </Button>
@@ -67,10 +67,10 @@ export default function AboutSection() {
             />
           </div>
           <div className="flex flex-col w-full items-center gap-8">
-            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl xs:p-2 xs:pt-5">
+            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl xs:p-2 xs:pt-5 tablet:text-2xl">
               Création digitale | Print | Réseaux sociaux | Formation Canva
             </p>
-            <div className="w-full flex justify-center gap-5 xs:flex-col xs:items-center">
+            <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
               <Button variant="outline" className="w-[150px] font-jaapokki">
                 Contactez-moi
               </Button>
@@ -85,7 +85,7 @@ export default function AboutSection() {
       </div>
       <div className="w-[95%] m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10">
         <div className="w-[50%] border-[1px] border-solid border-white xs:w-full">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl">
             POURQUOI CRÉER UN SITE INTERNET ?
           </h2>
           <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base">
@@ -98,8 +98,8 @@ export default function AboutSection() {
             d’obtenir bien plus qu’un simple site vitrine.
           </p>
         </div>
-        <div className="w-[50%] border-[1px] border-solid border-white xs:w-full">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg">
+        <div className="w-[50%] border-[1px] border-solid border-white xs:w-full tablet:mb-12">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl">
             POURQUOI une présence digitale ?
           </h2>
           <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base">

@@ -9,9 +9,9 @@ export default function Header() {
         <Image
           src={logo}
           alt="Logo de l'agence digitale webcreatis"
-          className="w-[12.5em] h-[12.5em] xs:w-[8.5em] xs:h-[8.5em]"
+          className="w-[12.5em] h-[12.5em] xs:w-[8.5em] xs:h-[8.5em] tablet:w-[10em] tablet:h-[10em]"
         />
-        <div className="flex gap-5 xs:flex-col">
+        <div className="flex gap-5 xs:flex-col tablet:flex-row">
           <Button
             text="un projet ?"
             bg="bg-darkWhite"

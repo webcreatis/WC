@@ -68,129 +68,129 @@ export default function ServicesSection() {
       >
         <Laptop color="#7BE0AD" size={36} />
         <h2>
-          <span className="text-black font-raleway italic text-6xl pr-3 xs:text-4xl">
+          <span className="text-black font-raleway italic text-6xl pr-3 xs:text-4xl tablet:text-6xl">
             Our
           </span>
-          <span className="text-black text-5xl font-jaapokki font-bold uppercase xs:text-4xl">
+          <span className="text-black text-5xl font-jaapokki font-bold uppercase xs:text-4xl tablet:text-6xl">
             Services
           </span>
         </h2>
       </div>
       <div className="w-full h-auto pb-32">
-        <ul className="w-3/4 m-auto">
+        <ul className="w-3/4 m-auto tablet:w-[85%]">
           <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col"
+            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
             data-image={websitePics.src}
           >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3">
+            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
               website
             </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+            <div className="flex justify-start gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 design
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 développement
               </span>
-              <span className="font-jaapokki uppercase text-xl text-blac xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-blac xs:text-base tablet:text-xs laptop:text-sm">
                 seo
               </span>
             </div>
           </li>
           <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col"
+            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
             data-image={brandingBoardPics.src}
           >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3">
+            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
               webdesign
             </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 wireframe
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 maquettage
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 charte graphique
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black xs:text-base tablet:text-xs laptop:text-sm">
                 branding board
               </span>
             </div>
           </li>
           <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col"
+            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
             data-image={kakemonoPics.src}
           >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3">
+            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
               design & print
             </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 logo
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 business card
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 kakemono
               </span>
             </div>
           </li>
           <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col"
+            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
             data-image={socialNetworkPics.src}
           >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3">
+            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
               social network
             </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
+              <span className="font-jaapokki uppercase text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 managment
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 design
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 reels
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black xs:text-base">
+              <span className="font-jaapokki uppercase text-black xs:text-base tablet:text-xs laptop:text-sm">
                 web editor
               </span>
             </div>
           </li>
           <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col"
+            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
             data-image={canvaPics.src}
           >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3">
+            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
               formation
             </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start">
-              <span className="font-jaapokki uppercase text-xl text-black xs:text-base">
+            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
+              <span className="font-jaapokki uppercase text-black xs:text-base tablet:text-xs laptop:text-sm">
                 canva
               </span>
             </div>
           </li>
           <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col"
+            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
             data-image={prestaPics.src}
           >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3">
+            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
               presta
             </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 development
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 maquettage
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-x laptop:text-sm">
                 canva
               </span>
-              <span className="font-jaapokki uppercase text-xl text-black xs:text-base">
+              <span className="font-jaapokki uppercase text-xl text-black xs:text-base tablet:text-xs laptop:text-sm">
                 funnel marketing
               </span>
             </div>

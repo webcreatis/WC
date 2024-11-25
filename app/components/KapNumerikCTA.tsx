@@ -13,10 +13,10 @@ export default function KapNumerikCTA() {
         <Image
           src={logoRegionReunion}
           alt="Logo de la région Réunion"
-          className="w-[200px] h-[200px] xs:w-full xs:h-auto"
+          className="w-[200px] h-[200px] xs:w-full xs:h-auto tablet:w-[45%] laptop:w-[45%]"
         />
       </div>
-      <div className="w-[50%] xs:w-full xs:mt-12 h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
+      <div className="w-[50%] xs:w-full xs:mt-12 tablet:w-[50%] laptop:w-[55%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
         <Image
           src={kapNumerikPics}
           alt="Publicité pour le kap Numerik à la réunion"
@@ -48,7 +48,7 @@ export default function KapNumerikCTA() {
           accompagne dans toutes les démarches et prend en charge le dépôt de
           votre dossier auprès de la Région Réunion.
         </p>
-        <div className="flex justify-start items-center gap-5 xs:flex-col xs:w-full">
+        <div className="flex justify-start items-center gap-5 xs:flex-col xs:w-full tablet:flex-row tablet:justify-center">
           <Button
             text="J'ai un projet"
             bg="bg-green"

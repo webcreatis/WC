@@ -1,7 +1,7 @@
 export default function MarqueeText() {
   return (
-    <div className="marquee flex w-full place-items-center h-auto pb-20 xs:pb-5">
-      <div className="marqueeText relative overflow-hidden xs:text-4xl">
+    <div className="marquee flex w-full place-items-center h-auto pb-20 xs:pb-5 laptop:h-[350px]">
+      <div className="marqueeText relative overflow-hidden xs:text-4xl laptop:text-6xl">
         {/*-- Première ligne de texte */}
         <div className="flex whitespace-nowrap animate-marqueeText">
           <span className="text-[5vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2">

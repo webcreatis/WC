@@ -229,7 +229,7 @@ export default function Footer() {
                 </span>
               </button>
             </small>
-            <div className="w-full mt-10 flex justify-center gap-3 xs:flex-col">
+            <div className="w-full mt-10 flex justify-center gap-3 xs:flex-col laptop:flex-row">
               <iframe
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/5nZVdhUh4Oz9LMQyneMpD5?utm_source=generator"
@@ -238,7 +238,7 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                className="xs:w-full"
+                className="xs:w-full laptop:w-[50%]"
               ></iframe>
               <iframe
                 style={{ borderRadius: "12px" }}
@@ -248,10 +248,10 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                className="xs:w-full"
+                className="xs:w-full laptop:w-[50%]"
               ></iframe>
             </div>
-            <div className="w-full mt-4 flex justify-center items-center gap-3 xs:flex-col">
+            <div className="w-full mt-4 flex justify-center items-center gap-3 xs:flex-col laptop:flex-row">
               <iframe
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/16zrPTCH7MuDST1aIwk3gI?utm_source=generator"
@@ -260,7 +260,7 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                className="xs:w-full"
+                className="xs:w-full laptop:w-[50%]"
               ></iframe>
               <iframe
                 style={{ borderRadius: "12px" }}
@@ -270,7 +270,7 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                className="xs:w-full"
+                className="xs:w-full laptop:w-[50%]"
               ></iframe>
             </div>
           </div>
