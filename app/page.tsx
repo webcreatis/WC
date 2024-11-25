@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import KapNumerikCTA from "./components/KapNumerikCTA";
 import ServicesSection from "./components/ServicesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 import WorksSection from "./components/WorkSection";
 import CanvasTrail from "./ui/Cursor";
 import MarqueeText from "./ui/MarqueeText";
@@ -22,6 +23,7 @@ export default function Home() {
         <AboutSection />
         <MarqueeText />
         <CustomerSection />
+        <TestimonialsSection />
       </main>
       <Footer />
     </>
