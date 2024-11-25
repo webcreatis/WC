@@ -16,7 +16,7 @@ export default function KapNumerikCTA() {
           className="w-[200px] h-[200px]"
         />
       </div>
-      <div className="w-[50%] h-[500px] shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
+      <div className="w-[50%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
         <Image
           src={kapNumerikPics}
           alt="Publicité pour le kap Numerik à la réunion"

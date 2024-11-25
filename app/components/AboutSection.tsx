@@ -24,11 +24,11 @@ export default function AboutSection() {
       </div>
       <div className="flex w-full">
         <div className="flex flex-col w-[50%] justify-between">
-          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all ease-in-out delay-150">
+          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all duration-300 ease-in-out">
             <Image
               src={patrickPics}
               alt={`portrait de patrick développeur front end chez webcreatis`}
-              className="hover:scale-110 object-cover"
+              className="hover:scale-110 object-cover transition-transform duration-300 ease-in-out"
               placeholder="blur"
             />
           </div>
@@ -59,11 +59,11 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="flex flex-col w-[50%] justify-between">
-          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transitio-all ease-in-out delay-150">
+          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all duration-300 ease-in-out">
             <Image
               src={patriciaPics}
               alt={`portrait de patricia webdesigner chez webcreatis`}
-              className="hover:scale-110 object-cover"
+              className="hover:scale-110 object-cover transition-transform duration-300 ease-in-out"
               placeholder="blur"
             />
           </div>
