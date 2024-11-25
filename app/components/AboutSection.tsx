@@ -85,7 +85,7 @@ export default function AboutSection() {
       </div>
       <div className="w-[95%] m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10">
         <div className="w-[50%] border-[1px] border-solid border-white xs:w-full">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg">
             POURQUOI CRÉER UN SITE INTERNET ?
           </h2>
           <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base">
@@ -99,7 +99,7 @@ export default function AboutSection() {
           </p>
         </div>
         <div className="w-[50%] border-[1px] border-solid border-white xs:w-full">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg">
             POURQUOI une présence digitale ?
           </h2>
           <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base">

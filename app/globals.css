@@ -46,6 +46,14 @@ html {
   scale: 15;
   width: 150px;
 }
+@media (min-width: 320px) and (max-width: 425px) {
+  body {
+    cursor: pointer;
+  }
+  .cursorGrow {
+    display: none;
+  }
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
