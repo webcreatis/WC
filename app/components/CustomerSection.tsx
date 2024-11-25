@@ -18,7 +18,7 @@ export default function CustomerSection() {
       <h3 className="text-3xl text-white font-raleway text-center pb-10 xs:text-xl tablet:text-2xl">
         Ils nous font confiance
       </h3>
-      <div className="hidden md:block w-1/2 h-[614px] m-auto border-2 border-solid border-white mb-28 bg-transparent relative overflow-hidden tablet:w-[90%]">
+      <div className="hidden md:block w-1/2 h-[614px] m-auto border-2 border-solid border-white mb-28 bg-transparent relative overflow-hidden tablet:w-[90%] l:w-[50%]">
         <AnimatedLogos />
       </div>
     </section>

@@ -8,15 +8,15 @@ export default function KapNumerikCTA() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section className="w-full flex justify-center items-center p-16 relative xs:flex-col-reverse xs:p-2">
-      <div className="flex w-full justify-center xs:w-full">
+    <section className="w-full flex justify-center items-center relative xs:flex-col-reverse xs:p-2 laptop:flex-row laptop:p-16 laptop:gap-10">
+      <div className="flex w-full justify-center xs:w-full laptop:hidden">
         <Image
           src={logoRegionReunion}
           alt="Logo de la région Réunion"
-          className="w-[200px] h-[200px] xs:w-full xs:h-auto tablet:w-[45%] laptop:w-[45%]"
+          className="w-[200px] h-[200px] xs:w-full xs:h-auto tablet:w-[45%]"
         />
       </div>
-      <div className="w-[50%] xs:w-full xs:mt-12 tablet:w-[50%] laptop:w-[55%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
+      <div className="w-[50%] xs:w-full xs:mt-12 tablet:w-[50%] laptop:w-[65%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
         <Image
           src={kapNumerikPics}
           alt="Publicité pour le kap Numerik à la réunion"
