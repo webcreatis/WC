@@ -22,8 +22,8 @@ export default function AboutSection() {
           </span>
         </h2>
       </div>
-      <div className="flex w-full xs:flex-col">
-        <div className="flex flex-col w-[50%] justify-between xs:w-full">
+      <div className="flex w-full xs:flex-col l:flex-row">
+        <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
           <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all duration-300 ease-in-out">
             <Image
               src={patrickPics}
@@ -33,7 +33,7 @@ export default function AboutSection() {
             />
           </div>
           <div className="flex flex-col w-full items-center gap-8 tablet:pb-10">
-            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl tablet:text-2xl">
+            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl tablet:text-2xl l:text-xl">
               Création de site Web sur mesure
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
@@ -57,7 +57,7 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-[50%] justify-between xs:w-full">
+        <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
           <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all duration-300 ease-in-out">
             <Image
               src={patriciaPics}
@@ -66,8 +66,8 @@ export default function AboutSection() {
               placeholder="blur"
             />
           </div>
-          <div className="flex flex-col w-full items-center gap-8">
-            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl xs:p-2 xs:pt-5 tablet:text-2xl">
+          <div className="flex flex-col w-full items-center gap-8 tablet:pb-10">
+            <p className="text-white pt-10 font-raleway text-2xl xs:text-xl xs:p-2 xs:pt-5 tablet:text-2xl l:pt-0 l:text-xl">
               Création digitale | Print | Réseaux sociaux | Formation Canva
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
@@ -83,12 +83,12 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-      <div className="w-[95%] m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10">
-        <div className="w-[50%] border-[1px] border-solid border-white xs:w-full">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl">
+      <div className="m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10 l:flex-row">
+        <div className="border-[1px] border-solid border-white xs:w-full l:w-[50%] l:h-[350px]">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
             POURQUOI CRÉER UN SITE INTERNET ?
           </h2>
-          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base">
+          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
             Que vous souhaitiez vendre sur internet ou augmenter votre
             visibilité, votre site web doit impérativement : attirer, séduire et
             convertir. Or, le web est un environnement très concurrentiel. Tout
@@ -98,11 +98,11 @@ export default function AboutSection() {
             d’obtenir bien plus qu’un simple site vitrine.
           </p>
         </div>
-        <div className="w-[50%] border-[1px] border-solid border-white xs:w-full tablet:mb-12">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl">
+        <div className="border-[1px] border-solid border-white xs:w-full tablet:mb-12 l:w-[50%] l:h-[350px]">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
             POURQUOI une présence digitale ?
           </h2>
-          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base">
+          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
             Il est important dans notre monde moderne d’être présent sur la
             toile et faire parler de soi. Cela vous apportera une visibilité
             accrue, de devenir une entreprise accessible dans ce monde du
