@@ -9,6 +9,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+        s: "375px",
+        mobile: "414px",
+        smallMobile: "640px",
+        tablet: "768px",
+        laptop: "1024px",
+        l: "1320px",
+        ipadPro: "1366px",
+        lg: "1440px",
+        x: "1720px",
+        xl: "2000px",
+        xxl: "2220px",
+        hdDesktop: "2560px",
+      },
       fontSize: {
         cross: "clamp(0.875rem, 1vw, 2rem)",
       },

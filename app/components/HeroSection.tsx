@@ -1,4 +1,3 @@
-import React from "react";
 import CrossIcon from "../ui/CrossIcon";
 
 export default function HeroSection() {
@@ -38,7 +37,7 @@ export default function HeroSection() {
           </span>
         </div>
       </h1>
-      <div className="hero-subtitle caption-timeline text-white text-center text-lg uppercase pt-10">
+      <div className="hero-subtitle caption-timeline text-white text-center text-lg uppercase pt-10 xs:p-5 xs:text-sm xs:text-left">
         <span className="block opacity-100">
           Nous sommes une Agence Digitale située à la Réunion,
         </span>

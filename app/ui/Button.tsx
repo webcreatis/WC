@@ -51,7 +51,7 @@ export default function Button({
       <button
         onClick={() => (location.href = link)}
         className={
-          "flex justify-center items-center text-[.875em] uppercase h-[3.2em] cursor-pointer p-[1.125em] rounded-[6.25em] " +
+          "flex justify-center xs:w-[130px] xs:h-[2.5em] items-center text-[.875em] uppercase h-[3.5em] cursor-pointer p-[1.125em] rounded-[6.25em] " +
           bg
         }
       >
@@ -59,7 +59,9 @@ export default function Button({
           ref={childrenRef}
           className="flex justify-center items-center overflow-hidden gap-[.625em]"
         >
-          <span className={"font-raleway font-semibold " + color}>{text}</span>
+          <span className={"font-raleway font-semibold xs:text-xs " + color}>
+            {text}
+          </span>
           {children}
         </div>
       </button>

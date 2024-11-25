@@ -43,7 +43,7 @@ export default function Footer() {
                   <Linkedin size="1.25rem" />
                   <Link
                     href="https://www.linkedin.com/in/patrick-perroudon/"
-                    className="font-raleway"
+                    className="font-raleway xs:text-center"
                   >
                     Linkedin Patrick
                   </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
                   <Linkedin size="1.25rem" />
                   <Link
                     href="https://www.linkedin.com/in/patriciaperroudon/"
-                    className="font-raleway"
+                    className="font-raleway xs:text-center"
                   >
                     Linkedin Patricia
                   </Link>
@@ -74,8 +74,8 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex h-[250px] items-center row-span-2 overflow-hidden mt-5 border-solid border-[1px] border-[#3f3f46] rounded-xl gradient-border">
-              <div className="w-1/2 h-1/2 flex items-center justify-center border-solid border-r-[1px] border-white">
+            <div className="w-full flex h-[250px] items-center row-span-2 overflow-hidden mt-5 border-solid border-[1px] border-[#3f3f46] rounded-xl gradient-border xs:justify-center">
+              <div className="w-1/2 h-1/2 flex items-center justify-center border-solid border-r-[1px] border-white xs:w-[120px]">
                 <Image
                   src={copyrightIcon}
                   alt={`icon du copyright`}
@@ -84,11 +84,14 @@ export default function Footer() {
                   placeholder="blur"
                 />
               </div>
-              <div className="w-1/2 flex flex-col justify-center items-center">
-                <span className="text-white font-raleway text-xl">
+              <div className="w-1/2 flex flex-col justify-center items-center xs:items-start xs:pl-5">
+                <span className="text-white font-raleway text-xl xs:text-base">
                   {currentYear} All Rights Reserved
                 </span>
-                <Link href="#" className="text-white font-raleway text-xl">
+                <Link
+                  href="#"
+                  className="text-white font-raleway text-xl xs:text-base"
+                >
                   Mentions légales
                 </Link>
                 <div className="flex justify-center items-center">
@@ -107,22 +110,22 @@ export default function Footer() {
             <div className="flex w-full place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-5">
               <div className="marqueeText relative overflow-hidden">
                 <div className="flex whitespace-nowrap animate-marqueeText">
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2">
+                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2">
+                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2">
+                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2">
+                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2">
+                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2">
+                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
                     Get In Touch
                   </span>
                 </div>
@@ -226,7 +229,7 @@ export default function Footer() {
                 </span>
               </button>
             </small>
-            <div className="w-full mt-10 flex justify-center gap-3">
+            <div className="w-full mt-10 flex justify-center gap-3 xs:flex-col">
               <iframe
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/5nZVdhUh4Oz9LMQyneMpD5?utm_source=generator"
@@ -235,6 +238,7 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
+                className="xs:w-full"
               ></iframe>
               <iframe
                 style={{ borderRadius: "12px" }}
@@ -244,9 +248,10 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
+                className="xs:w-full"
               ></iframe>
             </div>
-            <div className="w-full mt-4 flex justify-center items-center gap-3">
+            <div className="w-full mt-4 flex justify-center items-center gap-3 xs:flex-col">
               <iframe
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/16zrPTCH7MuDST1aIwk3gI?utm_source=generator"
@@ -255,6 +260,7 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
+                className="xs:w-full"
               ></iframe>
               <iframe
                 style={{ borderRadius: "12px" }}
@@ -264,6 +270,7 @@ export default function Footer() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
+                className="xs:w-full"
               ></iframe>
             </div>
           </div>

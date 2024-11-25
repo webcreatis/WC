@@ -14,14 +14,14 @@ export default function WorksSection() {
     >
       <div
         id="work-header"
-        className="flex justify-center items-center pt-32 pb-32"
+        className="flex justify-center items-center pt-32 pb-32 xs:pb-16"
       >
         <TrafficCone color="#7BE0AD" size={36} />
         <h2>
-          <span className="text-white font-raleway italic text-6xl pr-3">
+          <span className="text-white font-raleway italic text-6xl pr-3 xs:text-4xl">
             Our
           </span>
-          <span className="text-white text-5xl font-jaapokki font-bold uppercase">
+          <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-4xl">
             Works
           </span>
         </h2>

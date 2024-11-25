@@ -127,13 +127,13 @@ export default function RealTime({
   return (
     <div className="flex justify-center items-center uppercase gap-5">
       <div className="flex flex-col">
-        <span className="font-raleway">{day}</span>
+        <span className="font-raleway xs:text-sm">{day}</span>
         <div>
-          <span>{dayOfMonth} - </span>
-          <span className="font-raleway">{month}</span>
+          <span className="inline-block xs:text-sm">{dayOfMonth} - </span>
+          <span className="font-raleway xs:text-sm">{month}</span>
         </div>
         <div className="flex items-center gap-5 pt-2">
-          <span className="tablet:text-xs">{temperature}°C</span>
+          <span className="xs:text-sm tablet:text-sm">{temperature}°C</span>
           <WeatherDisplay
             weatherCode={weatherCode}
             weatherCodeNight={weatherCodeNight}
@@ -141,7 +141,7 @@ export default function RealTime({
         </div>
       </div>
 
-      <span className="inline-block text-[50px] p-5 font-mono w-[300px] text-center">
+      <span className="inline-block text-[50px] p-5 font-mono w-[300px] text-center xs:text-3xl">
         {time}
       </span>
     </div>

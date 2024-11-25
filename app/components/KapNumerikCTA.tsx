@@ -8,23 +8,23 @@ export default function KapNumerikCTA() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section className="w-full flex justify-center items-center p-16 relative">
-      <div className="absolute bottom-5 right-10">
+    <section className="w-full flex justify-center items-center p-16 relative xs:flex-col-reverse xs:p-2">
+      <div className="flex w-full justify-center xs:w-full">
         <Image
           src={logoRegionReunion}
           alt="Logo de la région Réunion"
-          className="w-[200px] h-[200px]"
+          className="w-[200px] h-[200px] xs:w-full xs:h-auto"
         />
       </div>
-      <div className="w-[50%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
+      <div className="w-[50%] xs:w-full xs:mt-12 h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
         <Image
           src={kapNumerikPics}
           alt="Publicité pour le kap Numerik à la réunion"
           className="w-[100%] h-[100%] rounded-xl"
         />
       </div>
-      <div className="flex flex-col flex-grow p-16">
-        <h2 className="font-jaapokki uppercase text-3xl pb-5">
+      <div className="flex flex-col flex-grow p-16 xs:p-2">
+        <h2 className="font-jaapokki uppercase text-3xl pb-5 xs:pt-12">
           Kap Numérik {currentYear}
         </h2>
         <p className="font-raleway">
@@ -48,7 +48,7 @@ export default function KapNumerikCTA() {
           accompagne dans toutes les démarches et prend en charge le dépôt de
           votre dossier auprès de la Région Réunion.
         </p>
-        <div className="flex justify-start items-center gap-5">
+        <div className="flex justify-start items-center gap-5 xs:flex-col xs:w-full">
           <Button
             text="J'ai un projet"
             bg="bg-green"
