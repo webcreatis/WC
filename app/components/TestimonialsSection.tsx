@@ -111,7 +111,7 @@ export default function TestimonialsSection() {
           orientation="vertical"
           className="w-full max-w-2xl"
         >
-          <CarouselContent className="-mt-1 h-[200px]">
+          <CarouselContent className="-mt-1 h-[250px] xs:h-[320px] mobile:h-[230px]">
             {testimonialArray.map((testimonial, index) => (
               <CarouselItem key={index} className="pt-1 md:basis-5/6">
                 <div className="p-1">
@@ -121,15 +121,15 @@ export default function TestimonialsSection() {
                         <Image
                           src={testimonial.avatar}
                           alt={`logo du site ${testimonial.societe}`}
-                          className="rounded-xl absolute bottom-3 right-5"
-                          width={50}
-                          height={50}
+                          className="rounded-xl absolute xs:hidden tablet:bottom-3 tablet:right-4 tablet:flex"
+                          width={40}
+                          height={40}
                         />
                       </Link>
                       <p className="text-xs font-light font-raleway">
                         {testimonial.texte}
                       </p>
-                      <span>
+                      <span className="xs:text-xs">
                         {testimonial.societe} - {testimonial.date}
                       </span>
                     </CardContent>
