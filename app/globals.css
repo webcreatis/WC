@@ -46,11 +46,11 @@ html {
   scale: 15;
   width: 150px;
 }
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 768px) {
   body {
     cursor: pointer;
   }
-  .cursorGrow {
+  .cursor {
     display: none;
   }
 }
@@ -203,4 +203,15 @@ html {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* cursor icon style */
+
+.arrow-cursor {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.arrow-cursor.visible {
+  opacity: 1;
 }

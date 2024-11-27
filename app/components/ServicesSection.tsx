@@ -1,6 +1,6 @@
 "use client";
 
-import { Laptop } from "lucide-react";
+import { Laptop, MoveRight } from "lucide-react";
 import { useCallback, useEffect, useRef } from "react";
 import brandingBoardPics from "../assets/images/Branding-board-webcreatis.webp";
 import kakemonoPics from "../assets/images/Envergure-Kakemono.webp";
@@ -24,26 +24,73 @@ export default function ServicesSection() {
   }, []);
 
   useEffect(() => {
+    // On récupére l'ensemble des cards services
     const boxes = document.querySelectorAll(".box");
+    const links = document.querySelectorAll(".buttonAction");
+    const cursorIcon = cursorRef.current?.querySelector(".arrow-cursor");
 
+    const showCursorIcon = () => {
+      if (cursorIcon) {
+        cursorIcon.classList.add("visible");
+      }
+    };
+
+    const hideCursorIcon = () => {
+      if (cursorIcon) {
+        cursorIcon.classList.remove("visible");
+      }
+    };
+
+    links.forEach((button) => {
+      const attributeButton = button.getAttribute("data-link");
+
+      button.addEventListener("mouseover", () => {
+        showCursorIcon();
+        // on se branche au cursor via sa reference
+        const cursor = cursorRef.current;
+        if (attributeButton && cursor) {
+          cursor.style.transform = "scale(2)";
+        }
+      });
+
+      button.addEventListener("mouseout", () => {
+        hideCursorIcon();
+        // on se branche au cursor via sa reference
+        const cursor = cursorRef.current;
+
+        if (attributeButton && cursor) cursor.style.transform = "none";
+      });
+    });
+
+    // On boucle dessus pour ajouter un événement au passage de la souris
     boxes.forEach((elem) => {
+      // Mouse enter
       elem.addEventListener("mouseenter", function () {
+        // On récupére l'élément qui posséde l'attribue "data-image"
         const att = elem.getAttribute("data-image");
 
+        // on se branche au cursor via sa reference
         const cursor = cursorRef.current;
+
+        // On affiche les images des services si cursor n'est pas nul
         if (cursor) {
+          // On ajoute la class "cursorGrow"
           cursor.classList.add("cursorGrow");
+          // on ajoute un bg image
           cursor.style.background = `url(${att})`;
           cursor.style.backgroundPosition = "center";
           cursor.style.backgroundSize = "contain";
           cursor.style.backgroundRepeat = "no-repeat";
         }
       });
+
+      // Mouse Out
       elem.addEventListener("mouseout", function () {
+        // On récupére le cursor
         const cursor = cursorRef.current;
         if (cursor) {
           cursor.classList.remove("cursorGrow");
-          cursor.style.background = "#000000";
+          cursor.style.background = "#E4F2E7";
         }
       });
     });
@@ -199,8 +246,12 @@ export default function ServicesSection() {
       </div>
       <div
         ref={cursorRef}
-        className="cursor w-[20px] h-[20px] rounded-full bg-green fixed pointer-events-none bg-contain bg-center z-50"
-      ></div>
+        className="cursor flex justify-center items-center w-[30px] h-[30px] rounded-full bg-greenLight fixed pointer-events-none bg-contain bg-center z-50 transition-transform duration-500 ease-in-out"
+      >
+        <p className="arrow-cursor">
+          <MoveRight color="#18181B" size={10} />
+        </p>
+      </div>
     </section>
   );
 }

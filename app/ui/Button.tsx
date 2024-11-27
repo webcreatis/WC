@@ -50,8 +50,9 @@ export default function Button({
     <>
       <button
         onClick={() => (location.href = link)}
+        data-link="link"
         className={
-          "flex justify-center xs:w-[130px] xs:h-[2.5em] items-center text-[.875em] uppercase h-[3.5em] cursor-pointer p-[1.125em] rounded-[6.25em] " +
+          "buttonAction flex justify-center xs:w-[130px] xs:h-[2.5em] items-center text-[.875em] uppercase h-[3.5em] cursor-pointer p-[1.125em] rounded-[6.25em] " +
           bg
         }
       >

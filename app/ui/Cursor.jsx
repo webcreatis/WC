@@ -4,11 +4,12 @@ import { useEffect, useRef } from "react";
 
 const CanvasTrail = () => {
   const canvasRef = useRef(null);
-  const mouseTimerRef = useRef(null); // useRef to store the mouse timer
+  const mouseTimerRef = useRef(null);
   const pointer = useRef({
     x: 0.5 * (typeof window !== "undefined" ? window.innerWidth : 0),
     y: 0.5 * (typeof window !== "undefined" ? window.innerHeight : 0),
   });
+
   const trail = useRef(
     new Array(30).fill(null).map(() => ({
       x: pointer.current.x,
@@ -17,7 +18,7 @@ const CanvasTrail = () => {
       dy: 0,
     }))
   );
-  const mouseMoved = useRef(false); // useRef to store the mouse moved state
+  const mouseMoved = useRef(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -32,7 +33,7 @@ const CanvasTrail = () => {
     const handleMouseMove = (e) => {
       mouseMoved.current = true;
       updateMousePosition(e.pageX, e.pageY);
-      clearTimeout(mouseTimerRef.current); // Use the ref to clear the timer
+      clearTimeout(mouseTimerRef.current);
       mouseTimerRef.current = setTimeout(() => {
         mouseMoved.current = false;
       }, 3000);

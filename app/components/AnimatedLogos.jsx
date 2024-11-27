@@ -100,6 +100,10 @@ const AnimatedLogos = () => {
         dx: (Math.random() - 0.5) * 0.05, // Vitesse X aléatoire
         dy: (Math.random() - 0.5) * 0.05, // Vitesse Y aléatoire
         isHovered: false, // Ajout d'un indicateur de survol
+        className: "buttonAction", // Ajout de la classe
+        attributes: {
+          "data-link": "link",
+        },
       };
 
       logos.push(logo);

@@ -21,61 +21,74 @@ export default function Footer() {
                 Connect with us
               </small>
               <div className="grid grid-cols-3 grid-rows-2 gap-2 p-5">
-                <div className="border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4">
-                  <AtSign size="1.25rem" />
-                  <Link
+                <div>
+                  <a
+                    data-link="link"
                     href="mailto:contact.webcreatis@gmail.com"
-                    className="font-raleway"
+                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
                   >
-                    Email
-                  </Link>
+                    <AtSign size="1.25rem" />
+                    <span className="font-raleway">Email</span>
+                  </a>
                 </div>
-                <div className="border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4">
-                  <Instagram size="1.25rem" />
-                  <Link
+                <div>
+                  <a
+                    data-link="link"
                     href="https://www.instagram.com/webcreatis?igsh=MXdjdml0NGJmNXhqaw%3D%3D&utm_source=qr"
-                    className="font-raleway"
+                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
                   >
-                    Instagram
-                  </Link>
+                    <Instagram size="1.25rem" />
+                    <span className="font-raleway">Instagram</span>
+                  </a>
                 </div>
-                <div className="border-[1px] border-[#3f3f46]  text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4">
-                  <Linkedin size="1.25rem" />
-                  <Link
+                <div>
+                  <a
+                    data-link="link"
                     href="https://www.linkedin.com/in/patrick-perroudon/"
-                    className="font-raleway xs:text-center"
+                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
                   >
-                    Linkedin Patrick
-                  </Link>
+                    <Linkedin size="1.25rem" />
+                    <span className="font-raleway xs:text-center">
+                      Linkedin Patrick
+                    </span>
+                  </a>
                 </div>
-                <div className="border-[1px] border-[#3f3f46]  text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4">
-                  <Linkedin size="1.25rem" />
-                  <Link
+                <div>
+                  <a
+                    data-link="link"
                     href="https://www.linkedin.com/in/patriciaperroudon/"
-                    className="font-raleway xs:text-center"
+                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
                   >
-                    Linkedin Patricia
-                  </Link>
+                    <Linkedin size="1.25rem" />
+                    <span className="font-raleway xs:text-center">
+                      Linkedin Patricia
+                    </span>
+                  </a>
                 </div>
-                <div className="border-[1px] border-[#3f3f46]  text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4">
-                  <Github size="1.25rem" />
-                  <Link
+                <div>
+                  <a
+                    data-link="link"
                     href="https://github.com/webcreatis"
-                    className="font-raleway"
+                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
                   >
-                    Github
-                  </Link>
+                    <Github size="1.25rem" />
+                    <span className="font-raleway">Github</span>
+                  </a>
                 </div>
-                <div className="border-[1px] border-[#3f3f46]  text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4">
-                  <Phone size="1.25rem" />
-                  <Link href="tel:0" className="font-raleway">
-                    Phone
-                  </Link>
+                <div>
+                  <a
+                    data-link="link"
+                    href="tel:0693514439"
+                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
+                  >
+                    <Phone size="1.25rem" />
+                    <span className="font-raleway">Phone</span>
+                  </a>
                 </div>
               </div>
             </div>
             <div className="w-full flex h-[250px] items-center row-span-2 overflow-hidden mt-5 border-solid border-[1px] border-[#3f3f46] rounded-xl gradient-border xs:justify-center">
-              <div className="w-1/2 h-1/2 flex items-center justify-center border-solid border-r-[1px] border-white xs:w-[120px]">
+              <div className="w-1/2 h-1/2 flex items-center justify-center border-solid border-r-[1px] border-white xs:w-[120px] laptop:w-1/2">
                 <Image
                   src={copyrightIcon}
                   alt={`icon du copyright`}

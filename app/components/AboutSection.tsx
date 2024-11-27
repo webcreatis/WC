@@ -37,20 +37,33 @@ export default function AboutSection() {
               Création de site Web sur mesure
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
-              <Button variant="outline" className="w-[150px] font-jaapokki">
+              <Button
+                variant="outline"
+                className="w-[150px] font-jaapokki buttonAction"
+                data-link="link"
+              >
                 Contactez-moi
               </Button>
-              <Button variant="outline" className="w-[150px] font-jaapokki">
+              <Button
+                variant="outline"
+                className="w-[150px] font-jaapokki buttonAction"
+                data-link="link"
+              >
                 Download CV
               </Button>
-              <Button variant="outline" className="w-[150px] font-jaapokki">
+              <Button
+                variant="outline"
+                className="w-[150px] font-jaapokki buttonAction"
+                data-link="link"
+              >
                 <Link href="https://www.linkedin.com/in/patrick-perroudon/">
                   Linkedin
                 </Link>
               </Button>
               <Button
                 variant="outline"
-                className="w-[150px] font-jaapokki xs:mb-7 tablet:mb-0"
+                className="w-[150px] font-jaapokki xs:mb-7 tablet:mb-0 buttonAction"
+                data-link="link"
               >
                 <Link href="https://github.com/webcreatis">Github</Link>
               </Button>
@@ -71,10 +84,18 @@ export default function AboutSection() {
               Création digitale | Print | Réseaux sociaux | Formation Canva
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
-              <Button variant="outline" className="w-[150px] font-jaapokki">
+              <Button
+                variant="outline"
+                className="w-[150px] font-jaapokki buttonAction"
+                data-link="link"
+              >
                 Contactez-moi
               </Button>
-              <Button variant="outline" className="w-[150px] font-jaapokki">
+              <Button
+                variant="outline"
+                className="w-[150px] font-jaapokki buttonAction"
+                data-link="link"
+              >
                 <Link href="https://www.linkedin.com/in/patriciaperroudon/">
                   Linkedin
                 </Link>

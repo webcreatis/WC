@@ -117,6 +117,7 @@ const config: Config = {
       },
       colors: {
         green: "#7BE0AD",
+        greenLight:"#E4F2E7",
         darkGreen: "#234E42",
         white: "#F9F9F9",
         darkWhite: "#e4e6ef",
