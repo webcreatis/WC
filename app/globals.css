@@ -23,7 +23,8 @@ html {
 }
 
 .hero-section,
-.works {
+.works,
+.about {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,
@@ -31,11 +32,11 @@ html {
     rgba(35, 78, 67, 1) 90%
   );
 }
-.services,
-.about,
-.marquee,
-.customer {
+.services {
   background: rgba(35, 78, 67, 1);
+}
+.marquee {
+  background-color: #234e42;
 }
 
 /* Cursor style */
@@ -46,7 +47,7 @@ html {
   scale: 15;
   width: 150px;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1366px) {
   body {
     cursor: pointer;
   }

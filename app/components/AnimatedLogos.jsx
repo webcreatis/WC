@@ -26,7 +26,7 @@ const AnimatedLogos = () => {
 
     // Configuration de base
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x18181b); // Noir
+    scene.background = new THREE.Color(0xff5757); // tomato
     const camera = new THREE.PerspectiveCamera(
       75,
       clientWidth / clientHeight,
@@ -46,8 +46,8 @@ const AnimatedLogos = () => {
     camera.position.z = 5;
 
     // Lumières
-    const light = new THREE.AmbientLight(0x18181b, 1); // Lumière douce
-    scene.add(light);
+    // const light = new THREE.AmbientLight(0x18181b, 1); // Lumière douce
+    // scene.add(light);
 
     // Loader pour les textures des logos
     const textureLoader = new THREE.TextureLoader();
@@ -81,7 +81,6 @@ const AnimatedLogos = () => {
       const texture = textureLoader.load(path.src);
       const material = new THREE.MeshBasicMaterial({
         map: texture,
-        color: 0xffffff,
         transparent: true, // Permet à la texture d'avoir des zones transparentes
         opacity: 1,
         blending: THREE.NormalBlending,
@@ -91,8 +90,8 @@ const AnimatedLogos = () => {
 
       // Position et mouvement aléatoires
       logo.position.set(
-        (Math.random() - 0.5) * 10, // Position X aléatoire
-        (Math.random() - 0.5) * 6, // Position Y aléatoire
+        Math.random() * 5 - 2.5, // X limité au rayon de la scène circulaire
+        Math.random() * 5 - 2.5, // Y limité au rayon de la scène circulaire
         0
       );
       logo.userData = {
@@ -211,7 +210,12 @@ const AnimatedLogos = () => {
     };
   }, []);
 
-  return <div ref={containerRef} className="w-full h-full"></div>;
+  return (
+    <div
+      ref={containerRef}
+      className="mt-32 ml-20 w-[400px] h-[400px] rounded-full overflow-hidden relative tablet:ml-40 laptop:ml-[16rem] l:ml-[0rem] l:w-[350px] l:h-[350px]"
+    ></div>
+  );
 };
 
 export default AnimatedLogos;

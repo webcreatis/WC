@@ -18,10 +18,10 @@ export default function WorksSection() {
       >
         <TrafficCone color="#7BE0AD" size={36} />
         <h2>
-          <span className="text-white font-raleway italic text-6xl pr-3 xs:text-4xl tablet:text-6xl">
+          <span className="text-white font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
             Our
           </span>
-          <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-4xl tablet:text-6xl">
+          <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:text-3xl tablet:text-6xl">
             Works
           </span>
         </h2>

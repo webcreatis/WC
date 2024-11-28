@@ -115,10 +115,10 @@ export default function ServicesSection() {
       >
         <Laptop color="#7BE0AD" size={36} />
         <h2>
-          <span className="text-black font-raleway italic text-6xl pr-3 xs:text-4xl tablet:text-6xl">
+          <span className="text-black font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
             Our
           </span>
-          <span className="text-black text-5xl font-jaapokki font-bold uppercase xs:text-4xl tablet:text-6xl">
+          <span className="text-black text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:text-3xl tablet:text-6xl">
             Services
           </span>
         </h2>

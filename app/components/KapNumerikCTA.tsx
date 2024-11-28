@@ -27,7 +27,7 @@ export default function KapNumerikCTA() {
         />
       </div>
       <div className="flex flex-col flex-grow p-16 xs:p-2">
-        <h2 className="font-jaapokki uppercase text-3xl pb-5 xs:pt-12">
+        <h2 className="font-jaapokki uppercase text-3xl pb-5 xs:pt-12 xs:Text-2xl mobile:text-3xl">
           Kap Numérik {currentYear}
         </h2>
         <p className="font-raleway">

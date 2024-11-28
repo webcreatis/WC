@@ -22,10 +22,10 @@ export default function Meteo() {
           `https://api.tomorrow.io/v4/weather/realtime?location=-20.926399,55.335800&apikey=${apiKey}`
         ).then((res) => res.json());
 
-        setWeatherCode(infos.data.values.weatherCode);
-        setWeatherCodeNight(infos.data.values.weatherCodeNight);
+        setWeatherCode(infos.data?.values.weatherCode);
+        setWeatherCodeNight(infos.data?.values.weatherCodeNight);
 
-        setTemperature(Math.round(infos.data.values.temperature));
+        setTemperature(Math.round(infos.data?.values.temperature));
       } catch (error) {
         console.error(
           "Erreur lors de la récupération des données météo :",
