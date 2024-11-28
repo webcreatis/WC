@@ -70,8 +70,6 @@ export default function CardWork({
             className="rounded-xl transition ease-out group-hover:scale-110 group-hover:animate-scalePics"
             width={450}
             height={450}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
           />
         </div>
       </li>

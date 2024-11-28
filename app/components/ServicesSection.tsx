@@ -246,7 +246,7 @@ export default function ServicesSection() {
       </div>
       <div
         ref={cursorRef}
-        className="cursor flex justify-center items-center w-[30px] h-[30px] rounded-full bg-greenLight fixed pointer-events-none bg-contain bg-center z-50 transition-transform duration-500 ease-in-out"
+        className="cursor flex justify-center items-center w-[30px] h-[30px] rounded-full bg-greenLight fixed pointer-events-none bg-contain bg-center z-[9999] transition-transform duration-500 ease-in-out"
       >
         <p className="arrow-cursor">
           <MoveRight color="#18181B" size={10} />

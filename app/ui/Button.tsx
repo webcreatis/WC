@@ -7,7 +7,7 @@ type ButtonProps = {
   bg: string;
   color: string;
   children?: JSX.Element;
-  link: string;
+  onClick?: () => void;
 };
 
 export default function Button({
@@ -15,7 +15,7 @@ export default function Button({
   bg,
   color,
   children,
-  link,
+  onClick,
 }: ButtonProps) {
   // refs
   const childrenRef = useRef<HTMLDivElement | null>(null);
@@ -49,10 +49,10 @@ export default function Button({
   return (
     <>
       <button
-        onClick={() => (location.href = link)}
+        onClick={onClick}
         data-link="link"
         className={
-          "buttonAction flex justify-center xs:w-[130px] xs:h-[2.5em] items-center text-[.875em] uppercase h-[3.5em] cursor-pointer p-[1.125em] rounded-[6.25em] " +
+          "buttonAction relative flex justify-center xs:w-[130px] xs:h-[2.5em] items-center text-[.875em] uppercase h-[3.5em] cursor-pointer p-[1.125em] rounded-[6.25em] " +
           bg
         }
       >

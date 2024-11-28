@@ -8,7 +8,10 @@ export default function KapNumerikCTA() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section className="w-full flex justify-center items-center relative xs:flex-col-reverse xs:p-2 laptop:flex-row laptop:p-16 laptop:gap-10">
+    <section
+      id="kap"
+      className="w-full flex justify-center items-center relative xs:flex-col-reverse xs:p-2 laptop:flex-row laptop:p-16 laptop:gap-10"
+    >
       <div className="flex w-full justify-center xs:w-full laptop:hidden">
         <Image
           src={logoRegionReunion}
@@ -49,18 +52,8 @@ export default function KapNumerikCTA() {
           votre dossier auprès de la Région Réunion.
         </p>
         <div className="flex justify-start items-center gap-5 xs:flex-col xs:w-full tablet:flex-row tablet:justify-center">
-          <Button
-            text="J'ai un projet"
-            bg="bg-green"
-            color="text-black"
-            link=""
-          />
-          <Button
-            text="Region Réunion"
-            bg="bg-darkWhite"
-            color="text-black"
-            link="https://regionreunion.com/aides-services/article/le-kap-numerik-version-2023-programme-europeen-feder-2021-2027"
-          />
+          <Button text="J'ai un projet" bg="bg-green" color="text-black" />
+          <Button text="Region Réunion" bg="bg-darkWhite" color="text-black" />
         </div>
       </div>
     </section>

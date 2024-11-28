@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: ["class"],
@@ -37,8 +38,25 @@ const config: Config = {
         marqueeText: "marqueeOne 30s linear infinite",
         "marquee-reverse": "marqueeTwo 30s linear infinite",
 				barAnimated: "barAnimated 1.3s infinite",
+        slideDown: "SlideDown .8s cubic-bezier(0.8, 0, 1, 1) forwards",
+        SlideUp: "SlideUp .8s cubic-bezier(0.8, 0, 1, 1) forwards",
+        SlideDownDeform: "SlideDownDeform 0.8s cubic-bezier(0.8, 0, 0.2, 1) forwards"
       },
       keyframes: {
+        SlideDownDeform: {
+          "0%": {
+            transform: "translateY(-250px) scaleY(0.8)", // Débute hors de l'écran, légèrement écrasé
+            "clip-path": "polygon(0 0, 100% 0, 100% 0, 0 0)", // Coincé en haut
+          },
+          "50%": {
+            transform: "translateY(10px) scaleY(1.05)", // Légère exagération vers le bas
+            "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)", // Début d'élargissement
+          },
+          "100%": {
+            transform: "translateY(0) scaleY(1)", // Position finale, taille normale
+            "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)", // Forme normale
+          },
+        },
         barAnimated: {
           "0%": {
             height: ".3rem",
@@ -59,7 +77,14 @@ const config: Config = {
             opacity: "",
           },
         },
-
+        SlideDown: {
+          "0%": { transform: "translateY(-1000px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        SlideUp: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-250px)" },
+        },
         marqueeOne: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
@@ -122,6 +147,7 @@ const config: Config = {
         white: "#F9F9F9",
         darkWhite: "#e4e6ef",
         black: "#18181B",
+        corail:"#ff5757",
         "bg-brand": "rgb(29 78 216)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -171,6 +197,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };
 export default config;
