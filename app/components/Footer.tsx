@@ -164,12 +164,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="p-5">
-                <Button
-                  text="View Project"
-                  bg="bg-green"
-                  color="text-black"
-                  link="https://www.envergure.re/"
-                />
+                <Button text="View Project" bg="bg-green" color="text-black" />
               </div>
             </div>
           </div>
