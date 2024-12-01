@@ -77,7 +77,10 @@ export default function CustomerSection() {
     return () => clearInterval(interval);
   }, [animatedIndex]);
   return (
-    <section className="w-full h-auto flex flex-col justify-center bg-darkWhite">
+    <section
+      id="customers"
+      className="w-full h-auto flex flex-col justify-center bg-darkWhite"
+    >
       <div className="flex justify-center items-center pt-32 pb-10">
         <Target size={36} color="#7BE0AD" />
         <h2>
@@ -93,7 +96,7 @@ export default function CustomerSection() {
         Ils nous font confiance
       </h3>
 
-      <div className="w-1/2 m-auto overflow-hidden grid grid-cols-5 grid-rows-3 gap-x-8 gap-y-10 h-auto bg-darkWhite pt-20 pb-20 xs:w-full xs:grid-cols-2 xs:gap-x-2 tablet:grid-cols-3 tablet:w-3/4 ipadPro:grid-cols-5 xl:grid-cols-4">
+      <div className="m-auto overflow-hidden grid grid-cols-5 grid-rows-3 gap-x-8 gap-y-10 h-auto bg-darkWhite pt-20 pb-20 xs:w-full xs:grid-cols-2 xs:gap-x-2 tablet:grid-cols-3 tablet:w-3/4 ipadPro:grid-cols-4 ipadPro:w-1/2">
         {logosArray.map((logo, index) => (
           <div
             key={index}

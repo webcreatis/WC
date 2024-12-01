@@ -108,7 +108,10 @@ export default function ServicesSection() {
   }, [cursorPosition]);
 
   return (
-    <section className="w-full h-auto flex-col justify-start items-start bg-white">
+    <section
+      id="services"
+      className="w-full h-auto flex-col justify-start items-start bg-white"
+    >
       <div
         id="services-header"
         className="flex justify-center items-center pt-32 pb-32"

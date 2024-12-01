@@ -1,3 +1,5 @@
+"use client";
+
 import { AtSign, Github, Instagram, Linkedin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -102,13 +104,13 @@ export default function Footer() {
                   {currentYear} All Rights Reserved
                 </span>
                 <Link
-                  href="#"
-                  className="text-white font-raleway text-xl xs:text-base"
+                  href="/mentions-legales"
+                  className="text-white buttonAction font-raleway text-xl xs:text-base"
                 >
                   Mentions légales
                 </Link>
                 <div className="flex justify-center items-center">
-                  <Link href="/" className="text-white">
+                  <Link href="/" className="text-white" data-link="link">
                     <Image
                       src={webcreatisLogo}
                       alt={`logo du site webcreatis`}
@@ -123,22 +125,22 @@ export default function Footer() {
             <div className="flex w-full place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-5">
               <div className="marqueeText relative overflow-hidden">
                 <div className="flex whitespace-nowrap animate-marqueeText">
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
+                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl ipadPro:text-[2vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
+                  <span className="text-[2vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl ipadPro:text-[2vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
+                  <span className="text-[2vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl ipadPro:text-[2vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
+                  <span className="text-[2vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl ipadPro:text-[2vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
+                  <span className="text-[2vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl ipadPro:text-[2vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[3vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl">
+                  <span className="text-[2vw] px-[2vw] uppercase text-darkGreen stroke-black text-stroke-2 xs:text-2xl ipadPro:text-[2vw]">
                     Get In Touch
                   </span>
                 </div>
@@ -164,7 +166,14 @@ export default function Footer() {
                 </div>
               </div>
               <div className="p-5">
-                <Button text="View Project" bg="bg-green" color="text-black" />
+                <Button
+                  text="View Project"
+                  bg="bg-green"
+                  color="text-black"
+                  onClick={() =>
+                    (window.location.href = "https://www.envergure.re/")
+                  }
+                />
               </div>
             </div>
           </div>

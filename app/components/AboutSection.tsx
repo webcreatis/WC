@@ -2,12 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import patriciaPics from "../assets/images/patricia-webdesigner-webcreatis.webp";
+import patriciaPics from "../assets/images/patricia-webcreatis.webp";
 import patrickPics from "../assets/images/patrick-developpeur-front-end-webcreatis.webp";
 
 export default function AboutSection() {
   return (
-    <section className="about w-full h-auto flex flex-col pb-28 xs:pb-10">
+    <section
+      id="about"
+      className="about w-full h-auto flex flex-col pb-28 xs:pb-10"
+    >
       <div
         id="services-header"
         className="flex justify-center items-center pt-32 pb-32"
@@ -42,14 +45,14 @@ export default function AboutSection() {
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                Contactez-moi
+                <Link href="tel:+262693514439">Contactez-moi</Link>
               </Button>
               <Button
                 variant="outline"
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                Download CV
+                <Link href="/CV-Patrick-Perroudon.pdf">Download CV</Link>
               </Button>
               <Button
                 variant="outline"
@@ -89,7 +92,7 @@ export default function AboutSection() {
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                Contactez-moi
+                <Link href="tel:+262693844876">Contactez-moi</Link>
               </Button>
               <Button
                 variant="outline"

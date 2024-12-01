@@ -85,7 +85,10 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="about w-full h-auto flex flex-col pb-28 xs:pb-10">
+    <section
+      id="testimonials"
+      className="about w-full h-auto flex flex-col pb-28 xs:pb-10"
+    >
       <div
         id="services-header"
         className="flex justify-center items-center pt-32 pb-10"

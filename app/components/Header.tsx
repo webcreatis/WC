@@ -46,7 +46,9 @@ export default function Header() {
             text="un projet ?"
             bg="bg-darkWhite"
             color="text-black"
-            onClick={handleShowMenu}
+            onClick={() =>
+              (window.location.href = "https://webcreatis.fr/contact/")
+            }
           ></Button>
           <Button
             text="Menu"
@@ -108,7 +110,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
-                  href="#projects"
+                  href="#services"
                   className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
@@ -122,7 +124,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
-                  href="#projects"
+                  href="#about"
                   className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
@@ -136,11 +138,11 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
-                  href="#projects"
+                  href="#customers"
                   className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
-                  clients
+                  références
                 </Link>
               </li>
               <li
@@ -150,7 +152,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
-                  href="#projects"
+                  href="#testimonials"
                   className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
@@ -164,7 +166,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
-                  href="#projects"
+                  href="https://webcreatis.fr/contact/"
                   className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
