@@ -1,15 +1,45 @@
 "use client";
 
+import Lenis from "@studio-freight/lenis";
 import { ArrowUpFromDot, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../assets/images/logo-transparent-webcreatis-reunion.webp";
 import Button from "../ui/Button";
 
 export default function Header() {
   const [isMenuVisible, setMenuVisible] = useState(false);
   const navigationRef = useRef<HTMLDivElement | null>(null);
+
+  const lenis = useRef<Lenis | null>(null);
+
+  useEffect(() => {
+    // Initialize Lenis
+    lenis.current = new Lenis({
+      duration: 0.9, // Control the duration of the scroll
+      easing: (t: number) => 1 - Math.pow(1 - t, 3),
+    });
+
+    const animate = (time: number) => {
+      lenis.current?.raf(time);
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+
+    // Cleanup on unmount
+    return () => {
+      lenis.current?.destroy();
+    };
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element && lenis.current) {
+      lenis.current.scrollTo(element);
+    }
+  };
 
   const handleShowMenu = () => {
     if (navigationRef.current) {
@@ -78,7 +108,7 @@ export default function Header() {
                 <Link
                   href="#top"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl gap-1"
-                  onClick={handleCloseMenu}
+                  onClick={() => scrollToSection("top")}
                 >
                   Top
                   <span className="flex -mt-[0.5rem]">
@@ -95,7 +125,7 @@ export default function Header() {
                 <Link
                   href="#projects"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={handleCloseMenu}
+                  onClick={() => scrollToSection("projects")}
                 >
                   works
                 </Link>
@@ -109,7 +139,7 @@ export default function Header() {
                 <Link
                   href="#services"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={handleCloseMenu}
+                  onClick={() => scrollToSection("services")}
                 >
                   services
                 </Link>
@@ -123,7 +153,7 @@ export default function Header() {
                 <Link
                   href="#about"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={handleCloseMenu}
+                  onClick={() => scrollToSection("about")}
                 >
                   team
                 </Link>
@@ -137,7 +167,7 @@ export default function Header() {
                 <Link
                   href="#customers"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={handleCloseMenu}
+                  onClick={() => scrollToSection("customers")}
                 >
                   références
                 </Link>
@@ -151,7 +181,7 @@ export default function Header() {
                 <Link
                   href="#testimonials"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={handleCloseMenu}
+                  onClick={() => scrollToSection("testimonials")}
                 >
                   avis
                 </Link>
