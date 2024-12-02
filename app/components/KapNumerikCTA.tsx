@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import kapNumerikPics from "../assets/images/KAP-NUMERIK-2024-webcreatis.webp";
 import logoRegionReunion from "../assets/images/region-reunion-logo.webp";
@@ -19,12 +22,18 @@ export default function KapNumerikCTA() {
           className="w-[200px] h-[200px] xs:w-full xs:h-auto tablet:w-[45%]"
         />
       </div>
-      <div className="w-[50%] xs:w-full xs:mt-12 tablet:w-[50%] laptop:w-[65%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
-        <Image
-          src={kapNumerikPics}
-          alt="Publicité pour le kap Numerik à la réunion"
-          className="w-[100%] h-[100%] rounded-xl"
-        />
+      <div className="w-[50%] xs:w-full xs:mt-12 tablet:w-[50%] laptop:w-[35%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
+        <motion.div
+          transition={{ duration: 0.3 }}
+          initial={{ boxShadow: "0px 0px #000", height: "0px" }}
+          whileInView={{ boxShadow: "10px 10px #000", height: "100%" }}
+        >
+          <Image
+            src={kapNumerikPics}
+            alt="Publicité pour le kap Numerik à la réunion"
+            className="w-[100%] h-[100%] rounded-xl"
+          />
+        </motion.div>
       </div>
       <div className="flex flex-col flex-grow p-16 xs:p-2">
         <h2 className="font-jaapokki uppercase text-3xl pb-5 xs:pt-12 xs:Text-2xl mobile:text-3xl">
