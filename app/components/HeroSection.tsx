@@ -2,7 +2,10 @@ import CrossIcon from "../ui/CrossIcon";
 
 export default function HeroSection() {
   return (
-    <section className="hero-section w-full h-screen flex flex-col justify-center items-center">
+    <section
+      id="top"
+      className="hero-section w-full h-screen flex flex-col justify-center items-center"
+    >
       <h1 className="text-9xl uppercase font-bold tracking-wide text-white font-jaapokki animate-fadeIn">
         <div className="flex space-x-1">
           <span className="letter inline-block min-w-[3vw] text-[10vw] transform transition-all duration-300 ease-in-out">

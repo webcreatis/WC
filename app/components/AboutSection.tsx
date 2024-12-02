@@ -27,7 +27,7 @@ export default function AboutSection() {
       </div>
       <div className="flex w-full xs:flex-col l:flex-row">
         <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
-          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all duration-300 ease-in-out">
+          <div className="h-[650px] flex justify-center blur-sm overflow-hidden hover:blur-none transition-all duration-300 ease-in-out">
             <Image
               src={patrickPics}
               alt={`portrait de patrick développeur front end chez webcreatis`}
@@ -74,7 +74,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
-          <div className="h-[650px] flex justify-center mix-blend-darken overflow-hidden hover:mix-blend-normal transition-all duration-300 ease-in-out">
+          <div className="h-[650px] flex justify-center blur-sm overflow-hidden hover:blur-none transition-all duration-300 ease-in-out">
             <Image
               src={patriciaPics}
               alt={`portrait de patricia webdesigner chez webcreatis`}

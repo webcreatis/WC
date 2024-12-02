@@ -31,10 +31,7 @@ export default function Header() {
   };
 
   return (
-    <header
-      id="top"
-      className="fixed top-0 left-0 w-full h-[12.5em] p-9 xs:h-[10rem] xs:p-2 z-[200]"
-    >
+    <header className="fixed top-0 left-0 w-full h-[12.5em] p-9 xs:h-[10rem] xs:p-2 z-[200]">
       <div className="flex justify-between items-center overflow-hidden pb-2 h-full">
         <Image
           src={logo}
@@ -63,7 +60,7 @@ export default function Header() {
           </Button>
           <nav
             ref={navigationRef}
-            className="w-full h-[150px] z-50 xs:h-screen tablet:h-[150px] absolute left-0 overflow-hidden -top-[1000px] bg-corail transition-transform"
+            className="w-full h-[150px] z-50 xs:h-screen tablet:h-[150px] absolute left-0 overflow-hidden -top-[1000px] bg-greenLight transition-transform"
           >
             <div
               onClick={handleCloseMenu}
@@ -74,30 +71,30 @@ export default function Header() {
             <ul className="flex w-1/2 m-auto justify-center items-center gap-5 xs:h-full xs:w-full xs:flex-col tablet:flex-row tablet:gap-5 tablet:h-auto tablet:w-1/2">
               <li
                 data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-darkWhite ${
+                className={`buttonAction font-jaapokki uppercase text-black ${
                   isMenuVisible ? "animate-fadeIn" : ""
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
                   href="#top"
-                  className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl gap-1"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl gap-1"
                   onClick={handleCloseMenu}
                 >
                   Top
                   <span className="flex -mt-[0.5rem]">
-                    <ArrowUpFromDot size={20} color="#E4F2E7" />
+                    <ArrowUpFromDot size={20} color="#18181B" />
                   </span>
                 </Link>
               </li>
               <li
                 data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-darkWhite ${
+                className={`buttonAction font-jaapokki uppercase text-black ${
                   isMenuVisible ? "animate-fadeIn" : ""
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
                   href="#projects"
-                  className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
                   works
@@ -105,13 +102,13 @@ export default function Header() {
               </li>
               <li
                 data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-darkWhite ${
+                className={`buttonAction font-jaapokki uppercase text-black ${
                   isMenuVisible ? "animate-fadeIn" : ""
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
                   href="#services"
-                  className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
                   services
@@ -119,13 +116,13 @@ export default function Header() {
               </li>
               <li
                 data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-darkWhite ${
+                className={`buttonAction font-jaapokki uppercase text-black ${
                   isMenuVisible ? "animate-fadeIn" : ""
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
                   href="#about"
-                  className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
                   team
@@ -133,13 +130,13 @@ export default function Header() {
               </li>
               <li
                 data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-darkWhite ${
+                className={`buttonAction font-jaapokki uppercase text-black ${
                   isMenuVisible ? "animate-fadeIn" : ""
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
                   href="#customers"
-                  className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
                   références
@@ -147,13 +144,13 @@ export default function Header() {
               </li>
               <li
                 data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-darkWhite ${
+                className={`buttonAction font-jaapokki uppercase text-black ${
                   isMenuVisible ? "animate-fadeIn" : ""
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
                   href="#testimonials"
-                  className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
                   avis
@@ -161,13 +158,13 @@ export default function Header() {
               </li>
               <li
                 data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-darkWhite ${
+                className={`buttonAction font-jaapokki uppercase text-black ${
                   isMenuVisible ? "animate-fadeIn" : ""
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
                   href="https://webcreatis.fr/contact/"
-                  className="w-full h-full text-xl text-darkWhite flex justify-center items-center tablet:text-base laptop:text-xl"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}
                 >
                   contact

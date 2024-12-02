@@ -47,7 +47,7 @@ html {
   transition: scale 300ms;
 }
 .cursorGrow {
-  scale: 15;
+  scale: 5;
   width: 150px;
 }
 @media (min-width: 320px) and (max-width: 1366px) {
