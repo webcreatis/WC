@@ -10,6 +10,8 @@ type cardWoksProps = {
   skillOne: string;
   skillTwo: string;
   skillThree?: string;
+  skillFour?: string;
+  skillFive?: string;
   pics: StaticImageData | string;
 };
 
@@ -22,6 +24,8 @@ export default function CardWork({
   skillOne,
   skillTwo,
   skillThree,
+  skillFour,
+  skillFive,
   pics,
 }: cardWoksProps) {
   return (
@@ -56,6 +60,20 @@ export default function CardWork({
               {skillThree ? (
                 <span className="inline-block text-sm bg-white bg-opacity-25 group-hover:bg-opacity-100 p-2 rounded-md">
                   {skillThree}
+                </span>
+              ) : (
+                <></>
+              )}
+              {skillFour ? (
+                <span className="inline-block text-sm bg-white bg-opacity-25 group-hover:bg-opacity-100 p-2 rounded-md">
+                  {skillFour}
+                </span>
+              ) : (
+                <></>
+              )}
+              {skillFive ? (
+                <span className="inline-block text-sm bg-white bg-opacity-25 group-hover:bg-opacity-100 p-2 rounded-md">
+                  {skillFive}
                 </span>
               ) : (
                 <></>

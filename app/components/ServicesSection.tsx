@@ -156,9 +156,6 @@ export default function ServicesSection() {
             </h3>
             <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
               <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                wireframe
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 maquettage
               </span>
               <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
@@ -185,6 +182,9 @@ export default function ServicesSection() {
               </span>
               <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
                 kakemono
+              </span>
+              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
+                flyer
               </span>
             </div>
           </li>
@@ -241,7 +241,7 @@ export default function ServicesSection() {
                 canva
               </span>
               <span className="font-jaapokki uppercase text-xl text-black xs:text-base tablet:text-xs laptop:text-sm">
-                funnel marketing
+                Jury CDA - DWWM - Cléa Numérique - CIF
               </span>
             </div>
           </li>

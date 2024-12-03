@@ -46,6 +46,8 @@ export default function WorksSection() {
           skillOne="Astro JS"
           skillTwo="Tailwind CSS"
           skillThree="Directus CMS"
+          skillFour="Logo"
+          skillFive="Maquettage"
           pics={seaIntensePics}
         />
         <CardWork
@@ -56,6 +58,9 @@ export default function WorksSection() {
           link="https://www.envergure.re/"
           skillOne="Astro JS"
           skillTwo="Tailwind CSS"
+          skillThree="Kakemono"
+          skillFour="Flyer"
+          skillFive="Maquettage"
           pics={envergurePics}
         />
         <CardWork
@@ -67,6 +72,7 @@ export default function WorksSection() {
           skillOne="Next JS"
           skillTwo="Tailwind CSS"
           skillThree="Directus CMS"
+          skillFour="Maquettage"
           pics={sofiaPics}
         />
         <CardWork
@@ -77,6 +83,8 @@ export default function WorksSection() {
           link="https://lyon-esthetique-dr-laval.com/"
           skillOne="Wordpress"
           skillTwo="Elementor"
+          skillThree="Carte de visite"
+          skillFour="Logo"
           pics={lavalPics}
         />
       </ul>

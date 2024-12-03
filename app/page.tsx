@@ -1,6 +1,7 @@
 import AboutSection from "./components/AboutSection";
 import CustomerSection from "./components/CustomerSection";
 import Footer from "./components/Footer";
+import FormationsSection from "./components/FormationsSection";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import KapNumerikCTA from "./components/KapNumerikCTA";
@@ -23,6 +24,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <MethodSection />
+        <FormationsSection />
         <MarqueeText />
         <CustomerSection />
         <TestimonialsSection />
