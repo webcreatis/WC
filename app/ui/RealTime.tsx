@@ -20,79 +20,54 @@ type RealTimeProps = {
 };
 
 export default function RealTime({
-  temperature,
-  weatherCode,
-  weatherCodeNight,
+  temperature = null,
+  weatherCode = null,
+  weatherCodeNight = null,
 }: RealTimeProps) {
-  //state
-  const [time, setTime] = useState("");
-  const [day, setDay] = useState("");
-  const [month, setMonth] = useState("");
-  const [dayOfMonth, setDayOfMonth] = useState("");
+  // State
+  const [time, setTime] = useState<string>("");
+  const [day, setDay] = useState<string>("");
+  const [month, setMonth] = useState<string>("");
+  const [dayOfMonth, setDayOfMonth] = useState<string>("");
 
-  // Obtenir le jour de la semaine
-  const daysOfWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  // Jour et Mois
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
+  // Weather icons mapping
   const weatherIcons: Record<number, JSX.Element> = {
-    1000: <Sun />, // Ciel dégagé
-    1100: <CloudSun />, // soleil + nuage
-    1101: <CloudSun />, // Partiellement nuageux
-    1102: <Cloudy />, // nuageux
-    1001: <Cloudy />, // Très nuageux
-    4000: <CloudDrizzle />, // Bruine
-    4200: <CloudRain />, // Pluie légère
-    4001: <CloudRain />, // Pluie
-    4201: <CloudRainWind />, // Pluie forte + vent
-    8000: <CloudLightning />, // Orage
+    1000: <Sun />, // Clear sky
+    1100: <CloudSun />, // Partly sunny
+    1101: <CloudSun />, // Partly cloudy
+    1102: <Cloudy />, // Cloudy
+    1001: <Cloudy />, // Overcast
+    4000: <CloudDrizzle />, // Drizzle
+    4200: <CloudRain />, // Light rain
+    4001: <CloudRain />, // Rain
+    4201: <CloudRainWind />, // Heavy rain with wind
+    8000: <CloudLightning />, // Thunderstorm
   };
 
   const weatherIconsNight: Record<number, JSX.Element> = {
-    1000: <Moon />, // Lune dégagé
-    11001: <CloudMoon />, // lune partiellement nuageux
-    11011: <CloudMoon />, // lune partiellement nuageux
-    11021: <CloudMoon />, // lune nuageux
+    1000: <Moon />, // Clear night
+    11001: <CloudMoon />, // Partly cloudy night
+    11011: <CloudMoon />, // Partly cloudy night
+    11021: <CloudMoon />, // Cloudy night
   };
 
-  const defaultIcon = <Cloudy />; // Icône par défaut
-  const defaultIconNight = <Moon />; // Icône par défaut
+  const defaultIcon = <Cloudy />; // Default icon for day
+  const defaultIconNight = <Moon />; // Default icon for night
 
-  const getWeatherIcon = (code: number | null) => {
-    // Vérification si le code est null et retour de l'icône par défaut
+  const getWeatherIcon = (code: number | null): JSX.Element => {
     if (code === null) return defaultIcon;
     return weatherIcons[code] || defaultIcon;
   };
 
-  const getWeatherIconNight = (weatherCodeNight: number | null) => {
-    // Vérification si le code est null et retour de l'icône par défaut
-    if (weatherCodeNight === null) return defaultIconNight;
-    return weatherIconsNight[weatherCodeNight] || defaultIconNight;
+  const getWeatherIconNight = (code: number | null): JSX.Element => {
+    if (code === null) return defaultIconNight;
+    return weatherIconsNight[code] || defaultIconNight;
   };
 
-  const WeatherDisplay = ({ weatherCode, weatherCodeNight }: RealTimeProps) => {
+  const WeatherDisplay = ({
+    weatherCode,
+    weatherCodeNight,
+  }: RealTimeProps): JSX.Element => {
     return weatherCode ? (
       <span className="weather-icon">{getWeatherIcon(weatherCode)}</span>
     ) : (
@@ -105,23 +80,48 @@ export default function RealTime({
   const updateTime = () => {
     const now = new Date();
 
-    const hours = String(now.getHours()).padStart(2, "0");
-    const minutes = String(now.getMinutes()).padStart(2, "0");
-    const seconds = String(now.getSeconds()).padStart(2, "0");
-    const timeString = `${hours}:${minutes}:${seconds}`;
+    // Formatter for La Réunion timezone
+    const reunionTimeFormatter = new Intl.DateTimeFormat("fr-FR", {
+      timeZone: "Indian/Reunion",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+    });
+
+    const formattedParts = reunionTimeFormatter.formatToParts(now);
+
+    // Extract relevant parts
+    const hours = formattedParts.find((part) => part.type === "hour")?.value;
+    const minutes = formattedParts.find(
+      (part) => part.type === "minute"
+    )?.value;
+    const seconds = formattedParts.find(
+      (part) => part.type === "second"
+    )?.value;
+    const dayName = formattedParts.find(
+      (part) => part.type === "weekday"
+    )?.value;
+    const dayOfMonth = formattedParts.find(
+      (part) => part.type === "day"
+    )?.value;
+    const monthName = formattedParts.find(
+      (part) => part.type === "month"
+    )?.value;
+
+    const timeString = `${hours || "00"}:${minutes || "00"}:${seconds || "00"}`;
     setTime(timeString);
-    const dayName = daysOfWeek[now.getDay()];
-    const dayOfMonth = String(now.getDate()).padStart(2, "0"); // Jour du mois
-    const monthName = months[now.getMonth()]; // Mois en texte
-    setDay(dayName);
-    setMonth(monthName);
-    setDayOfMonth(dayOfMonth);
+    setDay(dayName || "");
+    setMonth(monthName || "");
+    setDayOfMonth(dayOfMonth || "");
   };
 
   useEffect(() => {
     const interval = setInterval(updateTime, 1000);
-    updateTime(); // Appel initial pour éviter un délai d'une seconde
-    return () => clearInterval(interval); // Nettoyage à la désinstallation
+    updateTime(); // Initial call to avoid delay
+    return () => clearInterval(interval); // Cleanup on unmount
   }, []);
 
   return (
