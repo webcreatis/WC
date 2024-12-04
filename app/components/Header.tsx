@@ -108,7 +108,11 @@ export default function Header() {
                 <Link
                   href="#top"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl gap-1"
-                  onClick={() => scrollToSection("top")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("top");
+                    handleCloseMenu();
+                  }}
                 >
                   Top
                   <span className="flex -mt-[0.5rem]">
@@ -125,7 +129,11 @@ export default function Header() {
                 <Link
                   href="#projects"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={() => scrollToSection("projects")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("projects");
+                    handleCloseMenu();
+                  }}
                 >
                   works
                 </Link>
@@ -139,7 +147,11 @@ export default function Header() {
                 <Link
                   href="#services"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={() => scrollToSection("services")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("services");
+                    handleCloseMenu();
+                  }}
                 >
                   services
                 </Link>
@@ -153,7 +165,11 @@ export default function Header() {
                 <Link
                   href="#about"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={() => scrollToSection("about")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("about");
+                    handleCloseMenu();
+                  }}
                 >
                   team
                 </Link>
@@ -165,9 +181,31 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  href="#formations"
+                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("formations");
+                    handleCloseMenu();
+                  }}
+                >
+                  formations
+                </Link>
+              </li>
+              <li
+                data-link="link"
+                className={`buttonAction font-jaapokki uppercase text-black ${
+                  isMenuVisible ? "animate-fadeIn" : ""
+                } transition-all w-full h-[60px] flex justify-center items-center`}
+              >
+                <Link
                   href="#customers"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={() => scrollToSection("customers")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("customers");
+                    handleCloseMenu();
+                  }}
                 >
                   références
                 </Link>
@@ -181,7 +219,11 @@ export default function Header() {
                 <Link
                   href="#testimonials"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={() => scrollToSection("testimonials")}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("testimonials");
+                    handleCloseMenu();
+                  }}
                 >
                   avis
                 </Link>

@@ -8,7 +8,7 @@ import Button from "../ui/Button";
 
 export default function FormationsSection() {
   return (
-    <section className="formations">
+    <section id="formations" className="formations">
       <div
         id="services-header"
         className="flex flex-col justify-center items-center pt-32 pb-10"
