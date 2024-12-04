@@ -110,6 +110,35 @@ export default function AboutSection() {
       <div className="m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10 l:flex-row">
         <div className="border-[1px] border-solid border-white xs:w-full l:w-[50%] l:h-[350px]">
           <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
+            Patrick - Dev Front REACT
+          </h2>
+          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
+            Développeur Web Freelance, je suis disponible pour vous accompagner
+            dans vos projets : création de sites vitrines, e-commerce,
+            développement sur mesure ou applications web. Passionné par le web,
+            j’utilise mes compétences pour répondre à vos besoins de manière
+            efficace et adaptée.
+          </p>
+        </div>
+        <div className="border-[1px] border-solid border-white xs:w-full tablet:mb-12 l:w-[50%] l:h-[350px]">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
+            Patricia - Web Design & Com Digitale
+          </h2>
+          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
+            Pour moi chaque design, chaque couleurs se doivent d’être à votre
+            image. Je vous accompagne afin d’améliorer votre présence digitale
+            avec la création de votre logo, charte graphique, la gestions de vos
+            réseaux sociaux ou la création de vos tunnels de vente. Je suis là
+            pour vous aider dans la confection de l’ensemble de vos supports
+            imprimés : carte de visite, flyers, kakémono... Ou vous former à
+            utiliser CANVA pour créer vos propres réalisations et support de
+            communication.
+          </p>
+        </div>
+      </div>
+      <div className="m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10 l:flex-row">
+        <div className="border-[1px] border-solid border-white xs:w-full l:w-[50%] l:h-[350px]">
+          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
             POURQUOI CRÉER UN SITE INTERNET ?
           </h2>
           <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
