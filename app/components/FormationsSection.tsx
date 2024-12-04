@@ -1,9 +1,9 @@
 "use client";
 
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Share2 } from "lucide-react";
 import Image from "next/image";
 import comDigitalPics from "../assets/images/com-digitale-webcreatis.webp";
+import patriciaPics from "../assets/images/patricia-webcreatis.webp";
 import Button from "../ui/Button";
 
 export default function FormationsSection() {
@@ -28,9 +28,15 @@ export default function FormationsSection() {
           Libérez-vous du Temps et Reprenez les Rênes de Votre Activité !
         </h3>
       </div>
-      <div className="w-full h-auto flex items-center xs:flex-col laptop:flex-row">
-        <div className="w-[50%] xs:w-full laptop:w-[50%]">
-          <DotLottieReact src="/Animation - 1733233092249.json" loop autoplay />
+      <div className="w-full h-auto pb-20 pt-20 flex items-center xs:flex-col laptop:flex-row">
+        <div className="w-[50%] flex justify-center xs:w-full laptop:w-[50%]">
+          <Image
+            src={patriciaPics}
+            alt={`image de patricia webdesign chez webcreatis`}
+            className="rounded-xl transition ease-out group-hover:scale-110 group-hover:animate-scalePics"
+            width={250}
+            height={250}
+          />
         </div>
         <div className="w-[50%] flex flex-col items-start p-10 xs:w-full lg:w-[50%]">
           <h2 className="text-4xl font-semibold font-raleway text-green pb-10 xs:text-lg tablet:text-2xl">
@@ -52,10 +58,10 @@ export default function FormationsSection() {
         </div>
       </div>
       <div className="w-3/4 m-auto h-auto bg-darkWhite rounded-2xl flex xs:flex-col xs:w-full tablet:w-3/4 laptop:flex-row">
-        <div className="w-[40%] h-full flex justify-center overflow-hidden rounded-l-lg p-10 xs:w-full xs:p-5">
+        <div className="w-[40%] h-full flex justify-center rounded-l-lg p-10 xs:w-full xs:p-5 laptop:w-[40%]">
           <Image
             src={comDigitalPics}
-            alt={`portrait de patrick développeur front end chez webcreatis`}
+            alt={`publicité com digitale chez webcreatis`}
             className="hover:scale-110 object-cover transition-transform duration-300 ease-in-out"
             placeholder="blur"
           />
@@ -97,7 +103,7 @@ export default function FormationsSection() {
         </div>
       </div>
       <div className="w-full flex flex-col justify-center items-center">
-        <h3 className="font-jaapokki font-semibold text-6xl text-darkWhite uppercase pt-32 pb-10 xs:text-2xl">
+        <h3 className="font-jaapokki font-semibold text-6xl text-darkWhite uppercase pt-32 pb-10 xs:text-2xl laptop:text-6xl">
           Formations CANVA
         </h3>
         <span className="font-raleway font-normal text-darkWhite text-2xl text-center xs:text-xl xs:p-2">
@@ -114,9 +120,9 @@ export default function FormationsSection() {
           design !<br />
           Nous vous proposons 3 types de formations:{" "}
         </p>
-        <ul className="w-full flex justify-center mt-10 pb-20 gap-10 xs:flex-col laptop:flex-row">
+        <ul className="w-full flex justify-center mt-10 pb-20 gap-10 xs:flex-col laptop:flex-row laptop:w-full">
           <li className="overflow-hidden">
-            <div className="flip-card bg-transparent font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto">
+            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto laptop:w-[300px] ipadPro:w-[450px]">
               <div className="flip-card-inner relative w-full h-full text-center">
                 <div className="flip-card-front">
                   <p className="title uppercase font-jaapokki">
@@ -125,42 +131,42 @@ export default function FormationsSection() {
                   <p>{`Ma Com' en Main`}</p>
                 </div>
                 <div className="flip-card-back pt-10">
-                  <p className="title text-left p-5 text-sm font-raleway xs:text-xs">
+                  <p className="title text-left p-5 font-raleway xs:text-xs laptop:text-xs">
                     {`Parfaite pour débuter, cette formation vous apprend les bases essentielles de Canva. 
                       Ensemble, nous concevons votre logo, créons une charte graphique qui reflète votre identité, 
                       vos valeurs et réalisons vos premiers visuels pour les réseaux sociaux. 
                       Vous repartez avec les compétences pour construire votre image de marque, 
                       tout en gardant la maîtrise de votre communication.`}
                   </p>
-                  <p className="font-semibold font-raleway xs:text-xs">
+                  <p className="font-semibold font-raleway xs:text-xs laptop:text-sm">
                     Ce Pack comprend :
                   </p>
                   <ul className="p-5 flex flex-col gap-2 font-semibold">
-                    <li className="text-sm text-left xs:text-xs">
+                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
                       * Débuter avec Canva , les bases essentielles
                     </li>
-                    <li className="text-sm text-left xs:text-xs">
+                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
                       * Création de votre logo
                     </li>
-                    <li className="text-sm text-left xs:text-xs">
+                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
                       * Votre charte graphique et présentation du modèle de
                       marque
                     </li>
-                    <li className="text-sm text-left xs:text-xs">
+                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
                       * Création de votre Carte de visite
                     </li>
-                    <li className="text-sm text-left xs:text-xs">
+                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
                       * Débuter mes designs sur les Réseaux Sociaux
                       <ul>
-                        <li className="text-sm text-left pl-5 xs:text-xs">
+                        <li className="text-sm text-left pl-5 xs:text-xs laptop:text-sm">
                           1 Post de présentation de vous et vos services
                         </li>
-                        <li className="text-sm text-left pl-5 xs:text-xs">
+                        <li className="text-sm text-left pl-5 xs:text-xs laptop:text-sm">
                           1 Bannière (Linkedin, Facebook, YouTube)
                         </li>
                       </ul>
                     </li>
-                    <li className="text-sm text-left xs:text-xs">
+                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
                       * Calendrier éditorial de votre premier mois de
                       publication pour bien débuter
                     </li>
@@ -181,7 +187,7 @@ export default function FormationsSection() {
             </div>
           </li>
           <li className="overflow-hidden">
-            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto">
+            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto laptop:w-[300px] ipadPro:w-[450px]">
               <div className="flip-card-inner relative w-full h-full text-center">
                 <div className="flip-card-front">
                   <p className="title title uppercase font-jaapokki">
@@ -190,7 +196,7 @@ export default function FormationsSection() {
                   <p>{`Ma Com' Pro`}</p>
                 </div>
                 <div className="flip-card-back pt-5">
-                  <p className="title text-left p-5 text-sm font-raleway xs:text-xs">
+                  <p className="title text-left p-5 text-sm font-raleway xs:text-xs laptop:text-xs ipadPro:text-sm">
                     {`Pour aller plus loin, cette formation personnalisée vous
                     permet de créer en direct avec notre formateur une série de
                     designs avancés. 
@@ -198,31 +204,31 @@ export default function FormationsSection() {
                     prêts à l'emploi et un savoir-faire approfondi pour réaliser
                     des créations autonomes et professionnelles.`}
                   </p>
-                  <p className="font-semibold font-raleway xs:text-xs">
+                  <p className="font-semibold font-raleway xs:text-xs laptop:text-sm">
                     Ce Pack comprend:
                   </p>
-                  <ul className="p-5">
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                  <ul className="p-5 flex flex-col gap-2 font-semibold">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Débuter avec Canva , les bases essentielles
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Création de votre logos
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Votre charte graphique et présentation du modèle de
                       marque
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Création de votre Carte de visite
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Débuter mes designs sur les Réseaux Sociaux
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Calendrier éditorial de 3 mois pour avancer en toute
                       confiance
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Introduction à l’IA sur Canva pour créer des post plus
                       rapidement et trouver des idées de publications
                     </li>
@@ -243,7 +249,7 @@ export default function FormationsSection() {
             </div>
           </li>
           <li className="overflow-hidden">
-            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto">
+            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto laptop:w-[300px] ipadPro:w-[450px]">
               <div className="flip-card-inner relative w-full h-full text-center">
                 <div className="flip-card-front">
                   <p className="title title title uppercase font-jaapokki">
@@ -252,30 +258,30 @@ export default function FormationsSection() {
                   <p>Créations à la Carte</p>
                 </div>
                 <div className="flip-card-back pt-10">
-                  <p className="title text-left p-5 text-sm font-raleway xs:text-xs">
+                  <p className="title text-left p-5 text-sm font-raleway xs:text-xs laptop:text-xs ipadPro:text-sm">
                     Votre communication est déjà bien définie et vous avez votre
                     charte graphique , mais vous souhaitez gagner en autonomie
                     et optimiser votre temps ? <br />
                     La formation - Créations à la Carte <br />
                     est faite pour vous !
                   </p>
-                  <p className="font-semibold font-raleway xs:text-xs">
+                  <p className="font-semibold font-raleway xs:text-xs laptop:text-sm">
                     Ce que cette formation vous offre :
                   </p>
-                  <ul className="p-5">
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                  <ul className="p-5 flex flex-col gap-2 font-semibold">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Une prise en main complète de Canva adaptée à vos
                       besoins.
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs ">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       {`* L'apprentissage des astuces et fonctionnalités avancées
                       pour créer rapidement des visuels professionnels.`}
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Une prise en main complète de Canva adaptée à vos
                       besoins.
                     </li>
-                    <li className="text-sm font-normal text-left xs:text-xs">
+                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
                       * Une prise en main complète de Canva adaptée à vos
                       besoins.
                     </li>
