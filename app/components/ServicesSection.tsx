@@ -81,6 +81,7 @@ export default function ServicesSection() {
           cursor.style.backgroundPosition = "center";
           cursor.style.backgroundSize = "contain";
           cursor.style.backgroundRepeat = "no-repeat";
+          cursor.classList.remove("border-2", "border-solid", "border-corail");
         }
       });
 
@@ -90,7 +91,8 @@ export default function ServicesSection() {
         const cursor = cursorRef.current;
         if (cursor) {
           cursor.classList.remove("cursorGrow");
-          cursor.style.background = "#E4F2E7";
+          cursor.style.background = "#18181B";
+          cursor.classList.add("border-2", "border-solid", "border-corail");
         }
       });
     });
@@ -249,10 +251,10 @@ export default function ServicesSection() {
       </div>
       <div
         ref={cursorRef}
-        className="cursor flex justify-center items-center w-[30px] h-[30px] rounded-full bg-greenLight fixed pointer-events-none bg-contain bg-center z-[9999] transition-transform duration-500 ease-in-out"
+        className="cursor flex justify-center items-center w-[30px] h-[30px] rounded-full bg-black border-2 border-solid border-corail fixed pointer-events-none bg-contain bg-center z-[9999] transition-transform duration-500 ease-in-out"
       >
         <p className="arrow-cursor">
-          <MoveRight color="#18181B" size={10} />
+          <MoveRight color="#e4e6ef" size={10} />
         </p>
       </div>
     </section>
