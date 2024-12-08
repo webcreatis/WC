@@ -4,28 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import patriciaPics from "../assets/images/patricia-webcreatis.webp";
 import patrickPics from "../assets/images/patrick-developpeur-front-end-webcreatis.webp";
+import TitleSection from "./TitleSection";
 
 export default function AboutSection() {
+  const iconTeam = <Users size={36} color="#7BE0AD" />;
+
   return (
     <section
       id="about"
       className="about w-full h-auto flex flex-col pb-28 xs:pb-10"
     >
-      <div
-        id="services-header"
-        className="flex justify-center items-center pt-32 pb-32"
-      >
-        <Users size={36} color="#7BE0AD" />
-        <h2>
-          <span className="text-white font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Our
-          </span>
-          <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Team
-          </span>
-        </h2>
-      </div>
-      <div className="flex w-full xs:flex-col l:flex-row">
+      <TitleSection icon={iconTeam} title="Team" />
+      <div className="flex w-full pt-16 xs:flex-col l:flex-row">
         <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
           <div className="h-[650px] flex justify-center blur-sm overflow-hidden hover:blur-none transition-all duration-300 ease-in-out">
             <Image

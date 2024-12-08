@@ -3,22 +3,14 @@
 import { Layers3 } from "lucide-react";
 import Button from "../ui/Button";
 import HorizontalAccordion from "../ui/HorizontalAccordion";
+import TitleSection from "./TitleSection";
 
 export default function MethodSection() {
+  const iconMethod = <Layers3 color="#7BE0AD" size={36} />;
   return (
     <section className="w-full flex flex-col pb-32">
-      <div className="flex justify-center items-center pt-32 pb-32">
-        <Layers3 color="#7BE0AD" size={36} />
-        <h2>
-          <span className="text-black font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Our
-          </span>
-          <span className="text-black text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Methods
-          </span>
-        </h2>
-      </div>
-      <div className="w-full flex justify-between xs:flex-col lg:flex-row">
+      <TitleSection icon={iconMethod} title="Methods" color="text-black" />
+      <div className="w-full flex pt-16 justify-between xs:flex-col lg:flex-row">
         <div className="w-[50%] flex flex-col items-start p-10 xs:w-full lg:w-[50%]">
           <h2 className="text-4xl font-semibold font-raleway text-green pb-10 xs:text-lg tablet:text-2xl">
             Notre processus de création de site internet : <br />

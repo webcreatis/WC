@@ -17,8 +17,10 @@ import logoSeaIntense from "../assets/images/logo-sea-intense-reunion.webp";
 import stephaneMalhoPics from "../assets/images/stephane-malho.webp";
 import videvPics from "../assets/images/videv.webp";
 import logoSurya from "../assets/images/VILLA-SURYA-SOPHIE-PICCIRILLI.webp";
+import TitleSection from "./TitleSection";
 
 export default function TestimonialsSection() {
+  const iconTestimonial = <Pen size={36} color="#7BE0AD" />;
   const testimonialArray = [
     {
       date: "5 novembre 2024",
@@ -89,20 +91,7 @@ export default function TestimonialsSection() {
       id="testimonials"
       className="about w-full h-auto flex flex-col pb-28 xs:pb-10"
     >
-      <div
-        id="services-header"
-        className="flex justify-center items-center pt-32 pb-10"
-      >
-        <Pen size={36} color="#7BE0AD" />
-        <h2>
-          <span className="text-white font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Our
-          </span>
-          <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Testimonials
-          </span>
-        </h2>
-      </div>
+      <TitleSection icon={iconTestimonial} title="Testimonials" />
       <h3 className="text-3xl text-white font-raleway text-center pb-10 xs:text-xl tablet:text-2xl">
         Ils parlent de nous
       </h3>

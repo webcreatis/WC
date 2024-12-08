@@ -12,9 +12,11 @@ import logoSeaIntense from "../assets/images/logo-sea-intense-reunion.webp";
 import logoReunionPortage from "../assets/images/REUNION-PORTAGE.webp";
 import logoSimplon from "../assets/images/SIMPLON-OUTRE-MER.webp";
 import logoSurya from "../assets/images/VILLA-SURYA-SOPHIE-PICCIRILLI.webp";
+import TitleSection from "./TitleSection";
 
 export default function CustomerSection() {
   const [animatedIndex, setAnimatedIndex] = useState<number | null>(null);
+  const iconRef = <Target size={36} color="#7BE0AD" />;
 
   const logosCustomer = [
     {
@@ -81,17 +83,7 @@ export default function CustomerSection() {
       id="customers"
       className="w-full h-auto flex flex-col justify-center bg-darkWhite"
     >
-      <div className="flex justify-center items-center pt-32 pb-10">
-        <Target size={36} color="#7BE0AD" />
-        <h2>
-          <span className="text-black font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Our
-          </span>
-          <span className="text-black text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:3xl tablet:text-6xl">
-            References
-          </span>
-        </h2>
-      </div>
+      <TitleSection icon={iconRef} title="References" color="text-black" />
       <h3 className="text-3xl text-black font-raleway text-center pb-10 xs:text-xl tablet:text-2xl">
         Ils nous font confiance
       </h3>

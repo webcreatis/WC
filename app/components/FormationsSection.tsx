@@ -5,26 +5,15 @@ import Image from "next/image";
 import comDigitalPics from "../assets/images/com-digitale-webcreatis.webp";
 import patriciaPics from "../assets/images/patricia-webcreatis.webp";
 import Button from "../ui/Button";
+import TitleSection from "./TitleSection";
 
 export default function FormationsSection() {
+  const iconFormation = <Share2 size={36} color="#7BE0AD" />;
   return (
     <section id="formations" className="formations">
-      <div
-        id="services-header"
-        className="flex flex-col justify-center items-center pt-32 pb-10"
-      >
-        <div className="flex items-center">
-          <Share2 size={36} color="#7BE0AD" />
-          <h2>
-            <span className="text-white font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
-              Our
-            </span>
-            <span className="text-white text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:text-3xl tablet:text-6xl">
-              Com Digitale
-            </span>
-          </h2>
-        </div>
-        <h3 className="font-raleway font-normal text-greenLight text-2xl pt-10 xs:text-base xs:text-center">
+      <div className="flex flex-col justify-center items-center pt-32 pb-10">
+        <TitleSection icon={iconFormation} title="Com Digitale" />
+        <h3 className="font-raleway font-normal text-greenLight text-2xl xs:text-base xs:text-center">
           Libérez-vous du Temps et Reprenez les Rênes de Votre Activité !
         </h3>
       </div>

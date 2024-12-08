@@ -8,8 +8,10 @@ import canvaPics from "../assets/images/logo-canva.webp";
 import prestaPics from "../assets/images/presta-webcreatis.webp";
 import websitePics from "../assets/images/site-seaintense.webp";
 import socialNetworkPics from "../assets/images/social-network-webcreatis.webp";
+import TitleSection from "./TitleSection";
 
 export default function ServicesSection() {
+  const iconService = <Laptop color="#7BE0AD" size={36} />;
   const cursorRef = useRef<HTMLDivElement>(null);
 
   const cursorPosition = useCallback((e: MouseEvent) => {
@@ -114,22 +116,9 @@ export default function ServicesSection() {
       id="services"
       className="w-full h-auto flex-col justify-start items-start bg-white"
     >
-      <div
-        id="services-header"
-        className="flex justify-center items-center pt-32 pb-32"
-      >
-        <Laptop color="#7BE0AD" size={36} />
-        <h2>
-          <span className="text-black font-raleway italic text-6xl pr-3 xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Our
-          </span>
-          <span className="text-black text-5xl font-jaapokki font-bold uppercase xs:text-2xl mobile:text-3xl tablet:text-6xl">
-            Services
-          </span>
-        </h2>
-      </div>
+      <TitleSection icon={iconService} title="Services" color="text-black" />
       <div className="w-full h-auto pb-32">
-        <ul className="w-3/4 m-auto tablet:w-[85%]">
+        <ul className="w-3/4 m-auto pt-16 tablet:w-[85%]">
           <li
             className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
             data-image={websitePics.src}
