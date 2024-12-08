@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import patriciaPics from "../assets/images/patricia-webcreatis.webp";
 import patrickPics from "../assets/images/patrick-developpeur-front-end-webcreatis.webp";
+import AboutCard from "./AboutCard";
 import TitleSection from "./TitleSection";
 
 export default function AboutSection() {
@@ -98,61 +99,45 @@ export default function AboutSection() {
         </div>
       </div>
       <div className="m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10 l:flex-row">
-        <div className="border-[1px] border-solid border-white xs:w-full l:w-[50%] l:h-[350px]">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
-            Patrick - Dev Front REACT
-          </h2>
-          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
-            Développeur Web Freelance, je suis disponible pour vous accompagner
+        <AboutCard
+          title="Patrick - Dev Front REACT"
+          text="Développeur Web Freelance, je suis disponible pour vous accompagner
             dans vos projets : création de sites vitrines, e-commerce,
             développement sur mesure ou applications web. Passionné par le web,
             j’utilise mes compétences pour répondre à vos besoins de manière
-            efficace et adaptée.
-          </p>
-        </div>
-        <div className="border-[1px] border-solid border-white xs:w-full tablet:mb-12 l:w-[50%] l:h-[350px]">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
-            Patricia - Web Design & Com Digitale
-          </h2>
-          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
-            Pour moi chaque design, chaque couleurs se doivent d’être à votre
+            efficace et adaptée."
+        />
+        <AboutCard
+          title="Patricia - Web Design & Com Digitale"
+          text="Pour moi chaque design, chaque couleurs se doivent d’être à votre
             image. Je vous accompagne afin d’améliorer votre présence digitale
             avec la création de votre logo, charte graphique, la gestions de vos
             réseaux sociaux ou la création de vos tunnels de vente. Je suis là
             pour vous aider dans la confection de l’ensemble de vos supports
             imprimés : carte de visite, flyers, kakémono... Ou vous former à
             utiliser CANVA pour créer vos propres réalisations et support de
-            communication.
-          </p>
-        </div>
+            communication."
+        />
       </div>
       <div className="m-auto pt-24 flex justify-between gap-5 xs:w-[95%] xs:flex-col xs:pt-10 l:flex-row">
-        <div className="border-[1px] border-solid border-white xs:w-full l:w-[50%] l:h-[350px]">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
-            POURQUOI CRÉER UN SITE INTERNET ?
-          </h2>
-          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
-            Que vous souhaitiez vendre sur internet ou augmenter votre
+        <AboutCard
+          title="POURQUOI CRÉER UN SITE INTERNET ?"
+          text="Que vous souhaitiez vendre sur internet ou augmenter votre
             visibilité, votre site web doit impérativement : attirer, séduire et
             convertir. Or, le web est un environnement très concurrentiel. Tout
             passe par un site web conçu à votre image, attrayant , moderne,
             optimisé et bien référencé. En vous appuyant sur l’expertise d’une
             agence de création de site web comme Webcreatis, vous vous assurez
-            d’obtenir bien plus qu’un simple site vitrine.
-          </p>
-        </div>
-        <div className="border-[1px] border-solid border-white xs:w-full tablet:mb-12 l:w-[50%] l:h-[350px]">
-          <h2 className="text-center text-3xl text-green font-jaapokki pt-10 pb-5 uppercase xs:text-xl s:text-lg tablet:text-2xl l:text-3xl">
-            POURQUOI une présence digitale ?
-          </h2>
-          <p className="text-[20px] text-white font-raleway text-left font-light p-16 xs:p-4 xs:text-base l:text-lg">
-            Il est important dans notre monde moderne d’être présent sur la
+            d’obtenir bien plus qu’un simple site vitrine."
+        />
+        <AboutCard
+          title="Pourquoi une présence digitale ?"
+          text="Il est important dans notre monde moderne d’être présent sur la
             toile et faire parler de soi. Cela vous apportera une visibilité
             accrue, de devenir une entreprise accessible dans ce monde du
             numérique, d’être connu, reconnu et une meilleur crédibilité auprès
-            de vos clients.
-          </p>
-        </div>
+            de vos clients."
+        />
       </div>
     </section>
   );
