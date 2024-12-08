@@ -5,10 +5,38 @@ import Image from "next/image";
 import comDigitalPics from "../assets/images/com-digitale-webcreatis.webp";
 import patriciaPics from "../assets/images/patricia-webcreatis.webp";
 import Button from "../ui/Button";
+import FormationCard from "../ui/FormationCard";
 import TitleSection from "./TitleSection";
 
 export default function FormationsSection() {
+  // state
   const iconFormation = <Share2 size={36} color="#7BE0AD" />;
+
+  // datas
+  const formationStarterList = [
+    "* Débuter avec Canva , les bases essentielles",
+    "* Création de votre logo",
+    "* Votre charte graphique et présentation du modèle de marque",
+    "* Création de votre Carte de visite",
+    "* Débuter mes designs sur les Réseaux Sociaux",
+    "*********** 1 Post de présentation de vous et vos services",
+    "*********** 1 Bannière (Linkedin, Facebook, YouTube)",
+    "* Calendrier éditorial de votre premier mois de publication pour bien débuter",
+  ];
+  const formationStarterPlusList = [
+    "* Débuter avec Canva , les bases essentielles",
+    "* Création de votre logo",
+    "* Votre charte graphique et présentation du modèle de marque",
+    "* Création de votre Carte de visite",
+    "* Débuter mes designs sur les Réseaux Sociaux",
+    "* Calendrier éditorial de 3 mois pour avancer en toute confiance",
+    " * Introduction à l’IA sur Canva pour créer des post plus rapidement et trouver des idées de publications",
+  ];
+  const formationCustomList = [
+    "* Une prise en main complète de Canva adaptée à vos besoins.",
+    "* L'apprentissage des astuces et fonctionnalités avancées pour créer rapidement des visuels professionnels.",
+  ];
+
   return (
     <section id="formations" className="formations">
       <div className="flex flex-col justify-center items-center pt-32 pb-10">
@@ -110,186 +138,37 @@ export default function FormationsSection() {
           Nous vous proposons 3 types de formations:{" "}
         </p>
         <ul className="w-full flex justify-center mt-10 pb-20 gap-10 xs:flex-col laptop:flex-row laptop:w-full">
-          <li className="overflow-hidden">
-            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto laptop:w-[300px] ipadPro:w-[450px]">
-              <div className="flip-card-inner relative w-full h-full text-center">
-                <div className="flip-card-front">
-                  <p className="title uppercase font-jaapokki">
-                    Formation Starter
-                  </p>
-                  <p>{`Ma Com' en Main`}</p>
-                </div>
-                <div className="flip-card-back pt-10">
-                  <p className="title text-left p-5 font-raleway xs:text-xs laptop:text-xs">
-                    {`Parfaite pour débuter, cette formation vous apprend les bases essentielles de Canva. 
+          <FormationCard
+            title="Formation Starter"
+            subTitle="Ma Com' en Main"
+            text="Parfaite pour débuter, cette formation vous apprend les bases essentielles de Canva. 
                       Ensemble, nous concevons votre logo, créons une charte graphique qui reflète votre identité, 
                       vos valeurs et réalisons vos premiers visuels pour les réseaux sociaux. 
                       Vous repartez avec les compétences pour construire votre image de marque, 
-                      tout en gardant la maîtrise de votre communication.`}
-                  </p>
-                  <p className="font-semibold font-raleway xs:text-xs laptop:text-sm">
-                    Ce Pack comprend :
-                  </p>
-                  <ul className="p-5 flex flex-col gap-2 font-semibold">
-                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
-                      * Débuter avec Canva , les bases essentielles
-                    </li>
-                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
-                      * Création de votre logo
-                    </li>
-                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
-                      * Votre charte graphique et présentation du modèle de
-                      marque
-                    </li>
-                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
-                      * Création de votre Carte de visite
-                    </li>
-                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
-                      * Débuter mes designs sur les Réseaux Sociaux
-                      <ul>
-                        <li className="text-sm text-left pl-5 xs:text-xs laptop:text-sm">
-                          1 Post de présentation de vous et vos services
-                        </li>
-                        <li className="text-sm text-left pl-5 xs:text-xs laptop:text-sm">
-                          1 Bannière (Linkedin, Facebook, YouTube)
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="text-sm text-left xs:text-xs laptop:text-sm">
-                      * Calendrier éditorial de votre premier mois de
-                      publication pour bien débuter
-                    </li>
-                  </ul>
-                  <div className="w-full flex justify-center">
-                    <Button
-                      text="Un devis ?"
-                      bg="bg-green"
-                      color="text-black"
-                      onClick={() =>
-                        (window.location.href =
-                          "https://webcreatis.fr/contact/")
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="overflow-hidden">
-            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto laptop:w-[300px] ipadPro:w-[450px]">
-              <div className="flip-card-inner relative w-full h-full text-center">
-                <div className="flip-card-front">
-                  <p className="title title uppercase font-jaapokki">
-                    Formation Starter Plus
-                  </p>
-                  <p>{`Ma Com' Pro`}</p>
-                </div>
-                <div className="flip-card-back pt-5">
-                  <p className="title text-left p-5 text-sm font-raleway xs:text-xs laptop:text-xs ipadPro:text-sm">
-                    {`Pour aller plus loin, cette formation personnalisée vous
+                      tout en gardant la maîtrise de votre communication."
+            liste={formationStarterList}
+          />
+          <FormationCard
+            title="Formation Starter Plus"
+            subTitle="Ma Com' Pro"
+            text="Pour aller plus loin, cette formation personnalisée vous
                     permet de créer en direct avec notre formateur une série de
                     designs avancés. 
                     Vous repartez avec un panel de visuels
                     prêts à l'emploi et un savoir-faire approfondi pour réaliser
-                    des créations autonomes et professionnelles.`}
-                  </p>
-                  <p className="font-semibold font-raleway xs:text-xs laptop:text-sm">
-                    Ce Pack comprend:
-                  </p>
-                  <ul className="p-5 flex flex-col gap-2 font-semibold">
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Débuter avec Canva , les bases essentielles
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Création de votre logos
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Votre charte graphique et présentation du modèle de
-                      marque
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Création de votre Carte de visite
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Débuter mes designs sur les Réseaux Sociaux
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Calendrier éditorial de 3 mois pour avancer en toute
-                      confiance
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Introduction à l’IA sur Canva pour créer des post plus
-                      rapidement et trouver des idées de publications
-                    </li>
-                  </ul>
-                  <div className="w-full flex justify-center">
-                    <Button
-                      text="Un devis ?"
-                      bg="bg-green"
-                      color="text-black"
-                      onClick={() =>
-                        (window.location.href =
-                          "https://webcreatis.fr/contact/")
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="overflow-hidden">
-            <div className="flip-card bg-transparent w-[450px] h-[600px] font-raleway perspective-midrange xs:w-full tablet:w-3/4 tablet:m-auto laptop:w-[300px] ipadPro:w-[450px]">
-              <div className="flip-card-inner relative w-full h-full text-center">
-                <div className="flip-card-front">
-                  <p className="title title title uppercase font-jaapokki">
-                    Formation sur mesure{" "}
-                  </p>
-                  <p>Créations à la Carte</p>
-                </div>
-                <div className="flip-card-back pt-10">
-                  <p className="title text-left p-5 text-sm font-raleway xs:text-xs laptop:text-xs ipadPro:text-sm">
-                    Votre communication est déjà bien définie et vous avez votre
+                    des créations autonomes et professionnelles."
+            liste={formationStarterPlusList}
+          />
+          <FormationCard
+            title="Formation sur mesure"
+            subTitle="Créations à la Carte"
+            text="Votre communication est déjà bien définie et vous avez votre
                     charte graphique , mais vous souhaitez gagner en autonomie
-                    et optimiser votre temps ? <br />
-                    La formation - Créations à la Carte <br />
-                    est faite pour vous !
-                  </p>
-                  <p className="font-semibold font-raleway xs:text-xs laptop:text-sm">
-                    Ce que cette formation vous offre :
-                  </p>
-                  <ul className="p-5 flex flex-col gap-2 font-semibold">
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Une prise en main complète de Canva adaptée à vos
-                      besoins.
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      {`* L'apprentissage des astuces et fonctionnalités avancées
-                      pour créer rapidement des visuels professionnels.`}
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Une prise en main complète de Canva adaptée à vos
-                      besoins.
-                    </li>
-                    <li className="text-left xs:text-xs laptop:text-xs ipadPro:text-sm">
-                      * Une prise en main complète de Canva adaptée à vos
-                      besoins.
-                    </li>
-                  </ul>
-                  <div className="w-full flex justify-center">
-                    <Button
-                      text="Un devis ?"
-                      bg="bg-green"
-                      color="text-black"
-                      onClick={() =>
-                        (window.location.href =
-                          "https://webcreatis.fr/contact/")
-                      }
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
+                    et optimiser votre temps ?
+                    La formation - Créations à la Carte
+                    est faite pour vous !"
+            liste={formationCustomList}
+          />
         </ul>
       </div>
     </section>
