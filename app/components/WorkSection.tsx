@@ -15,7 +15,7 @@ export default function WorksSection() {
       id="projects"
     >
       <TitleSection icon={iconWorks} title="Works" />
-      <ul className="w-full pt-16">
+      <ul className="w-full pt-16 xs:pt-2 tablet:pt-16">
         <CardWork
           title="Docteur Julien Vivier"
           desc="Medicine & Aesthetics"

@@ -18,7 +18,7 @@ export default function AboutSection() {
       <TitleSection icon={iconTeam} title="Team" />
       <div className="flex w-full pt-16 xs:flex-col l:flex-row">
         <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
-          <div className="h-[650px] flex justify-center blur-sm overflow-hidden hover:blur-none transition-all duration-300 ease-in-out">
+          <div className="h-[650px] flex justify-center overflow-hidden hover:blur-none transition-all duration-300 ease-in-out xs:blur-none ipadPro:blur-sm">
             <Image
               src={patrickPics}
               alt={`portrait de patrick développeur front end chez webcreatis`}
@@ -65,7 +65,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
-          <div className="h-[650px] flex justify-center blur-sm overflow-hidden hover:blur-none transition-all duration-300 ease-in-out">
+          <div className="h-[650px] flex justify-center overflow-hidden hover:blur-none transition-all duration-300 ease-in-out xs:blur-none ipadPro:blur-sm">
             <Image
               src={patriciaPics}
               alt={`portrait de patricia webdesigner chez webcreatis`}

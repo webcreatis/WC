@@ -50,7 +50,7 @@ export default function CardWork({
             <h3 className="text-[40px] uppercase font-jaapokki text-white opacity-25 group-hover:opacity-100 xs:text-2xl">
               {title}
             </h3>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <span className="inline-block text-sm bg-white bg-opacity-25 group-hover:bg-opacity-100 p-2 rounded-md">
                 {skillOne}
               </span>
