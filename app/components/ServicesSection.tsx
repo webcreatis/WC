@@ -8,9 +8,11 @@ import canvaPics from "../assets/images/logo-canva.webp";
 import prestaPics from "../assets/images/presta-webcreatis.webp";
 import websitePics from "../assets/images/site-seaintense.webp";
 import socialNetworkPics from "../assets/images/social-network-webcreatis.webp";
+import ServiceBloc from "../ui/ServiceBloc";
 import TitleSection from "./TitleSection";
 
 export default function ServicesSection() {
+  // state
   const iconService = <Laptop color="#7BE0AD" size={36} />;
   const cursorRef = useRef<HTMLDivElement>(null);
 
@@ -111,6 +113,7 @@ export default function ServicesSection() {
     };
   }, [cursorPosition]);
 
+  // Affichage
   return (
     <section
       id="services"
@@ -119,123 +122,41 @@ export default function ServicesSection() {
       <TitleSection icon={iconService} title="Services" color="text-black" />
       <div className="w-full h-auto pb-32">
         <ul className="w-3/4 m-auto pt-16 tablet:w-[85%]">
-          <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
-            data-image={websitePics.src}
-          >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
-              website
-            </h3>
-            <div className="flex justify-start gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                design
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                développement
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-blac xs:text-base tablet:text-xs laptop:text-sm">
-                seo
-              </span>
-            </div>
-          </li>
-          <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
-            data-image={brandingBoardPics.src}
-          >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
-              webdesign
-            </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                maquettage
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                charte graphique
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black xs:text-base tablet:text-xs laptop:text-sm">
-                branding board
-              </span>
-            </div>
-          </li>
-          <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
-            data-image={kakemonoPics.src}
-          >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
-              design & print
-            </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                logo
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                business card
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                kakemono
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                flyer
-              </span>
-            </div>
-          </li>
-          <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
-            data-image={socialNetworkPics.src}
-          >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
-              social network
-            </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
-              <span className="font-jaapokki uppercase text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                managment
-              </span>
-              <span className="font-jaapokki uppercase text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                design
-              </span>
-              <span className="font-jaapokki uppercase text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                reels
-              </span>
-              <span className="font-jaapokki uppercase text-black xs:text-base tablet:text-xs laptop:text-sm">
-                web editor
-              </span>
-            </div>
-          </li>
-          <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
-            data-image={canvaPics.src}
-          >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
-              formation
-            </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
-              <span className="font-jaapokki uppercase text-black xs:text-base tablet:text-xs laptop:text-sm">
-                canva
-              </span>
-            </div>
-          </li>
-          <li
-            className="flex w-full border-b-[1px] border-black mt-5 box xs:flex-col tablet:flex-row"
-            data-image={prestaPics.src}
-          >
-            <h3 className="inline-block text-6xl font-jaapokki uppercase text-green xs:text-xl xs:pb-3 tablet:text-2xl laptop:text-5xl">
-              presta
-            </h3>
-            <div className="flex justify-start items-end gap-1 ml-10 xs:ml-1 xs:flex-col xs:items-start tablet:flex-row tablet:items-end tablet:ml-10">
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                development
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-xs laptop:text-sm">
-                maquettage
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black after:content-['|'] after:ml-0.5 after:text-green xs:text-base tablet:text-x laptop:text-sm">
-                canva
-              </span>
-              <span className="font-jaapokki uppercase text-xl text-black xs:text-base tablet:text-xs laptop:text-sm">
-                Jury CDA - DWWM - Cléa Numérique - CIF
-              </span>
-            </div>
-          </li>
+          <ServiceBloc
+            title="website"
+            skills={["design", "développement", "seo"]}
+            imagePath={websitePics.src}
+          />
+          <ServiceBloc
+            title="webdesign"
+            skills={["maquettage", "charte graphique", "branding board"]}
+            imagePath={brandingBoardPics.src}
+          />
+          <ServiceBloc
+            title="design & print"
+            skills={["logo", "business card", "kakemono", "flyer"]}
+            imagePath={kakemonoPics.src}
+          />
+          <ServiceBloc
+            title="social network"
+            skills={["managment", "design", "reels", "web editor"]}
+            imagePath={socialNetworkPics.src}
+          />
+          <ServiceBloc
+            title="formation"
+            skills={["canva"]}
+            imagePath={canvaPics.src}
+          />
+          <ServiceBloc
+            title="presta"
+            skills={[
+              "development",
+              "maquettage",
+              "canva",
+              "Jury CDA - DWWM - Cléa Numérique - CIF",
+            ]}
+            imagePath={prestaPics.src}
+          />
         </ul>
       </div>
       <div
