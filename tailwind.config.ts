@@ -170,11 +170,9 @@ const config: Config = {
   					height: '0'
   				}
   			},
-				"scroll" : {
-					'100%':{
-						transform: 'translateX(-170%)'
-					}
-				}
+				scroll: {
+          '100%': { transform: 'translateX(-100%)' },
+        },
   		},
   		scale: {
   			custom: '1 1.4'
