@@ -1,4 +1,5 @@
 import CrossIcon from "../ui/CrossIcon";
+import MarqueeHeader from "../ui/MarqueeHeader";
 
 export default function HeroSection() {
   return (
@@ -6,7 +7,7 @@ export default function HeroSection() {
       id="top"
       className="hero-section w-full h-screen flex flex-col justify-center items-center"
     >
-      <h1 className="text-9xl uppercase font-bold tracking-wide text-white font-jaapokki animate-fadeIn">
+      <h1 className="text-9xl uppercase font-bold tracking-wide text-white font-jaapokki animate-fadeIn xs:mt-10">
         <div className="flex space-x-1">
           <span className="letter inline-block min-w-[3vw] text-[10vw] transform transition-all duration-300 ease-in-out">
             w
@@ -51,6 +52,7 @@ export default function HeroSection() {
           On est là pour vous accompagner, avec simplicité et créativité !`}
         </p>
       </div>
+      <MarqueeHeader />
       <div className="absolute bottom-5 flex w-full justify-between p-5">
         <CrossIcon />
         <CrossIcon />

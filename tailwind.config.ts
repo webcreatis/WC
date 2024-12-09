@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+			content: {
+        'infos': '"Création site internet - Social Network - Formation - Développement sur mesure"',
+      },
   		screens: {
   			xs: '320px',
   			s: '375px',
@@ -42,7 +45,8 @@ const config: Config = {
   			SlideUp: 'SlideUp .8s cubic-bezier(0.8, 0, 1, 1) forwards',
   			SlideDownDeform: 'SlideDownDeform 0.8s cubic-bezier(0.8, 0, 0.2, 1) forwards',
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+				scroll: 'scroll 20s linear infinite',
   		},
   		keyframes: {
   			SlideDownDeform: {
@@ -165,7 +169,12 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+				"scroll" : {
+					'100%':{
+						transform: 'translateX(-170%)'
+					}
+				}
   		},
   		scale: {
   			custom: '1 1.4'
