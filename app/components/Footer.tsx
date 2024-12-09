@@ -50,9 +50,7 @@ export default function Footer() {
                     className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
                   >
                     <Linkedin size="1.25rem" />
-                    <span className="font-raleway xs:text-center">
-                      Linkedin Patrick
-                    </span>
+                    <span className="font-raleway xs:text-center">Patrick</span>
                   </a>
                 </div>
                 <div>
@@ -63,7 +61,7 @@ export default function Footer() {
                   >
                     <Linkedin size="1.25rem" />
                     <span className="font-raleway xs:text-center">
-                      Linkedin Patricia
+                      Patricia
                     </span>
                   </a>
                 </div>
@@ -149,7 +147,7 @@ export default function Footer() {
           </div>
           <div className="text-5xl text-black rounded-lg py-1 row-span-2">
             <div className="w-full h-full row-span-2 border-[1px] border-[#3f3f46] rounded-xl overflow-hidden bg-site-envergure">
-              <div className="flex w-full items-center justify-between uppercase p-5 backdrop-opacity-10 backdrop-invert bg-black/75">
+              <div className="flex w-full items-center justify-between uppercase p-5 backdrop-opacity-10 backdrop-invert bg-black/95">
                 <div className="font-raleway text-xl text-white"> Latest </div>
                 <span className="font-raleway text-xl text-white"> #Work </span>
               </div>

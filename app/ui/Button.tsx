@@ -7,7 +7,7 @@ type ButtonProps = {
   bg: string;
   color: string;
   children?: JSX.Element;
-  onClick?: () => void;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 export default function Button({
@@ -51,16 +51,15 @@ export default function Button({
       <button
         onClick={onClick}
         data-link="link"
-        className={
-          "buttonAction relative flex justify-center xs:w-[130px] xs:h-[2.5em] items-center text-[.875em] uppercase h-[3.5em] cursor-pointer p-[1.125em] rounded-[6.25em] " +
-          bg
-        }
+        className={`buttonAction relative flex justify-center xs:w-[135px] xs:h-[2.5em] xs:p-2 ipadPro:w-[180px] items-center uppercase h-[3.5em] cursor-pointer p-[1.7em] rounded-md ${bg}`}
       >
         <div
           ref={childrenRef}
           className="flex justify-center items-center overflow-hidden gap-[.625em]"
         >
-          <span className={"font-raleway font-semibold xs:text-xs " + color}>
+          <span
+            className={`font-raleway font-semibold xs:text-xs ipadPro:text-sm ${color}`}
+          >
             {text}
           </span>
           {children}

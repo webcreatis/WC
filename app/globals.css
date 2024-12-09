@@ -149,12 +149,12 @@ html {
   background-size: cover;
   background-position: center;
   transition: opacity 0.3s ease; /* Animation pour un effet fluide */
-  opacity: 0.5; /* Niveau de luminosité initial */
+  opacity: 0.2; /* Niveau de luminosité initial */
   z-index: 0;
 }
 
 .bg-site-envergure:hover::before {
-  opacity: 0.2; /* Rend l'image plus sombre au survol */
+  opacity: 0.1; /* Rend l'image plus sombre au survol */
 }
 
 .bg-site-envergure > * {

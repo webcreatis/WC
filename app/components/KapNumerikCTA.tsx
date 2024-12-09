@@ -19,10 +19,10 @@ export default function KapNumerikCTA() {
         <Image
           src={logoRegionReunion}
           alt="Logo de la région Réunion"
-          className="w-[200px] h-[200px] xs:w-full xs:h-auto tablet:w-[45%]"
+          className="w-[200px] h-[200px] xs:w-[60%] xs:h-auto tablet:w-[45%]"
         />
       </div>
-      <div className="w-[50%] xs:w-full xs:mt-12 tablet:w-[50%] laptop:w-[35%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
+      <div className="w-[50%] xs:w-[80%] xs:mt-12 tablet:w-[50%] laptop:w-[35%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
         <motion.div
           transition={{ duration: 0.3 }}
           initial={{ boxShadow: "0px 0px #000", height: "0px" }}

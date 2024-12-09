@@ -40,16 +40,16 @@ export default function HeroSection() {
           </span>
         </div>
       </h1>
-      <div className="hero-subtitle caption-timeline text-white text-center text-lg uppercase pt-10 xs:p-5 xs:text-sm xs:text-left">
-        <span className="block opacity-100">
-          Nous sommes une Agence Digitale située à la Réunion,
-        </span>
-        <span className="block opacity-100">
-          spécialisée dans la création de sites internet, le marketing digital,
-        </span>
-        <span className="block opacity-100">
-          le design et le développement.
-        </span>
+      <div className="hero-subtitle w-3/4 caption-timeline text-white pt-10 xs:p-7 xs:w-full tablet:w-3/4 lg:w-[65%]">
+        <p className="xs:text-xs xs:text-left tablet:text-sm ipadPro:text-lg">
+          {`Nous sommes deux passionnés du digital basés à La Réunion.
+          On vous aide à créer un site internet qui vous ressemble, à développer
+          votre présence sur les réseaux sociaux et à booster vos projets en
+          ligne.
+          Besoin d'un site, d'une formation ou d'un coup de main pour vos
+          visuels ?
+          On est là pour vous accompagner, avec simplicité et créativité !`}
+        </p>
       </div>
       <div className="absolute bottom-5 flex w-full justify-between p-5">
         <CrossIcon />
