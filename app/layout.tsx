@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     "Webcreatis,Agence Digitale - La Réunion: Création site internet,Marketing Digital,Développement",
   description:
     "Webcreatis, Agence digitale basée à La Réunion : Création site internet, marketing digital, développement, stratégies digitales, gestion des réseaux sociaux, webdesign.",
+  other: {
+    "google-site-verification": "VfeRAKrEv3DMzCqWxIUaizKN_jvPxMS43bXa5Cclz-Q", // Balise meta pour Google
+  },
 };
 
 // Layout
