@@ -7,6 +7,7 @@ import "./globals.css";
 const jaapokkiSans = localFont({
   src: "./fonts/jaapokki-subtract.otf",
   variable: "--font-jaapokki-sans",
+  display: "swap",
   weight: "400",
 });
 const raleway = Raleway({
@@ -37,7 +38,6 @@ export default function RootLayout({
         className={`${jaapokkiSans.variable} ${raleway.variable} antialiased bg-background`}
       >
         {children}
-        {/* <Script src="Cursor.js"></Script> */}
       </body>
     </html>
   );
