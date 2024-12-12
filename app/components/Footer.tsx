@@ -6,6 +6,7 @@ import Link from "next/link";
 import copyrightIcon from "../assets/images/icon-copyrights.webp";
 import webcreatisLogo from "../assets/images/logo-transparent-webcreatis-reunion.webp";
 import Button from "../ui/Button";
+import CardFooter from "../ui/CardFooter";
 import Meteo from "../ui/Meteo";
 
 export default function Footer() {
@@ -23,68 +24,36 @@ export default function Footer() {
                 Connect with us
               </small>
               <div className="grid grid-cols-3 grid-rows-2 gap-2 p-5">
-                <div>
-                  <a
-                    data-link="link"
-                    href="mailto:contact.webcreatis@gmail.com"
-                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
-                  >
-                    <AtSign size="1.25rem" />
-                    <span className="font-raleway">Email</span>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    data-link="link"
-                    href="https://www.instagram.com/webcreatis?igsh=MXdjdml0NGJmNXhqaw%3D%3D&utm_source=qr"
-                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
-                  >
-                    <Instagram size="1.25rem" />
-                    <span className="font-raleway">Instagram</span>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    data-link="link"
-                    href="https://www.linkedin.com/in/patrick-perroudon/"
-                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
-                  >
-                    <Linkedin size="1.25rem" />
-                    <span className="font-raleway xs:text-center">Patrick</span>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    data-link="link"
-                    href="https://www.linkedin.com/in/patriciaperroudon/"
-                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
-                  >
-                    <Linkedin size="1.25rem" />
-                    <span className="font-raleway xs:text-center">
-                      Patricia
-                    </span>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    data-link="link"
-                    href="https://github.com/webcreatis"
-                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
-                  >
-                    <Github size="1.25rem" />
-                    <span className="font-raleway">Github</span>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    data-link="link"
-                    href="tel:0693514439"
-                    className="buttonAction border-[1px] border-[#3f3f46] text-5xl text-white rounded-lg py-4 flex flex-col items-center gap-4"
-                  >
-                    <Phone size="1.25rem" />
-                    <span className="font-raleway">Phone</span>
-                  </a>
-                </div>
+                <CardFooter
+                  icon={<AtSign size="1.25rem" />}
+                  texte="Email"
+                  link="mailto:contact.webcreatis@gmail.com"
+                />
+                <CardFooter
+                  icon={<Instagram size="1.25rem" />}
+                  texte="Instagram"
+                  link="https://www.instagram.com/webcreatis?igsh=MXdjdml0NGJmNXhqaw%3D%3D&utm_source=qr"
+                />
+                <CardFooter
+                  icon={<Linkedin size="1.25rem" />}
+                  texte="Patricia"
+                  link="https://www.linkedin.com/in/patriciaperroudon/"
+                />
+                <CardFooter
+                  icon={<Linkedin size="1.25rem" />}
+                  texte="Patrick"
+                  link="https://www.linkedin.com/in/patrick-perroudon/"
+                />
+                <CardFooter
+                  icon={<Github size="1.25rem" />}
+                  texte="Github"
+                  link="https://github.com/webcreatis"
+                />
+                <CardFooter
+                  icon={<Phone size="1.25rem" />}
+                  texte="Phone"
+                  link="tel:0693514439"
+                />
               </div>
             </div>
             <div className="w-full flex h-[250px] items-center row-span-2 overflow-hidden mt-5 border-solid border-[1px] border-[#3f3f46] rounded-xl gradient-border xs:justify-center">
