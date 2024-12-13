@@ -7,7 +7,7 @@ export default function MentionsLegales() {
     <div className="w-full px-4 py-6 bg-greenLight font-raleway">
       {/* Retour à l'accueil */}
       <div className="mb-4">
-        <Link href="/" passHref>
+        <Link href="/" passHref aria-label={`Retournez à l'accueil du site`}>
           <Button text="Acceuil" bg="bg-corail" color="text-white" />
         </Link>
       </div>

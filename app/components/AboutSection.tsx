@@ -36,21 +36,34 @@ export default function AboutSection() {
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                <Link href="tel:+262693514439">Contactez-moi</Link>
+                <Link
+                  href="tel:+262693514439"
+                  aria-label={`Contactez Patrick au 0693514439`}
+                >
+                  Contactez-moi
+                </Link>
               </Button>
               <Button
                 variant="outline"
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                <Link href="/CV-Patrick-Perroudon.pdf">Download CV</Link>
+                <Link
+                  href="/CV-Patrick-Perroudon.pdf"
+                  aria-label={`Télécharger le CV de Patrick développeur web chez webcreatis`}
+                >
+                  Download CV
+                </Link>
               </Button>
               <Button
                 variant="outline"
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                <Link href="https://www.linkedin.com/in/patrick-perroudon/">
+                <Link
+                  href="https://www.linkedin.com/in/patrick-perroudon/"
+                  aria-label={`Visitez la page linkedin de patrick développeur chez webcreatis`}
+                >
                   Linkedin
                 </Link>
               </Button>
@@ -59,7 +72,12 @@ export default function AboutSection() {
                 className="w-[150px] font-jaapokki xs:mb-7 tablet:mb-0 buttonAction"
                 data-link="link"
               >
-                <Link href="https://github.com/webcreatis">Github</Link>
+                <Link
+                  href="https://github.com/webcreatis"
+                  aria-label={`Visitez la page github de webcreatis`}
+                >
+                  Github
+                </Link>
               </Button>
             </div>
           </div>
@@ -83,14 +101,22 @@ export default function AboutSection() {
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                <Link href="tel:+262693844876">Contactez-moi</Link>
+                <Link
+                  href="tel:+262693844876"
+                  aria-label={`Contactez Patricia au 0693844876`}
+                >
+                  Contactez-moi
+                </Link>
               </Button>
               <Button
                 variant="outline"
                 className="w-[150px] font-jaapokki buttonAction"
                 data-link="link"
               >
-                <Link href="https://www.linkedin.com/in/patriciaperroudon/">
+                <Link
+                  href="https://www.linkedin.com/in/patriciaperroudon/"
+                  aria-label={`Visitez la page linkedin de patricia webdesign chez webcreatis`}
+                >
                   Linkedin
                 </Link>
               </Button>

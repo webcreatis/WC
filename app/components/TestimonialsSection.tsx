@@ -109,7 +109,10 @@ export default function TestimonialsSection() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex flex-col items-start gap-5 justify-center p-6 relative">
-                      <Link href={testimonial.link}>
+                      <Link
+                        href={testimonial.link}
+                        aria-label={`Visitez le site de ${testimonial.societe}`}
+                      >
                         <Image
                           src={testimonial.avatar}
                           alt={`logo du site ${testimonial.societe}`}

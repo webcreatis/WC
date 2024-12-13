@@ -73,11 +73,17 @@ export default function Footer() {
                 <Link
                   href="/mentions-legales"
                   className="text-white buttonAction font-raleway text-xl xs:text-base"
+                  aria-label={`Allez sur la page des mentions légales de webcreatis`}
                 >
                   Mentions légales
                 </Link>
                 <div className="flex justify-center items-center">
-                  <Link href="/" className="text-white" data-link="link">
+                  <Link
+                    href="/"
+                    className="text-white buttonAction"
+                    data-link="link"
+                    aria-label={`Retour en haut de la page`}
+                  >
                     <Image
                       src={webcreatisLogo}
                       alt={`logo du site webcreatis`}
@@ -215,6 +221,7 @@ export default function Footer() {
             </small>
             <div className="w-full mt-10 flex justify-center gap-3 xs:flex-col laptop:flex-row">
               <iframe
+                title="spotify"
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/5nZVdhUh4Oz9LMQyneMpD5?utm_source=generator"
                 width="40%"
@@ -225,6 +232,7 @@ export default function Footer() {
                 className="xs:w-full laptop:w-[50%]"
               ></iframe>
               <iframe
+                title="spotify"
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/3HIA9qP0VRXwGPu9JGhntM?utm_source=generator"
                 width="40%"
@@ -237,6 +245,7 @@ export default function Footer() {
             </div>
             <div className="w-full mt-4 flex justify-center items-center gap-3 xs:flex-col laptop:flex-row">
               <iframe
+                title="spotify"
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/16zrPTCH7MuDST1aIwk3gI?utm_source=generator"
                 width="40%"
@@ -247,6 +256,7 @@ export default function Footer() {
                 className="xs:w-full laptop:w-[50%]"
               ></iframe>
               <iframe
+                title="spotify"
                 style={{ borderRadius: "12px" }}
                 src="https://open.spotify.com/embed/track/5TlSw8HyxbUeOdQlb8zVbg?utm_source=generator"
                 width="40%"

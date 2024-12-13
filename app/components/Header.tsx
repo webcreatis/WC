@@ -126,6 +126,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Retourner en haut de page`}
                   href="#top"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl gap-1"
                   onClick={(e) => {
@@ -147,6 +148,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Aller sur la section projets de webcreatis`}
                   href="#projects"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={(e) => {
@@ -165,6 +167,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Aller sur la section services de webcreatis`}
                   href="#services"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={(e) => {
@@ -183,6 +186,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Aller sur la section à propos de l'agence webcreatis`}
                   href="#about"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={(e) => {
@@ -201,6 +205,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Aller sur la section formations de webcreatis`}
                   href="#formations"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={(e) => {
@@ -219,6 +224,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Aller sur la section clients de webcreatis`}
                   href="#customers"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={(e) => {
@@ -237,6 +243,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Aller sur la section témoignages client de webcreatis`}
                   href="#testimonials"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={(e) => {
@@ -255,6 +262,7 @@ export default function Header() {
                 } transition-all w-full h-[60px] flex justify-center items-center`}
               >
                 <Link
+                  aria-label={`Aller sur la page contact de webcreatis`}
                   href="https://webcreatis.fr/contact/"
                   className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
                   onClick={handleCloseMenu}

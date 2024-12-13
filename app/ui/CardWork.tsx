@@ -34,7 +34,7 @@ export default function CardWork({
         data-link="link"
         className="buttonAction flex xs:flex-col-reverse xs:h-auto xs:gap-7 tablet:flex-row tablet:gap-2 tablet:pb-5 justify-between items-center transition ease-out border-t-[1px] border-white first:border-t-0 hover:bg-green hover:border-t-green hover:border-b-green cursor-pointer overflow-hidden whitespace-nowrap relative group"
       >
-        <Link href={link}>
+        <Link href={link} aria-label={`Visitez le site de ${link}`}>
           <span className="w-full invisible uppercase inline-block text-white text-[2000%] font-extrabold font-raleway absolute -top-[4rem] group-hover:visible group-hover:animate-marquee group-hover:opacity-20">
             {titleMarquee}
           </span>
