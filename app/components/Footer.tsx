@@ -190,6 +190,7 @@ export default function Footer() {
                 Recent Listening to
               </div>
               <button
+                aria-label="bouton action"
                 type="button"
                 className="btn btn--neutral btn--sm btn--square"
               >

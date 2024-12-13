@@ -61,8 +61,23 @@ export default function KapNumerikCTA() {
           votre dossier auprès de la Région Réunion.
         </p>
         <div className="flex justify-start items-center gap-5 xs:flex-col xs:w-full tablet:flex-row tablet:justify-center">
-          <Button text="J'ai un projet" bg="bg-green" color="text-black" />
-          <Button text="Region Réunion" bg="bg-darkWhite" color="text-black" />
+          <Button
+            text="J'ai un projet"
+            bg="bg-green"
+            color="text-black"
+            onClick={() =>
+              (window.location.href = "https://webcreatis.fr/contact/")
+            }
+          />
+          <Button
+            text="Region Réunion"
+            bg="bg-darkWhite"
+            color="text-black"
+            onClick={() =>
+              (window.location.href =
+                "https://www.regionreunion.com/aides-services/article/le-kap-numerik-version-2023-programme-europeen-feder-2021-2027")
+            }
+          />
         </div>
       </div>
     </section>
