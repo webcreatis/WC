@@ -1,6 +1,6 @@
 export default function MarqueeHeader() {
   return (
-    <div className="flex place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-10 xs:h-[50px] xs:w-full xs:rounded-none xs:mt-5 laptop:w-2/4 laptop:mt-16">
+    <div className="flex place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-10 xs:h-[50px] xs:w-full xs:rounded-none xs:mt-5 laptop:w-2/4 laptop:mt-16 animate-fadeIn transition-all duration-1200 ease-in-out">
       <div className="marqueeText relative overflow-hidden">
         <div className="flex whitespace-nowrap animate-[scroll_30s_linear_infinite] min-w-max">
           <span className="px-[2vw] uppercase text-green  xs:text-lg ipadPro:text-[1.5vw]">

@@ -8,6 +8,8 @@ import { useEffect, useRef, useState } from "react";
 import logo from "../assets/images/logo-transparent-webcreatis-reunion.webp";
 import Button from "../ui/Button";
 
+import { motion } from "framer-motion";
+
 export default function Header() {
   const [isMenuVisible, setMenuVisible] = useState(false);
   const navigationRef = useRef<HTMLDivElement | null>(null);
@@ -63,31 +65,49 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full h-[12.5em] p-9 xs:h-[10rem] xs:p-2 z-[200]">
       <div className="flex justify-between items-center overflow-hidden pb-2 h-full">
-        <Image
-          src={logo}
-          alt="Logo de l'agence digitale webcreatis"
-          className="w-[12.5em] h-[12.5em] xs:w-[8.5em] xs:h-[8.5em] tablet:w-[10em] tablet:h-[10em]"
-        />
+        <motion.div
+          animate={{ y: 10, opacity: 1 }}
+          initial={{ y: 0, opacity: 0 }}
+          transition={{ duration: 0.3, delay: 0.2, ease: "linear" }}
+        >
+          <Image
+            src={logo}
+            alt="Logo de l'agence digitale webcreatis"
+            className="w-[12.5em] h-[12.5em] xs:w-[8.5em] xs:h-[8.5em] tablet:w-[10em] tablet:h-[10em]"
+          />
+        </motion.div>
         <div className="flex gap-5 xs:flex-col tablet:flex-row">
-          <Button
-            text="un projet ?"
-            bg="bg-darkWhite"
-            color="text-black"
-            onClick={() =>
-              (window.location.href = "https://webcreatis.fr/contact/")
-            }
-          ></Button>
-          <Button
-            text="Menu"
-            bg="bg-darkWhite"
-            color="text-black"
-            onClick={handleShowMenu}
+          <motion.div
+            animate={{ y: 10, opacity: 1 }}
+            initial={{ y: 0, opacity: 0 }}
+            transition={{ duration: 0.3, delay: 0.5, ease: "linear" }}
           >
-            <div className="dots flex items-center relative w-[1.15em] h-[1.15em] text-black gap-1">
-              <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
-              <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
-            </div>
-          </Button>
+            <Button
+              text="un projet ?"
+              bg="bg-darkWhite"
+              color="text-black"
+              onClick={() =>
+                (window.location.href = "https://webcreatis.fr/contact/")
+              }
+            ></Button>
+          </motion.div>
+          <motion.div
+            animate={{ y: 10, opacity: 1 }}
+            initial={{ y: 0, opacity: 0 }}
+            transition={{ duration: 0.3, delay: 0.8, ease: "linear" }}
+          >
+            <Button
+              text="Menu"
+              bg="bg-darkWhite"
+              color="text-black"
+              onClick={handleShowMenu}
+            >
+              <div className="dots flex items-center relative w-[1.15em] h-[1.15em] text-black gap-1">
+                <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
+                <span className="inline-block w-[.3125em] h-[.3125em] rounded-[100%] bg-black"></span>
+              </div>
+            </Button>
+          </motion.div>
           <nav
             ref={navigationRef}
             className="w-full h-[150px] z-50 xs:h-screen tablet:h-[150px] absolute left-0 overflow-hidden -top-[1000px] bg-greenLight transition-transform"
