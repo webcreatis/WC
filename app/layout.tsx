@@ -50,7 +50,7 @@ export default function RootLayout({
               (function() {
                 var u = "//web-analyse-matomo.sh2.hidora.net/";
                 _paq.push(['setTrackerUrl', u + 'matomo.php']);
-                _paq.push(['setSiteId', '1']);
+                _paq.push(['setSiteId', '2']);
                 var d = document,
                     g = d.createElement('script'),
                     s = d.getElementsByTagName('script')[0];
