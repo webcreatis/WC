@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
-import Head from "next/head";
+import Script from "next/script";
 import "./globals.css";
 
 // Fonts
@@ -35,11 +35,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <Head>
-        {/* Script Matomo */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+      <body
+        className={`${jaapokkiSans.variable} ${raleway.variable} antialiased bg-background`}
+      >
+        {children}
+      </body>
+      <Script
+        id="link-matomo"
+        dangerouslySetInnerHTML={{
+          __html: `
               var _paq = window._paq || [];
               _paq.push(['trackPageView']);
               _paq.push(['enableLinkTracking']);
@@ -55,14 +59,8 @@ export default function RootLayout({
                 s.parentNode.insertBefore(g, s);
               })();
             `,
-          }}
-        />
-      </Head>
-      <body
-        className={`${jaapokkiSans.variable} ${raleway.variable} antialiased bg-background`}
-      >
-        {children}
-      </body>
+        }}
+      />
     </html>
   );
 }
