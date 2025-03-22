@@ -83,11 +83,11 @@ export default function Header() {
             transition={{ duration: 0.3, delay: 0.5, ease: "linear" }}
           >
             <Button
-              text="un projet ?"
-              bg="bg-darkWhite"
+              text="Prendre RDV"
+              bg="bg-corail"
               color="text-black"
               onClick={() =>
-                (window.location.href = "https://webcreatis.fr/contact/")
+                (window.location.href = "mailto:contact.webcreatis@gmail.com")
               }
             ></Button>
           </motion.div>

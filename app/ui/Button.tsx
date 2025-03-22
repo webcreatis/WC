@@ -52,7 +52,7 @@ export default function Button({
         aria-label="bouton action"
         onClick={onClick}
         data-link="link"
-        className={`buttonAction relative flex justify-center xs:w-[135px] xs:h-[2.5em] xs:p-2 ipadPro:w-[180px] items-center uppercase h-[3.5em] cursor-pointer p-[1.7em] rounded-md ${bg}`}
+        className={`buttonAction relative flex justify-center xs:w-[135px] xs:h-[2.5em] xs:p-2 ipadPro:w-[130px] laptop:xs:h-[3.5em] items-center uppercase cursor-pointer p-[1.7em] rounded-md ${bg}`}
       >
         <div
           ref={childrenRef}

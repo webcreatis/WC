@@ -66,7 +66,7 @@ export default function KapNumerikCTA() {
             bg="bg-green"
             color="text-black"
             onClick={() =>
-              (window.location.href = "https://webcreatis.fr/contact/")
+              (window.location.href = "mailto:contact.webcreatis@gmail.com")
             }
           />
           <Button
