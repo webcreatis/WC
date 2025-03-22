@@ -5,7 +5,8 @@ import Image from "next/image";
 import comDigitalPics from "../assets/images/com-digitale-webcreatis.webp";
 import patriciaPics from "../assets/images/patricia-webcreatis.webp";
 import Button from "../ui/Button";
-import FormationCard from "../ui/FormationCard";
+import { CardHoverEffectFormations } from "../ui/CardFormation";
+//import FormationCard from "../ui/FormationCard";
 import TitleSection from "./TitleSection";
 
 export default function FormationsSection() {
@@ -13,29 +14,29 @@ export default function FormationsSection() {
   const iconFormation = <Share2 size={36} color="#7BE0AD" />;
 
   // datas
-  const formationStarterList = [
-    "* Débuter avec Canva , les bases essentielles",
-    "* Création de votre logo",
-    "* Votre charte graphique et présentation du modèle de marque",
-    "* Création de votre Carte de visite",
-    "* Débuter mes designs sur les Réseaux Sociaux",
-    "*********** 1 Post de présentation de vous et vos services",
-    "*********** 1 Bannière (Linkedin, Facebook, YouTube)",
-    "* Calendrier éditorial de votre premier mois de publication pour bien débuter",
-  ];
-  const formationStarterPlusList = [
-    "* Débuter avec Canva , les bases essentielles",
-    "* Création de votre logo",
-    "* Votre charte graphique et présentation du modèle de marque",
-    "* Création de votre Carte de visite",
-    "* Débuter mes designs sur les Réseaux Sociaux",
-    "* Calendrier éditorial de 3 mois pour avancer en toute confiance",
-    " * Introduction à l’IA sur Canva pour créer des post plus rapidement et trouver des idées de publications",
-  ];
-  const formationCustomList = [
-    "* Une prise en main complète de Canva adaptée à vos besoins.",
-    "* L'apprentissage des astuces et fonctionnalités avancées pour créer rapidement des visuels professionnels.",
-  ];
+  // const formationStarterList = [
+  //   "* Débuter avec Canva , les bases essentielles",
+  //   "* Création de votre logo",
+  //   "* Votre charte graphique et présentation du modèle de marque",
+  //   "* Création de votre Carte de visite",
+  //   "* Débuter mes designs sur les Réseaux Sociaux",
+  //   "*********** 1 Post de présentation de vous et vos services",
+  //   "*********** 1 Bannière (Linkedin, Facebook, YouTube)",
+  //   "* Calendrier éditorial de votre premier mois de publication pour bien débuter",
+  // ];
+  // const formationStarterPlusList = [
+  //   "* Débuter avec Canva , les bases essentielles",
+  //   "* Création de votre logo",
+  //   "* Votre charte graphique et présentation du modèle de marque",
+  //   "* Création de votre Carte de visite",
+  //   "* Débuter mes designs sur les Réseaux Sociaux",
+  //   "* Calendrier éditorial de 3 mois pour avancer en toute confiance",
+  //   " * Introduction à l’IA sur Canva pour créer des post plus rapidement et trouver des idées de publications",
+  // ];
+  // const formationCustomList = [
+  //   "* Une prise en main complète de Canva adaptée à vos besoins.",
+  //   "* L'apprentissage des astuces et fonctionnalités avancées pour créer rapidement des visuels professionnels.",
+  // ];
 
   return (
     <section id="formations" className="formations">
@@ -137,7 +138,7 @@ export default function FormationsSection() {
           design !<br />
           Nous vous proposons 3 types de formations:{" "}
         </p>
-        <ul className="w-full flex justify-center mt-10 pb-20 gap-10 xs:flex-col laptop:flex-row laptop:w-full">
+        {/* <ul className="w-full flex justify-center mt-10 pb-20 gap-10 xs:flex-col laptop:flex-row laptop:w-full">
           <FormationCard
             title="Formation Starter"
             subTitle="Ma Com' en Main"
@@ -169,8 +170,9 @@ export default function FormationsSection() {
                     est faite pour vous !"
             liste={formationCustomList}
           />
-        </ul>
+        </ul> */}
       </div>
+      <CardHoverEffectFormations />
     </section>
   );
 }

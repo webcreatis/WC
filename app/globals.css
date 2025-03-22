@@ -132,6 +132,15 @@ html {
     -webkit-text-stroke: 2px #ff5757;
     -webkit-text-fill-color: transparent;
   }
+  .gradient-flip-front {
+    background: linear-gradient(
+      120deg,
+      #e4f2e7 60%,
+      #7be0ad 88%,
+      #e4f2e7 40%,
+      rgba(123, 224, 173, 0.6) 48%
+    );
+  }
 }
 
 /* FOOTER style */
