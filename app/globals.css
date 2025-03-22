@@ -28,7 +28,8 @@ html {
 .hero-section,
 .works,
 .about,
-.formations {
+.formations,
+.marquee {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,
@@ -38,9 +39,6 @@ html {
 }
 .services {
   background: rgba(35, 78, 67, 1);
-}
-.marquee {
-  background-color: #234e42;
 }
 
 /* Cursor style */
@@ -131,7 +129,7 @@ html {
     --move-final: calc(-50% + var(--offset));
   }
   .text-stroke-2 {
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px #ff5757;
     -webkit-text-fill-color: transparent;
   }
 }

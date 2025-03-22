@@ -1,5 +1,5 @@
 import AboutSection from "./components/AboutSection";
-import CustomerSection from "./components/CustomerSection";
+import ClientSection from "./components/ClientSection";
 import Footer from "./components/Footer";
 import FormationsSection from "./components/FormationsSection";
 import Header from "./components/Header";
@@ -10,7 +10,6 @@ import ServicesSection from "./components/ServicesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import WorksSection from "./components/WorkSection";
 import CanvasTrail from "./ui/Cursor";
-import MarqueeText from "./ui/MarqueeText";
 
 export default function Home() {
   return (
@@ -25,8 +24,7 @@ export default function Home() {
         <AboutSection />
         <MethodSection />
         <FormationsSection />
-        <MarqueeText />
-        <CustomerSection />
+        <ClientSection />
         <TestimonialsSection />
       </main>
       <Footer />

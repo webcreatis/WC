@@ -10,9 +10,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-			content: {
-        'infos': '"Création site internet - Social Network - Formation - Développement sur mesure"',
-      },
+  		content: {
+  			infos: 'Création site internet - Social Network - Formation - Développement sur mesure"'
+  		},
   		screens: {
   			xs: '320px',
   			s: '375px',
@@ -36,7 +36,7 @@ const config: Config = {
   			rotateMouseOut: 'rotateMouseout .3s ease-in-out forwards',
   			fadeIn: 'fadeIn 0.8s ease-out forwards',
   			bgHover: 'background-color ease-out .4s',
-  			marquee: 'marquee 4s linear infinite',
+  			marquee: 'marquee var(--duration) infinite linear',
   			scalePics: 'scalePics 0.4s ease-in-out forwards',
   			marqueeText: 'marqueeOne 30s linear infinite',
   			'marquee-reverse': 'marqueeTwo 30s linear infinite',
@@ -46,7 +46,8 @@ const config: Config = {
   			SlideDownDeform: 'SlideDownDeform 0.8s cubic-bezier(0.8, 0, 0.2, 1) forwards',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-				scroll: 'scroll 20s linear infinite',
+  			scroll: 'scroll 20s linear infinite',
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
   		},
   		keyframes: {
   			SlideDownDeform: {
@@ -121,6 +122,12 @@ const config: Config = {
   				},
   				'100%': {
   					transform: 'translateX(-100%)'
+  				},
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(calc(-100% - var(--gap)))'
   				}
   			},
   			rotateMouseEnter: {
@@ -170,18 +177,36 @@ const config: Config = {
   					height: '0'
   				}
   			},
-				scroll: {
-          '100%': { transform: 'translateX(-100%)' },
-        },
+  			scroll: {
+  				'100%': {
+  					transform: 'translateX(-100%)'
+  				}
+  			},
+  			'marquee-vertical': {
+  				from: {
+  					transform: 'translateY(0)'
+  				},
+  				to: {
+  					transform: 'translateY(calc(-100% - var(--gap)))'
+  				}
+  			}
   		},
   		scale: {
   			custom: '1 1.4'
   		},
   		fontFamily: {
-  			jaapokki: ["var(--font-jaapokki-sans)"],
-  			raleway: ["var(--font-raleway)"]
+  			jaapokki: [
+  				'var(--font-jaapokki-sans)'
+  			],
+  			raleway: [
+  				'var(--font-raleway)'
+  			]
   		},
   		colors: {
+				red: "#E5194E",
+				orange: "#E96F32",
+				black_ariane: "#000000",
+				blue: "#01AEF1",
   			green: '#7BE0AD',
   			greenLight: '#E4F2E7',
   			darkGreen: '#234E42',

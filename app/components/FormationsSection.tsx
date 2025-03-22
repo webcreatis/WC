@@ -39,7 +39,7 @@ export default function FormationsSection() {
 
   return (
     <section id="formations" className="formations">
-      <div className="flex flex-col justify-center items-center pt-32 pb-10">
+      <div className="flex flex-col justify-center items-center pt-5 pb-10">
         <TitleSection icon={iconFormation} title="Com Digitale" />
         <h3 className="font-raleway font-normal text-greenLight text-2xl xs:text-base xs:text-center">
           Libérez-vous du Temps et Reprenez les Rênes de Votre Activité !
@@ -56,10 +56,10 @@ export default function FormationsSection() {
           />
         </div>
         <div className="w-[50%] flex flex-col items-start p-10 xs:w-full lg:w-[50%]">
-          <h2 className="text-4xl font-semibold font-raleway text-green pb-10 xs:text-lg tablet:text-2xl">
+          <h2 className="font-semibold font-jaapokki text-green pb-10 xs:text-lg tablet:text-2xl laptop:text-4xl">
             Vous êtes indépendants, commerçants, artisans ??
           </h2>
-          <p className="text-white text-justify pb-10 xs:text-sm tablet:text-base">
+          <p className="text-white font-raleway text-justify pb-10 xs:text-sm tablet:text-base">
             Recentrez-vous sur votre coeur de métier et dites adieu aux heures
             perdues en communication grâce à nos formations Canva et à nos
             solutions de gestion des réseaux sociaux.
