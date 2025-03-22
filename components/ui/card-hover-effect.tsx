@@ -1,6 +1,6 @@
+import Button from "@/app/ui/Button";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -26,8 +26,7 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
+        <div
           key={item?.id}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -58,7 +57,7 @@ export const HoverEffect = ({
               </span>
             </CardDescription>
             {item.infos && (
-              <ul className="list-disc pl-5 mt-6 flex flex-col gap-2">
+              <ul className="list-disc pl-5 mt-6 mb-20 flex flex-col gap-2">
                 {item?.infos.map((item, i) => (
                   <li
                     key={i}
@@ -69,8 +68,18 @@ export const HoverEffect = ({
                 ))}
               </ul>
             )}
+            <div className="absolute bottom-0 right-0">
+              <Button
+                text="Prendre RDV"
+                bg="bg-green"
+                color="text-black"
+                onClick={() =>
+                  (window.location.href = "mailto:contact.webcreatis@gmail.com")
+                }
+              />
+            </div>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>
   );
@@ -86,11 +95,11 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden gradient-flip-front border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden gradient-flip-front border border-transparent dark:border-white/[0.2] group-hover:border-slate-70 z-20",
         className
       )}
     >
-      <div className="relative z-50">
+      <div className="relative z-50 h-full">
         <div className="p-4">{children}</div>
       </div>
     </div>
@@ -124,7 +133,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm h-full",
         className
       )}
     >
