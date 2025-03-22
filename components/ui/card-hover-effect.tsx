@@ -71,7 +71,7 @@ export const HoverEffect = ({
             <div className="absolute bottom-0 right-0">
               <Button
                 text="Prendre RDV"
-                bg="bg-green"
+                bg="bg-corail"
                 color="text-black"
                 onClick={() =>
                   (window.location.href = "mailto:contact.webcreatis@gmail.com")
