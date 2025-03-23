@@ -31,8 +31,8 @@ export default function FormationsSection() {
           />
         </div>
         <div className="w-[50%] flex flex-col items-start p-10 xs:w-full lg:w-[50%]">
-          <h2 className="font-semibold font-jaapokki text-green pb-10 xs:text-lg tablet:text-2xl laptop:text-4xl">
-            Vous êtes indépendants, commerçants, artisans ??
+          <h2 className="font-semibold font-jaapokki text-green pb-10 xs:text-lg tablet:text-2xl laptop:text-3xl">
+            Vous êtes indépendants, commerçants, artisans ?
           </h2>
           <p className="text-white font-raleway text-justify pb-10 xs:text-sm tablet:text-base">
             Recentrez-vous sur votre coeur de métier et dites adieu aux heures
