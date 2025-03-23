@@ -115,7 +115,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "font-bold tracking-wide mt-4 text-black font-jaapokki text-2xl",
+        "font-bold tracking-wide mt-4 text-black font-jaapokki text-xl",
         className
       )}
     >
