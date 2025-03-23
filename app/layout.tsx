@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./globals.css";
 
 // Fonts
@@ -38,7 +40,9 @@ export default function RootLayout({
       <body
         className={`${jaapokkiSans.variable} ${raleway.variable} antialiased bg-background`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
       <Script
         id="link-matomo"

@@ -70,12 +70,15 @@ export default function Header() {
           initial={{ y: 0, opacity: 0 }}
           transition={{ duration: 0.3, delay: 0.2, ease: "linear" }}
         >
-          <Image
-            src={logo}
-            alt="Logo de l'agence digitale webcreatis"
-            className="w-[12.5em] h-[12.5em] xs:w-[8.5em] xs:h-[8.5em] tablet:w-[10em] tablet:h-[10em]"
-          />
+          <Link href={"/"} aria-label="bouton action" data-link="link">
+            <Image
+              src={logo}
+              alt="Logo de l'agence digitale webcreatis"
+              className="w-[12.5em] h-[12.5em] xs:w-[8.5em] xs:h-[8.5em] tablet:w-[10em] tablet:h-[10em]"
+            />
+          </Link>
         </motion.div>
+
         <div className="flex gap-5 xs:flex-col tablet:flex-row">
           <motion.div
             animate={{ y: 10, opacity: 1 }}

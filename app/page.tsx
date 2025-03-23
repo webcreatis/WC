@@ -1,8 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import ClientSection from "./components/ClientSection";
-import Footer from "./components/Footer";
 import FormationsSection from "./components/FormationsSection";
-import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import KapNumerikCTA from "./components/KapNumerikCTA";
 import MethodSection from "./components/MethodSection";
@@ -15,7 +13,6 @@ export default function Home() {
   return (
     <>
       <CanvasTrail />
-      <Header />
       <main>
         <HeroSection />
         <KapNumerikCTA />
@@ -27,7 +24,6 @@ export default function Home() {
         <ClientSection />
         <TestimonialsSection />
       </main>
-      <Footer />
     </>
   );
 }

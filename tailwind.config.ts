@@ -211,7 +211,7 @@ const config: Config = {
   			greenLight: '#E4F2E7',
   			darkGreen: '#234E42',
   			white: '#F9F9F9',
-  			darkWhite: '#e4e6ef',
+  			darkWhite: '#F8F8F8',
   			black: '#18181B',
   			corail: '#ff5757',
   			'bg-brand': 'rgb(29 78 216)',
