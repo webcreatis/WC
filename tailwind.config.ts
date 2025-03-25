@@ -212,6 +212,7 @@ const config: Config = {
   			darkGreen: '#234E42',
   			white: '#F9F9F9',
   			darkWhite: '#F8F8F8',
+				bg_card: '#E4E5DE',
   			black: '#18181B',
   			corail: '#ff5757',
   			'bg-brand': 'rgb(29 78 216)',

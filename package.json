@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -20,6 +20,7 @@
     "lucide-react": "^0.456.0",
     "motion": "^12.0.0-alpha.2",
     "next": "15.0.1",
+    "next-video": "^2.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.5.4",
