@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import StackingCards from "../components/StackingCards";
+import TextAnimated from "../ui/TextAnimated";
 
 type SectionProps = {
   title: string;
@@ -16,14 +17,37 @@ export default function CreateWebPage() {
 
   const sections: SectionProps[] = [
     {
-      title: "Développement Web",
+      title: "créasite",
       bg: "bg-white",
-      description: `Dans un monde numérique où la présence en ligne est essentielle, un site web sur-mesure est la clé pour se démarquer. 
-        Faire appel à une agence spécialisée à Paris garantit un site optimisé, qui reflète parfaitement votre marque et répond à vos besoins spécifiques. 
-        Grâce à une approche globale alliant développement, design, marketing digital et SEO, nous créons des expériences uniques pour booster votre visibilité et vos opportunités commerciales.`,
+      description: `Aujourd’hui, avoir un site, c’est bien. 
+      Mais avoir un site web sur-mesure qui claque, c’est encore mieux ! 
+      Chez Webcreatis, on mixe design stylé, dev solide, marketing malin et SEO qui fait mouche pour créer un site qui reflète parfaitement votre marque et répond à vos besoins spécifiques.
+      Votre projet mérite mieux qu’un simple template, alors Contactez-nous et construisons quelque chose d’unique ensemble !`,
       service:
         "Développement custom - Single Page Applications - Responsive Implementation",
-      src: "/videos/services-web.mp4",
+      src: "/videos/creasite-webcreatis.mp4",
+    },
+    {
+      title: "créaone",
+      bg: "bg-white",
+      description: `Une One Page qui fait tout, sauf passer inaperçue ! 
+      Pas besoin de 10 pages pour faire le taf. Avec une One Page bien pensée, on va droit à l’essentiel : design soigné, scroll fluide, animations stylées et contenu qui percute.
+      Parfait pour présenter ton activité, un service ou un produit sans détour.
+      Rapide, efficace, impactant.
+      Tu veux marquer les esprits en un scroll ? Let's go`,
+      service:
+        "Développement custom - Single Page Applications - Responsive Implementation",
+      src: "/videos/creaone-webcreatis.webm",
+    },
+    {
+      title: "créashop",
+      bg: "bg-white",
+      description: `Vous avez un projet e-commerce ? On s’occupe de tout. De la vitrine à la caisse, on vous crée un site ultra-performant, stylé, rapide, et surtout pensé pour vendre. 
+      Chez Webcreatis, pas de solutions toutes faites : chaque boutique est 100% sur-mesure, responsive et optimisée pour l’expérience utilisateur.
+      On utilise des technos modernes (Next.js, Tailwind, etc.) pour que votre site soit aussi beau qu’efficace, avec une gestion simplifiée de vos produits, paiements sécurisés et tout ce qu’il faut pour cartonner en ligne.`,
+      service:
+        "Paiement en ligne - Ajoutez, modifiez, organisez vos produits - Authentification & comptes clients",
+      src: "/videos/creashop-webcreatis.mp4",
     },
     {
       title: "Animations Web",
@@ -33,12 +57,12 @@ export default function CreateWebPage() {
       Résultat : des interactions fun et une expérience utilisateur qui reste en tête.`,
       service:
         "Animations au défilement - Effets interactifs au survol - Animations de texte dynamiques",
-      src: "/videos/services-animations.mp4",
+      src: "/videos/services-animations.webm",
     },
     {
       title: "TECHNOLOGIES",
       bg: "bg-white",
-      description: `On propulse votre projet avec les technologies les plus puissantes ! 🚀 Chaque site qu'on crée est optimisé à fond grâce à Next.js, React, et Tailwind CSS, 
+      description: `On propulse votre projet avec les technologies les plus puissantes ! Chaque site qu'on crée est optimisé à fond grâce à Next.js, React, et Tailwind CSS, 
       pour des performances de folie et un design impeccable. On prend aussi en main votre contenu avec Directus et vous assure une sécurité de fer avec NextAuth.js pour l'authentification. 
       Et pour vos applications mobiles, Flutter et Dart nous permettent de proposer des expériences super fluides sur iOS et Android.`,
       service:
@@ -54,33 +78,24 @@ export default function CreateWebPage() {
       service: "Conception d'interface utilisateur",
       src: "/videos/directus.mp4",
     },
-    {
-      title: "E-Commerce",
-      bg: "bg-white",
-      description: `Vous avez un projet e-commerce ? On s’occupe de tout. De la vitrine à la caisse, on vous crée un site ultra-performant, stylé, rapide, et surtout pensé pour vendre. 
-      Chez Webcreatis, pas de solutions toutes faites : chaque boutique est 100% sur-mesure, responsive et optimisée pour l’expérience utilisateur.
-      On utilise des technos modernes (Next.js, Tailwind, etc.) pour que votre site soit aussi beau qu’efficace, avec une gestion simplifiée de vos produits, paiements sécurisés et tout ce qu’il faut pour cartonner en ligne.`,
-      service:
-        "Paiement en ligne - Ajoutez, modifiez, organisez vos produits - Authentification & comptes clients",
-      src: "/videos/services-ecommerce.mp4",
-    },
   ];
 
   return (
-    <section className="w-full flex flex-col bg-white text-black font-raleway pt-80">
-      <h1 className="font-jaapokki uppercase text-7xl text-green flex justify-center">
+    <section className="w-full flex flex-col bg-white text-black font-raleway pt-40">
+      {/* <h1 className="font-jaapokki uppercase text-7xl text-green flex justify-center">
         Création de site internet
       </h1>
       <p className="font-raleway text-black w-2/5 mx-auto text-lg text-center pt-10">
         En tant qu’agence spécialisée dans la création de site internet sur
         mesure, nous développons des solutions digitales adaptés à vos besoins.
-      </p>
-      <main className="relative mt-[2vh] mb-[20vh]">
+      </p> */}
+      <TextAnimated />
+      <main className="relative mt-[2vh] xs:mb-[85vh] md:mb-[70vh] laptop:mb-[80vh]">
         {sections.map((section, index) => (
           <div
             key={index}
             ref={containerRef}
-            className="h-[100vh] flex items-center justify-center sticky top-0"
+            className="flex items-center justify-center xs:relative xs:h-[80vh] md:h-[70vh] laptop:h-[60vh] lg:sticky lg:top-0 xl:h-[40vh] "
           >
             <StackingCards key={index} index={index} section={section} />
           </div>
