@@ -3,7 +3,7 @@ import { Library } from "lucide-react";
 export default function MarqueeText() {
   const iconLib = <Library color="#7BE0AD" size={36} />;
   return (
-    <div className="mt-10 mb-20 flex w-full place-items-center h-auto xs:pb-5 xs:flex-col laptop:h-[350px] laptop:flex-row">
+    <div className="mt-20 mb-20 flex w-full place-items-center h-auto xs:pb-5 xs:flex-col laptop:h-[450px]">
       <div className="marqueeText relative overflow-hidden xs:text-4xl xs:w-full xs:mt-10 md:mt-10 laptop:text-6xl laptop:flex-1">
         {/*-- Première ligne de texte */}
         <div className="flex whitespace-nowrap animate-marqueeText">
@@ -31,30 +31,28 @@ export default function MarqueeText() {
         </div>
         {/* -- Deuxième ligne de texte */}
         <div className="flex whitespace-nowrap animate-marquee-reverse">
+          <span className="text-[5vw] px-[2vw] text-green uppercase">CSS3</span>
           <span className="text-[5vw] px-[2vw] text-green uppercase">
-            design
+            Framer Motion
           </span>
           <span className="text-[5vw] px-[2vw] text-green uppercase">
-            wireframe
+            Typescript
+          </span>
+          <span className="text-[5vw] px-[2vw] text-green uppercase">Dart</span>
+          <span className="text-[5vw] px-[2vw] text-green uppercase">
+            context
           </span>
           <span className="text-[5vw] px-[2vw] text-green uppercase">
-            maquettage
+            Flutter
           </span>
           <span className="text-[5vw] px-[2vw] text-green uppercase">
-            kakemono
-          </span>
-          <span className="text-[5vw] px-[2vw] text-green uppercase">logo</span>
-          <span className="text-[5vw] px-[2vw] text-green uppercase">
-            charte graphique
+            Node Js
           </span>
           <span className="text-[5vw] px-[2vw] text-green uppercase">
-            branding board
+            Better Auth
           </span>
           <span className="text-[5vw] px-[2vw] text-green uppercase">
-            flyer
-          </span>
-          <span className="text-[5vw] px-[2vw] text-green uppercase">
-            business card
+            Stripe
           </span>
         </div>
         {/*-- Troisiéme ligne de texte */}
@@ -81,7 +79,7 @@ export default function MarqueeText() {
             ZOD
           </span>
           <span className="text-[5vw] px-[2vw] uppercase  text-stroke-2">
-            stripe
+            Elementor
           </span>
         </div>
       </div>

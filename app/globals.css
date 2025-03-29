@@ -29,7 +29,8 @@ html {
 .works,
 .about,
 .formations,
-.marquee {
+.marquee,
+.creasite {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,

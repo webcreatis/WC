@@ -12,7 +12,7 @@ export default function CreateWebPage() {
   const words = `Nous créons des sites web sur-mesure, pensés pour vous, avec style et efficacité.`;
 
   return (
-    <section className="w-full flex flex-col bg-white text-black font-raleway pt-40">
+    <section className="creasite w-full flex flex-col text-black font-raleway pt-40">
       <TextAnimated />
       <div className="relative mt-[2vh] xs:mb-[85vh] md:mb-[70vh] laptop:mb-[80vh]">
         {sections.map((section, index) => (
@@ -26,7 +26,23 @@ export default function CreateWebPage() {
         ))}
       </div>
       <ParagraphAnimated value={words} />
-      <MarqueeText />
+      <div className="bg-white">
+        <h3 className="font-jaapokki uppercase text-6xl text-center pt-20">
+          <span className="text-corail uppercase text-6xl font-jaapokki">
+            Outils
+          </span>{" "}
+          et{" "}
+          <span className="text-green uppercase text-6xl font-jaapokki">
+            technologies
+          </span>{" "}
+          utilisés
+        </h3>
+        <p className="font-raleway text-xl pt-5 text-center">
+          On pioche le top de la tech pour créer des produits rapides, malins et
+          agréables à utiliser.
+        </p>
+        <MarqueeText />
+      </div>
     </section>
   );
 }

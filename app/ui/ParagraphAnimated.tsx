@@ -19,7 +19,7 @@ export default function ParagraphAnimated({ value }: ParagraphAnimatedProps) {
   return (
     <motion.p
       ref={elementRef}
-      className="font-raleway text-black w-[80%] mx-auto text-center pt-0 pb-40"
+      className="font-raleway text-white w-[80%] mx-auto text-center pt-0 pb-40"
       style={{ opacity: scrollYProgress }}
     >
       {words.map((word, i) => {
