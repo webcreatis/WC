@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import StackingCards from "../components/StackingCards";
 import sections from "../datas/creadatas";
+import MarqueeText from "../ui/MarqueeText";
 import ParagraphAnimated from "../ui/ParagraphAnimated";
 import TextAnimated from "../ui/TextAnimated";
 
@@ -25,6 +26,7 @@ export default function CreateWebPage() {
         ))}
       </div>
       <ParagraphAnimated value={words} />
+      <MarqueeText />
     </section>
   );
 }

@@ -3,7 +3,6 @@
 import { Layers3 } from "lucide-react";
 import Button from "../ui/Button";
 import HorizontalAccordion from "../ui/HorizontalAccordion";
-import MarqueeText from "../ui/MarqueeText";
 import TitleSection from "./TitleSection";
 
 export default function MethodSection() {
@@ -11,7 +10,7 @@ export default function MethodSection() {
   return (
     <section className="w-full flex flex-col">
       <TitleSection icon={iconMethod} title="Methods" color="text-black" />
-      <div className="w-full flex pt-16 justify-between xs:flex-col lg:flex-row">
+      <div className="w-full flex pt-16 pb-36 justify-between xs:flex-col lg:flex-row">
         <div className="w-[50%] flex flex-col items-start p-10 xs:w-full lg:w-[50%]">
           <h2 className="text-4xl font-semibold font-jaapokki text-green pb-10 xs:text-xl tablet:text-2xl">
             Notre processus de création de site internet : <br />
@@ -36,7 +35,6 @@ export default function MethodSection() {
           <HorizontalAccordion />
         </div>
       </div>
-      <MarqueeText />
     </section>
   );
 }
