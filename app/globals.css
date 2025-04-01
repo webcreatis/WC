@@ -130,7 +130,7 @@ html {
     --move-final: calc(-50% + var(--offset));
   }
   .text-stroke-2 {
-    -webkit-text-stroke: 2px #ff5757;
+    -webkit-text-stroke: 2px #ffb29b;
     -webkit-text-fill-color: transparent;
   }
   .gradient-flip-front {
@@ -341,4 +341,8 @@ html {
 
 .animate-scroll {
   animation: scroll 30s linear infinite;
+}
+
+.dEWnUG {
+  min-width: unset !important;
 }

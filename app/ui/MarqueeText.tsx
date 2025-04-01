@@ -1,9 +1,6 @@
-import { Library } from "lucide-react";
-
 export default function MarqueeText() {
-  const iconLib = <Library color="#7BE0AD" size={36} />;
   return (
-    <div className="mt-20 mb-20 flex w-full place-items-center h-auto xs:pb-5 xs:flex-col laptop:h-[450px]">
+    <div className="mt-10 flex w-full place-items-center h-auto xs:pb-5 xs:flex-col laptop:h-[250px] lg:h-[300px] x:h-[400px]">
       <div className="marqueeText relative overflow-hidden xs:text-4xl xs:w-full xs:mt-10 md:mt-10 laptop:text-6xl laptop:flex-1">
         {/*-- Première ligne de texte */}
         <div className="flex whitespace-nowrap animate-marqueeText">

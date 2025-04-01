@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import StackingCards from "../components/StackingCards";
 import sections from "../datas/creadatas";
+import CallToActionWithQrCode from "../ui/CallToActionWithQrCode";
 import MarqueeText from "../ui/MarqueeText";
 import ParagraphAnimated from "../ui/ParagraphAnimated";
 import TextAnimated from "../ui/TextAnimated";
@@ -10,39 +11,53 @@ import TextAnimated from "../ui/TextAnimated";
 export default function CreateWebPage() {
   const containerRef = useRef(null);
   const words = `Nous créons des sites web sur-mesure, pensés pour vous, avec style et efficacité.`;
+  const ctaDescriptionText = `Fini les sites génériques ! On crée pour vous un site unique, beau, rapide et pensé pour vos vrais besoins. Pas de blabla, juste un projet bien ficelé, avec vous, pour vous.
+Scannez le QR code à droite pour répondre à quelques questions et nous aider à créer un site qui vous correspond à 100 %. 
+C'est rapide, sans engagement, et ça nous permet de mieux comprendre votre projet.`;
+  const qrCodeLink =
+    "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAooRbNxUQkJUMzlZUEpZMjJaV0xCSFg0NEZNWDVTMy4u&origin=QRCode&route=shorturl";
+  const ctaDescriptionQrCodeText = `👀 Pas de scanner ? Pas de souci, cliquez ci-dessous !"`;
 
   return (
     <section className="creasite w-full flex flex-col text-black font-raleway pt-40">
       <TextAnimated />
-      <div className="relative mt-[2vh] xs:mb-[85vh] md:mb-[70vh] laptop:mb-[80vh]">
+      <div className="relative mt-[2vh] xs:mb-[55vh] md:mb-[70vh] laptop:mb-[80vh]">
         {sections.map((section, index) => (
           <div
             key={index}
             ref={containerRef}
-            className="flex items-center justify-center xs:relative xs:h-[80vh] md:h-[70vh] laptop:h-[60vh] lg:sticky lg:top-0 xl:h-[40vh] "
+            className="flex items-center justify-center xs:relative xs:h-[95vh] md:h-[75vh] laptop:h-[70vh] lg:sticky lg:top-0 xl:h-[40vh] "
           >
             <StackingCards key={index} index={index} section={section} />
           </div>
         ))}
       </div>
       <ParagraphAnimated value={words} />
-      <div className="bg-white">
-        <h3 className="font-jaapokki uppercase text-6xl text-center pt-20">
-          <span className="text-corail uppercase text-6xl font-jaapokki">
+      <div className="bg-white py-10 sm:py-14 md:py-16 lg:py-20">
+        <h3 className="font-jaapokki uppercase text-3xl md:text-4xl lg:text-6xl text-center px-4">
+          <span className="text-corail uppercase font-jaapokki xs:text-3xl sm:text-4xl md:text-4xl lg:text-6xl">
             Outils
           </span>{" "}
           et{" "}
-          <span className="text-green uppercase text-6xl font-jaapokki">
+          <span className="text-green uppercase font-jaapokki xs:text-3xl md:text-4xl lg:text-6xl">
             technologies
           </span>{" "}
           utilisés
         </h3>
-        <p className="font-raleway text-xl pt-5 text-center">
+        <p className="font-raleway text-base sm:text-lg md:text-xl pt-2 sm:pt-3 md:pt-4 lg:pt-5 text-center px-4 sm:px-8 md:px-16 lg:px-24 max-w-3xl mx-auto">
           On pioche le top de la tech pour créer des produits rapides, malins et
           agréables à utiliser.
         </p>
         <MarqueeText />
       </div>
+      <CallToActionWithQrCode
+        ctaTitle="Votre site web, votre meilleure vitrine."
+        ctaDescription={ctaDescriptionText}
+        ctaDescriptionQrCode={ctaDescriptionQrCodeText}
+        ctaLink={qrCodeLink}
+        ctaTitleLink="Accéder au formulaire"
+        ctaQrText="Flashez le QR code"
+      />
     </section>
   );
 }

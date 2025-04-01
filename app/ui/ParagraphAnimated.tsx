@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 type ParagraphAnimatedProps = {
   value: string;
@@ -9,26 +9,41 @@ type ParagraphAnimatedProps = {
 
 export default function ParagraphAnimated({ value }: ParagraphAnimatedProps) {
   const elementRef = useRef(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const { scrollYProgress } = useScroll({
     target: elementRef,
-    offset: ["start 0.8", "start start"],
+    offset: ["start 0.9", "center center"],
   });
 
-  const words = value.split("");
+  // ici useEffect permet de mettre à jour l'état avec la valeur actuelle du scroll
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.on("change", setScrollProgress);
+    return () => unsubscribe();
+  }, [scrollYProgress]);
+
+  const characters = value.split("");
 
   return (
     <motion.p
       ref={elementRef}
-      className="font-raleway text-white w-[80%] mx-auto text-center pt-0 pb-40"
-      style={{ opacity: scrollYProgress }}
+      className="font-raleway text-white w-[90%] sm:w-[85%] md:w-[80%] mx-auto text-center pt-0 pb-20 xs:pt-40 sm:pb-32 md:pb-40 lg:pb-48 lg:pt-10"
     >
-      {words.map((word, i) => {
-        const start = i / words.length;
-        const end = start + 1 / words.length;
-        const opacity = useTransform(scrollYProgress, [start, end], [0, 1]);
+      {characters.map((char, i) => {
+        // Calcul pour déterminer quand un caractère doit apparaître
+        const charThreshold = i / characters.length;
+        const isVisible = scrollProgress >= charThreshold;
+
         return (
-          <motion.span key={i} style={{ opacity }} className="text-9xl">
-            {word}
+          <motion.span
+            key={i}
+            className="text-3xl sm:text-4xl md:text-6xl laptop:text-7xl lg:text-9xl inline-block"
+            animate={{
+              opacity: isVisible ? 1 : 0,
+              y: isVisible ? 0 : 20,
+              transition: { duration: 0.3 },
+            }}
+          >
+            {char === " " ? "\u00A0" : char}
           </motion.span>
         );
       })}
