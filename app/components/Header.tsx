@@ -1,7 +1,6 @@
 "use client";
 
 import Lenis from "@studio-freight/lenis";
-import { ArrowUpFromDot, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -9,6 +8,7 @@ import logo from "../assets/images/logo-transparent-webcreatis-reunion.webp";
 import Button from "../ui/Button";
 
 import { motion } from "framer-motion";
+import Navigation from "./Navigation";
 
 export default function Header() {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -35,13 +35,6 @@ export default function Header() {
       lenis.current?.destroy();
     };
   }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element && lenis.current) {
-      lenis.current.scrollTo(element);
-    }
-  };
 
   const handleShowMenu = () => {
     if (navigationRef.current) {
@@ -111,170 +104,11 @@ export default function Header() {
               </div>
             </Button>
           </motion.div>
-          <nav
+          <Navigation
+            handleCloseMenu={handleCloseMenu}
+            isMenuVisible={isMenuVisible}
             ref={navigationRef}
-            className="w-full h-[150px] z-50 xs:h-screen tablet:h-[150px] absolute left-0 overflow-hidden -top-[1000px] bg-greenLight transition-transform"
-          >
-            <div
-              onClick={handleCloseMenu}
-              className="w-full h-[50px] flex justify-end mt-5 pr-7 xs:mr-5"
-            >
-              <X size={36} color="black" />
-            </div>
-            <ul className="flex w-1/2 m-auto justify-center items-center gap-5 xs:h-full xs:w-full xs:flex-col tablet:flex-row tablet:gap-5 tablet:h-auto tablet:w-1/2">
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Retourner en haut de page`}
-                  href="#top"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl gap-1"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("top");
-                    handleCloseMenu();
-                  }}
-                >
-                  Top
-                  <span className="flex -mt-[0.5rem]">
-                    <ArrowUpFromDot size={20} color="#18181B" />
-                  </span>
-                </Link>
-              </li>
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Aller sur la section projets de webcreatis`}
-                  href="#projects"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("projects");
-                    handleCloseMenu();
-                  }}
-                >
-                  works
-                </Link>
-              </li>
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Aller sur la section services de webcreatis`}
-                  href="#services"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("services");
-                    handleCloseMenu();
-                  }}
-                >
-                  services
-                </Link>
-              </li>
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Aller sur la section à propos de l'agence webcreatis`}
-                  href="#about"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("about");
-                    handleCloseMenu();
-                  }}
-                >
-                  team
-                </Link>
-              </li>
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Aller sur la section formations de webcreatis`}
-                  href="#formations"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("formations");
-                    handleCloseMenu();
-                  }}
-                >
-                  formations
-                </Link>
-              </li>
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Aller sur la section clients de webcreatis`}
-                  href="#customers"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("customers");
-                    handleCloseMenu();
-                  }}
-                >
-                  références
-                </Link>
-              </li>
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Aller sur la section témoignages client de webcreatis`}
-                  href="#testimonials"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("testimonials");
-                    handleCloseMenu();
-                  }}
-                >
-                  avis
-                </Link>
-              </li>
-              <li
-                data-link="link"
-                className={`buttonAction font-jaapokki uppercase text-black ${
-                  isMenuVisible ? "animate-fadeIn" : ""
-                } transition-all w-full h-[60px] flex justify-center items-center`}
-              >
-                <Link
-                  aria-label={`Aller sur la page contact de webcreatis`}
-                  href="https://webcreatis.fr/contact/"
-                  className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-                  onClick={handleCloseMenu}
-                >
-                  contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          />
         </div>
       </div>
     </header>
