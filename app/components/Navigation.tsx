@@ -53,6 +53,21 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
               Création site internet
             </Link>
           </li>
+          <li
+            data-link="link"
+            className={`buttonAction font-jaapokki uppercase text-black ${
+              isMenuVisible ? "animate-fadeIn" : ""
+            } transition-all w-full h-[60px] flex justify-center items-center`}
+          >
+            <Link
+              aria-label="Aller sur la page contact"
+              href="/contact"
+              className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
+              onClick={handleCloseMenu}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     );
