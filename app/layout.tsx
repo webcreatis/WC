@@ -5,6 +5,7 @@ import Script from "next/script";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
+import CanvasTrail from "./ui/Cursor";
 
 // Fonts
 const jaapokkiSans = localFont({
@@ -40,6 +41,7 @@ export default function RootLayout({
       <body
         className={`${jaapokkiSans.variable} ${raleway.variable} antialiased bg-background`}
       >
+        <CanvasTrail />
         <Header />
         {children}
         <Footer />

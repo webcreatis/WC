@@ -7,12 +7,10 @@ import MethodSection from "./components/MethodSection";
 import ServicesSection from "./components/ServicesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import WorksSection from "./components/WorkSection";
-import CanvasTrail from "./ui/Cursor";
 
 export default function Home() {
   return (
     <>
-      <CanvasTrail />
       <main>
         <HeroSection />
         <KapNumerikCTA />
