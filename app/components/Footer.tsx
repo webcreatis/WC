@@ -98,22 +98,22 @@ export default function Footer() {
             <div className="flex w-full place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-5">
               <div className="marqueeText relative overflow-hidden">
                 <div className="flex whitespace-nowrap animate-marqueeText">
-                  <span className="text-[3vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
+                  <span className="text-[3vw] x:text-[1.7vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[2vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
+                  <span className="text-[2vw] x:text-[1.7vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[2vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
+                  <span className="text-[2vw] x:text-[1.7vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[2vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
+                  <span className="text-[2vw] x:text-[1.7vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[2vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
+                  <span className="text-[2vw] x:text-[1.7vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
                     Get In Touch
                   </span>
-                  <span className="text-[2vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
+                  <span className="text-[2vw] x:text-[1.7vw] px-[2vw] uppercase text-green  xs:text-2xl ipadPro:text-[2.5vw]">
                     Get In Touch
                   </span>
                 </div>

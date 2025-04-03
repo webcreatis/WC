@@ -28,20 +28,20 @@ export default function StackingCards({ index, section }: StackingCardsProps) {
     <motion.div
       ref={container}
       key={index}
-      style={{
-        top: `calc(8vh + ${index * 90}px)`,
-      }}
+      // style={{
+      //   top: `calc(8vh + ${index * 90}px)`,
+      // }}
       className={`flex flex-col relative w-[95%] max-w-[1800px] mx-auto xs:mt-10 s:mt-16 md:h-[650px] md:flex-row laptop:h-[600px] justify-center overflow-hidden text-6xl font-bold rounded-3xl shadow-[0_2px_43px_rgba(43,0,33,0.1),0_-30px_100px_rgba(43,0,33,0.1)] ${
         section.bg
       } z-[${10 - index}]`}
     >
       {/* Texte */}
       <div className="w-full md:w-1/2 flex flex-col gap-5 px-6 py-8 xs:pt-1 md:pt-8 md:pr-8">
-        <h2 className="pt-10 xs:text-2xl xs:text-left md:text-3xl md:pt-5 xl:text-[50px] font-jaapokki text-black uppercase">
+        <h2 className="pt-10 xs:text-2xl xs:text-left md:text-3xl md:pt-5 laptop:text-4xl xl:text-[50px] font-jaapokki text-black uppercase">
           {section.title}
         </h2>
         <div className="w-full flex flex-col gap-5 justify-between">
-          <p className="text-black font-raleway xs:text-base laptop:text-lg xl:text-2xl font-normal">
+          <p className="text-black font-raleway xs:text-base md:text-lg laptop:text-lg xl:text-2xl font-normal">
             {section.description}
           </p>
           <p className="text-black font-raleway text-sm md:text-base font-medium">
