@@ -7,6 +7,7 @@ import MethodSection from "./components/MethodSection";
 import ServicesSection from "./components/ServicesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import WorksSection from "./components/WorkSection";
+import CustomCursor from "./ui/CustomCursor";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <ClientSection />
         <TestimonialsSection />
       </main>
+      <CustomCursor />
     </>
   );
 }
