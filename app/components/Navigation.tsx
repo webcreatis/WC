@@ -14,7 +14,8 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
     return (
       <nav
         ref={ref}
-        className="w-full h-[150px] z-50 xs:h-screen tablet:h-[150px] absolute left-0 overflow-hidden -top-[1000px] bg-greenLight transition-transform"
+        className={`w-full xs:h-screen sm:h-[150px] z-50 fixed top-0 left-0 bg-greenLight transition-transform duration-300 ease-in-out 
+        ${isMenuVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div
           onClick={handleCloseMenu}
@@ -22,52 +23,30 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
         >
           <X size={36} color="black" />
         </div>
-        <ul className="flex w-1/2 m-auto justify-center items-center gap-5 xs:h-full xs:w-full xs:flex-col tablet:flex-row tablet:gap-5 tablet:h-auto tablet:w-1/2">
-          <li
-            data-link="link"
-            className={`buttonAction font-jaapokki uppercase text-black ${
-              isMenuVisible ? "animate-fadeIn" : ""
-            } transition-all w-full h-[60px] flex justify-center items-center`}
-          >
-            <Link
-              aria-label="Aller sur la page d'accueil de webcreatis"
-              href="/"
-              className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-              onClick={handleCloseMenu}
+        <ul className="flex flex-col items-center justify-center h-full gap-6 md:flex-row md:h-auto md:w-3/4 md:m-auto">
+          {[
+            { href: "/", label: "Home" },
+            {
+              href: "/creation-site-internet",
+              label: "Création site internet",
+            },
+            { href: "/contact", label: "Contact" },
+          ].map((item, index) => (
+            <li
+              key={index}
+              className={`buttonAction font-jaapokki uppercase text-black transition-all 
+              w-full md:w-auto flex justify-center items-center`}
             >
-              Home
-            </Link>
-          </li>
-          <li
-            data-link="link"
-            className={`buttonAction font-jaapokki uppercase text-black ${
-              isMenuVisible ? "animate-fadeIn" : ""
-            } transition-all w-full h-[60px] flex justify-center items-center`}
-          >
-            <Link
-              aria-label="Aller sur la page création de site internet"
-              href="/creation-site-internet"
-              className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-              onClick={handleCloseMenu}
-            >
-              Création site internet
-            </Link>
-          </li>
-          <li
-            data-link="link"
-            className={`buttonAction font-jaapokki uppercase text-black ${
-              isMenuVisible ? "animate-fadeIn" : ""
-            } transition-all w-full h-[60px] flex justify-center items-center`}
-          >
-            <Link
-              aria-label="Aller sur la page contact"
-              href="/contact"
-              className="w-full h-full text-xl text-black flex justify-center items-center tablet:text-base laptop:text-xl"
-              onClick={handleCloseMenu}
-            >
-              Contact
-            </Link>
-          </li>
+              <Link
+                aria-label={`Aller sur la page ${item.label}`}
+                href={item.href}
+                className="w-full h-full text-xl text-black flex justify-center items-center md:text-base lg:text-xl px-6 py-3"
+                onClick={handleCloseMenu}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     );
