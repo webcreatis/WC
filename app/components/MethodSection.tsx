@@ -11,8 +11,8 @@ export default function MethodSection() {
     <section className="w-full flex flex-col">
       <TitleSection icon={iconMethod} title="Methods" color="text-black" />
       <div className="w-full flex pt-16 pb-36 justify-between xs:flex-col lg:flex-row">
-        <div className="w-[50%] flex flex-col items-start p-10 xs:w-full lg:w-[50%]">
-          <h2 className="text-4xl font-semibold font-jaapokki text-green pb-10 xs:text-xl tablet:text-2xl">
+        <div className="w-[50%] flex flex-col items-start p-10 xs:w-full md:mb-14 lg:w-[50%] lg:mb-0">
+          <h2 className="text-4xl font-semibold font-jaapokki text-green pb-10 xs:text-xl tablet:text-2xl lg:text-3xl">
             Notre processus de création de site internet : <br />
           </h2>
           <p className="font-raleway text-justify pb-10 xs:text-base tablet:text-base">
