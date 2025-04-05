@@ -14,22 +14,39 @@ export default function MethodSection() {
         <div className="w-[50%] flex flex-col items-start p-10 xs:w-full lg:w-[50%]">
           <h2 className="text-4xl font-semibold font-jaapokki text-green pb-10 xs:text-xl tablet:text-2xl">
             Notre processus de création de site internet : <br />
-            De l’idée à la réalisation
           </h2>
           <p className="font-raleway text-justify pb-10 xs:text-base tablet:text-base">
-            Notre approche ?<br /> Nous combinons une stratégie bien pensée avec
-            des outils modernes, à chaque étape du projet. Nous suivons un
-            processus clair et transparent pour garantir un travail de qualité,
-            parfaitement intégré à votre écosystème numérique.
+            Spécialisés dans les sites sur-mesure, on vous accompagne de la
+            première idée jusqu’à la mise en ligne.
+            <br />
+            Des sites pensés pour vos objectifs, conçus pour vos utilisateurs,
+            et 100 % adaptés au mobile.
           </p>
-          <Button
-            text="j'ai un projet"
-            bg="bg-green"
-            color="text-black"
-            onClick={() =>
-              (window.location.href = "mailto:contact.webcreatis@gmail.com")
-            }
-          />
+          <p className="font-raleway text-justify pb-10 xs:text-base tablet:text-base">
+            Notre approche ?<br /> <br />
+            On mixe une bonne dose de stratégie, des outils au top et surtout,
+            beaucoup de bon sens. <br />
+            À chaque étape, vous avez une URL privée pour suivre l’évolution du
+            site en temps réel — comme si vous étiez dans les coulisses. <br />
+            Et à chaque mise en ligne, on se cale une réunion ensemble pour
+            valider, ajuster et avancer dans la bonne direction.
+          </p>
+          <div className="flex gap-5 xs:flex-col md:flex-row">
+            <Button
+              text="Devis gratuit"
+              bg="bg-green"
+              color="text-black"
+              onClick={() =>
+                (window.location.href = "mailto:contact.webcreatis@gmail.com")
+              }
+            />
+            <Button
+              text="En savoir plus"
+              bg="bg-corail"
+              color="text-black"
+              onClick={() => (window.location.href = "/creation-site-internet")}
+            />
+          </div>
         </div>
         <div className="w-[50%] xs:w-full lg:w-[50%]">
           <HorizontalAccordion />
