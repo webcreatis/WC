@@ -1,5 +1,5 @@
-import { withNextVideo } from "next-video/process";
 import type { NextConfig } from "next";
+import { withNextVideo } from "next-video/process";
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
       {
         pathname: '/assets/images/**',
         search: '',
+      },
+      {
+        // Permet toutes les images dans /public/images/
+        // Ajuste le chemin selon ton projet
+        pathname: '/images/**',
       },
     ],
   },

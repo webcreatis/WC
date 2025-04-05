@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 import Button from "../ui/Button";
 
@@ -12,6 +13,7 @@ type StackingCardsProps = {
     description: string;
     service: string;
     src: string;
+    imgPlaceholder: string;
   };
 };
 
@@ -28,9 +30,6 @@ export default function StackingCards({ index, section }: StackingCardsProps) {
     <motion.div
       ref={container}
       key={index}
-      // style={{
-      //   top: `calc(8vh + ${index * 90}px)`,
-      // }}
       className={`flex flex-col relative w-[95%] max-w-[1800px] mx-auto xs:mt-10 s:mt-16 md:h-[650px] md:flex-row laptop:h-[600px] justify-center overflow-hidden text-6xl font-bold rounded-3xl shadow-[0_2px_43px_rgba(43,0,33,0.1),0_-30px_100px_rgba(43,0,33,0.1)] ${
         section.bg
       } z-[${10 - index}]`}
@@ -60,21 +59,34 @@ export default function StackingCards({ index, section }: StackingCardsProps) {
         </div>
       </div>
 
-      {/* Vidéo */}
+      {/* Média (Vidéo sur desktop, image sur mobile) */}
       <div className="relative w-full md:w-1/2 mt-4 md:mt-0 h-full">
         <motion.div style={{ opacity }}>
-          <video
-            autoPlay
-            muted
-            loop
-            className="w-full h-full object-cover md:absolute md:top-0 md:right-0 md:bottom-0 md:left-0 md:rounded-tr-3xl md:rounded-br-3xl"
-          >
-            <source src={section.src} type="video/mp4" />
+          <picture>
             <source
-              src={section.src.replace(".mp4", ".webm")}
-              type="video/webp"
+              srcSet={section.imgPlaceholder}
+              media="(max-width: 768px)"
             />
-          </video>
+            <video
+              autoPlay
+              muted
+              loop
+              className="w-full h-full object-cover md:absolute md:top-0 md:right-0 md:bottom-0 md:left-0 md:rounded-tr-3xl md:rounded-br-3xl hidden md:block"
+            >
+              <source src={section.src} type="video/mp4" />
+              <source
+                src={section.src.replace(".mp4", ".webm")}
+                type="video/webp"
+              />
+            </video>
+            <Image
+              src={section.imgPlaceholder}
+              alt="Placeholder"
+              width={10}
+              height={10}
+              className="w-full h-full object-cover md:hidden"
+            />
+          </picture>
         </motion.div>
       </div>
     </motion.div>

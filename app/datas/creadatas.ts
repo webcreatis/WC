@@ -5,6 +5,7 @@ type SectionProps = {
   description: string;
   service: string;
   src: string;
+  imgPlaceholder:string
 };
 
 
@@ -19,6 +20,7 @@ const sections: SectionProps[] = [
     service:
       "Développement custom - Single Page Applications - Responsive Implementation",
     src: "/videos/creasite-webcreatis.mp4",
+    imgPlaceholder: "/images/creasite.webp"
   },
   {
     title: "créaone",
@@ -31,6 +33,7 @@ const sections: SectionProps[] = [
     service:
       "Développement custom - Single Page Applications - Responsive Implementation",
     src: "/videos/creaone-webcreatis.webm",
+    imgPlaceholder: "/images/creaone-webcreatis.webp"
   },
   {
     title: "créashop",
@@ -41,6 +44,7 @@ const sections: SectionProps[] = [
     service:
       "Paiement en ligne - Ajoutez, modifiez, organisez vos produits - Authentification & comptes clients",
     src: "/videos/creashop-webcreatis.mp4",
+    imgPlaceholder: "/images/creashop.webp"
   },
   {
     title: "Animations Web",
@@ -51,6 +55,7 @@ const sections: SectionProps[] = [
     service:
       "Animations au défilement - Effets interactifs au survol - Animations de texte dynamiques",
     src: "/videos/services-animations.webm",
+    imgPlaceholder: "/images/animation-framer-motion.webp"
   },
   {
     title: "TECHNOLOGIES",
@@ -61,6 +66,7 @@ const sections: SectionProps[] = [
     service:
       "NextJS - React - Directus - Zod - Tailwind css - NextAuth.js - Flutter - Stripe - Redux toolkit",
     src: "/videos/react-animated.mp4",
+    imgPlaceholder: "/images/technos.webp"
   },
   {
     title: "CMS - DIRECTUS",
@@ -70,6 +76,7 @@ const sections: SectionProps[] = [
     Et avec un contrôle granulaire des autorisations, vos données sont en sécurité. Simple, flexible et sécurisé, c'est l'outil idéal pour gérer vos contenus !`,
     service: "Conception d'interface utilisateur",
     src: "/videos/directus.mp4",
+    imgPlaceholder: "/images/directus-cms.webp"
   },
 ];
 
