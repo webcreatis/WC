@@ -58,11 +58,16 @@ export default function StackingCards({ index, section }: StackingCardsProps) {
           />
         </div>
       </div>
-
-      {/* Média (Vidéo sur desktop, image sur mobile) */}
-      <div className="relative w-full md:w-1/2 mt-4 md:mt-0 h-full">
-        <motion.div style={{ opacity }}>
-          <picture>
+      <div className="relative w-full md:w-1/2 h-full">
+        <motion.div style={{ opacity }} className="h-full">
+          <Image
+            src={section.imgPlaceholder}
+            alt="Placeholder"
+            width={1400}
+            height={1300}
+            className="w-full h-full object-cover"
+          />
+          {/* <picture>
             <source
               srcSet={section.imgPlaceholder}
               media="(max-width: 768px)"
@@ -86,7 +91,7 @@ export default function StackingCards({ index, section }: StackingCardsProps) {
               height={10}
               className="w-full h-full object-cover md:hidden"
             />
-          </picture>
+          </picture> */}
         </motion.div>
       </div>
     </motion.div>
