@@ -22,7 +22,9 @@ html {
   transform: scale(1, 1.8);
 }
 .card {
-  box-shadow: 15px 15px 30px rgb(25, 25, 25), -5px -5px 10px rgb(60, 60, 60);
+  box-shadow:
+    15px 15px 30px rgb(25, 25, 25),
+    -5px -5px 10px rgb(60, 60, 60);
 }
 
 .hero-section,
@@ -30,7 +32,8 @@ html {
 .about,
 .formations,
 .marquee,
-.creasite {
+.creasite,
+.contact {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,

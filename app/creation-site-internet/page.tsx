@@ -22,7 +22,7 @@ C'est rapide, sans engagement, et ça nous permet de mieux comprendre votre proj
 
   return (
     <section className="creasite w-full flex flex-col text-black font-raleway pt-40">
-      <TextAnimated />
+      <TextAnimated title="créasite" />
       <div className="relative mt-[2vh] xs:mb-[2vh] md:mb-[5vh] laptop:mb-[7vh]">
         {sections.map((section, index) => (
           <div
