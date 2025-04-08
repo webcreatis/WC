@@ -41,7 +41,7 @@ export const TemplateEmail = ({
       <Body className="bg-corail font-sans">
         <Container className="mx-auto px-6 pt-5 pb-12">
           <Img
-            src="http://localhost:3000/images/logo.png"
+            src="https://www.webcreatis.re/images/logo.png"
             width={48}
             height={48}
             alt="Webcreatis"
