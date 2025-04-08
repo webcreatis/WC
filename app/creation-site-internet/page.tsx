@@ -4,6 +4,7 @@ import { useRef } from "react";
 import StackingCards from "../components/StackingCards";
 import sections from "../datas/creadatas";
 import CallToActionWithQrCode from "../ui/CallToActionWithQrCode";
+import CanvasTrail from "../ui/Cursor";
 import CustomCursor from "../ui/CustomCursor";
 import MarqueeText from "../ui/MarqueeText";
 import ParagraphAnimated from "../ui/ParagraphAnimated";
@@ -22,6 +23,7 @@ C'est rapide, sans engagement, et ça nous permet de mieux comprendre votre proj
 
   return (
     <section className="creasite w-full flex flex-col text-black font-raleway pt-40">
+      <CanvasTrail />
       <TextAnimated title="créasite" />
       <div className="relative mt-[2vh] xs:mb-[2vh] md:mb-[5vh] laptop:mb-[7vh]">
         {sections.map((section, index) => (

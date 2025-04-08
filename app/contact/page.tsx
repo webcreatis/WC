@@ -1,8 +1,11 @@
 "use client";
 import React, { useState } from "react";
+import { submitDevis } from "../actions/submitDevisActions";
 import CustomCursor from "../ui/CustomCursor";
 import TextAnimated from "../ui/TextAnimated";
-//import { submitDevis } from "./actions";
+
+// Définir un type pour les clés de formErrors
+type FormErrorKey = "name" | "email" | "service" | "message" | "global";
 
 export default function DevisPage() {
   const [formData, setFormData] = useState({
@@ -13,39 +16,122 @@ export default function DevisPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
 
-  const handleChange = (e) => {
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    service: "",
+    message: "",
+    global: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+
+    // Effacer l'erreur lorsque l'utilisateur modifie le champ
+    if (formErrors[name as keyof typeof formErrors]) {
+      setFormErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setError("");
+
+    setFormErrors({
+      name: "",
+      email: "",
+      service: "",
+      message: "",
+      global: "",
+    });
+
+    // Création d'un objet FormData
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("service", formData.service);
+    form.append("message", formData.message);
+
+    console.log("form-------->", form);
 
     try {
-      // await submitDevis(formData);
-      // setSubmitted(true);
-      // setFormData({
-      //   name: "",
-      //   email: "",
-      //   service: "création site vitrine",
-      //   message: "",
-      // });
+      const result = await submitDevis(form);
+
+      if (result.success) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          service: "création site vitrine",
+          message: "",
+        });
+      } else if (result.error) {
+        // Traiter les erreurs de validation Zod
+        try {
+          const parsedErrors = JSON.parse(result.error);
+
+          // Mettre à jour les erreurs de formulaire avec les erreurs Zod
+          const newErrors = {
+            name: "",
+            email: "",
+            service: "",
+            message: "",
+            global: "",
+          };
+
+          if (parsedErrors._errors) {
+            newErrors.global = parsedErrors._errors.join(", ");
+          }
+
+          // Extraire les erreurs par champ
+          const fields: FormErrorKey[] = [
+            "name",
+            "email",
+            "service",
+            "message",
+          ];
+          for (const field of fields) {
+            if (parsedErrors[field]?._errors) {
+              newErrors[field as keyof typeof newErrors] =
+                parsedErrors[field]._errors.join(", ");
+            }
+          }
+
+          setFormErrors(newErrors);
+        } catch (parseError) {
+          console.log("parseError ====>", parseError);
+
+          // Si le parsing échoue, utiliser l'erreur comme message global
+          setFormErrors((prev) => ({
+            ...prev,
+            global:
+              result.error ||
+              "Une erreur s'est produite lors de la validation du formulaire.",
+          }));
+        }
+      }
     } catch (err) {
-      console.log(
+      console.error(
         "Une erreur s'est produite lors de l'envoi du formulaire :",
         err
       );
-
-      setError(
-        "Une erreur s'est produite lors de l'envoi du formulaire. Veuillez réessayer."
-      );
+      setFormErrors((prev) => ({
+        ...prev,
+        global:
+          "Une erreur s'est produite lors de l'envoi du formulaire. Veuillez réessayer.",
+      }));
     } finally {
       setIsSubmitting(false);
     }
@@ -261,9 +347,14 @@ export default function DevisPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      className={`text-black mt-1 block w-full border ${
+                        formErrors.name ? "border-red-500" : "border-gray-300"
+                      } rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       placeholder="Votre nom"
                     />
+                    {formErrors.name && (
+                      <p className="mt-1 text-sm text-red">{formErrors.name}</p>
+                    )}
                   </div>
 
                   <div>
@@ -280,9 +371,16 @@ export default function DevisPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      className={`text-black mt-1 block w-full border ${
+                        formErrors.email ? "border-red-500" : "border-gray-300"
+                      } rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       placeholder="votre.email@example.com"
                     />
+                    {formErrors.email && (
+                      <p className="mt-1 text-sm text-red">
+                        {formErrors.email}
+                      </p>
+                    )}
                   </div>
 
                   <div>
@@ -297,7 +395,11 @@ export default function DevisPage() {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="text-black mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      className={`text-black mt-1 block w-full border ${
+                        formErrors.service
+                          ? "border-red-500"
+                          : "border-gray-300"
+                      } rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                     >
                       <option value="création site vitrine">
                         Création site vitrine
@@ -315,6 +417,11 @@ export default function DevisPage() {
                         Print (Kakemono - Plaquette Commerciale ect...)
                       </option>
                     </select>
+                    {formErrors.service && (
+                      <p className="mt-1 text-sm text-red">
+                        {formErrors.service}
+                      </p>
+                    )}
                   </div>
 
                   <div>
@@ -330,12 +437,21 @@ export default function DevisPage() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className="text-black mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      className={`text-black mt-1 block w-full border ${
+                        formErrors.message
+                          ? "border-red-500"
+                          : "border-gray-300"
+                      } rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       placeholder="Décrivez votre projet et vos besoins..."
                     />
+                    {formErrors.message && (
+                      <p className="mt-1 text-sm text-red">
+                        {formErrors.message}
+                      </p>
+                    )}
                   </div>
 
-                  {error && (
+                  {formErrors.global && (
                     <div className="rounded-md bg-red-50 p-4">
                       <div className="flex">
                         <div className="flex-shrink-0">
@@ -354,8 +470,8 @@ export default function DevisPage() {
                           </svg>
                         </div>
                         <div className="ml-3">
-                          <h3 className="text-sm font-medium text-red-800">
-                            {error}
+                          <h3 className="text-sm font-medium text-red">
+                            {formErrors.global}
                           </h3>
                         </div>
                       </div>
