@@ -79,12 +79,14 @@ export default function Header() {
             transition={{ duration: 0.3, delay: 0.5, ease: "linear" }}
           >
             <Button
-              text="Prendre RDV"
+              text="RDV en ligne"
               bg="bg-corail"
               color="text-black"
               onClick={() =>
-                (window.location.href =
-                  "https://calendly.com/contact-webcreatis/30min")
+                window.open(
+                  "https://calendly.com/contact-webcreatis/30min",
+                  "_blank"
+                )
               }
             ></Button>
           </motion.div>

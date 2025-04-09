@@ -58,7 +58,7 @@ export default function Button({
           className="flex justify-center items-center overflow-hidden gap-[.625em]"
         >
           <span
-            className={`font-raleway font-semibold xs:text-xs ipadPro:text-sm ${color}`}
+            className={`font-raleway font-semibold xs:text-sm ipadPro:text-sm lg:text-base ${color}`}
           >
             {text}
           </span>
