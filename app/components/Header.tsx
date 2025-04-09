@@ -63,7 +63,12 @@ export default function Header() {
           initial={{ y: 0, opacity: 0 }}
           transition={{ duration: 0.3, delay: 0.2, ease: "linear" }}
         >
-          <Link href={"/"} aria-label="bouton action" data-link="link">
+          <Link
+            href={"/"}
+            aria-label="bouton action"
+            data-link="link"
+            className="buttonAction"
+          >
             <Image
               src={logo}
               alt="Logo de l'agence digitale webcreatis"
@@ -73,7 +78,7 @@ export default function Header() {
         </motion.div>
 
         <div className="flex gap-5 xs:flex-col tablet:flex-row">
-          <motion.div
+          {/* <motion.div
             animate={{ y: 10, opacity: 1 }}
             initial={{ y: 0, opacity: 0 }}
             transition={{ duration: 0.3, delay: 0.5, ease: "linear" }}
@@ -89,11 +94,12 @@ export default function Header() {
                 )
               }
             ></Button>
-          </motion.div>
+          </motion.div> */}
           <motion.div
             animate={{ y: 10, opacity: 1 }}
             initial={{ y: 0, opacity: 0 }}
             transition={{ duration: 0.3, delay: 0.8, ease: "linear" }}
+            className="mr-5 xs:mr-1 laptop:mr-5"
           >
             <Button
               text="Menu"
