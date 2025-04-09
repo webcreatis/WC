@@ -5,16 +5,19 @@ type ContactCardProps = {
   title: string;
   link: string;
   textLink: string;
+  icon: JSX.Element;
 };
 
 export default function ContactCard({
   title,
   link,
   textLink,
+  icon,
 }: ContactCardProps) {
   return (
     <div className="relative flex w-[90%] md:w-[70%] m-auto h-auto justify-between border-2 border-white min-[320px]:flex-col laptop:flex-row laptop:w-full lg:w-[90%] xl:w-[70%]">
-      <p className="w-full font-semibold text-2xl p-5 xs:text-lg md:flex-1 md:text-3xl border-b-2 md:border-b-2 md:border-r-0 md:p-7 laptop:border-b-0 laptop:border-r-2 laptop:text-left xl:p-14 uppercase text-center cursor-pointer">
+      <p className="w-full flex items-center gap-2 font-semibold text-2xl p-5 xs:text-lg md:flex-1 md:text-3xl border-b-2 md:border-b-2 md:border-r-0 md:p-7 laptop:border-b-0 laptop:border-r-2 laptop:text-left xl:p-14 uppercase text-center cursor-pointer">
+        <span>{icon}</span>
         {title}
       </p>
 
