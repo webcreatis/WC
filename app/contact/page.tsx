@@ -13,7 +13,7 @@ export default function ContactPage() {
         <div className="w-full flex flex-col items-center gap-5">
           <ContactCard
             title="Camp de base, la Réunion"
-            link="https://www.google.com/maps/place//data=!4m2!3m1!1s0x218287c7a88b4291:0x1e0c6bfe54c406e6?sa=X&ved=1t:8290&ictx=111"
+            link="https://www.google.com/maps/place/La+Possession+97419,+La+R%C3%A9union/@-20.9529905,55.3172094,14.26z/data=!4m6!3m5!1s0x2182864c786a183b:0x8853f4353455bbfc!8m2!3d-20.9313685!4d55.3337397!16zL20vMGRocjV0?hl=fr&entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D"
             textLink="view on maps"
           />
           <ContactCard
