@@ -38,8 +38,8 @@ export default function ContactPage() {
           />
           <ContactCard
             title="planifier une visio"
-            link="https://www.instagram.com/webcreatis/"
-            textLink="calendly"
+            link="https://calendly.com/contact-webcreatis/30min"
+            textLink="calendrier"
           />
         </div>
       </div>
