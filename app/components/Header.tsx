@@ -83,7 +83,8 @@ export default function Header() {
               bg="bg-corail"
               color="text-black"
               onClick={() =>
-                (window.location.href = "mailto:contact.webcreatis@gmail.com")
+                (window.location.href =
+                  "https://calendly.com/contact-webcreatis/30min")
               }
             ></Button>
           </motion.div>
