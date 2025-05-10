@@ -46,13 +46,10 @@ export default function HeroSection() {
       </h2>
       <div className="hero-subtitle w-3/4 caption-timeline text-white pt-10 xs:p-7 xs:w-full tablet:w-3/4 lg:w-[65%] animate-fadeIn transition-all duration-1000 ease-in-out">
         <h1 className="xs:text-sm xs:text-left tablet:text-sm ipadPro:text-lg laptop:text-center">
-          {`Nous sommes deux passionnés du digital basés à La Réunion.
-          On vous aide à créer un site internet qui vous ressemble, à développer
-          votre présence sur les réseaux sociaux et à booster vos projets en
-          ligne.
-          Besoin d'un site, d'une formation ou d'un coup de main pour vos
-          visuels ?
-          On est là pour vous accompagner, avec simplicité et créativité !`}
+          {`Nous sommes deux passionnés du web & du digital basés à La Réunion.
+          Nous vous accompagnons dans la création de votre site internet, de votre identité visuelle et dans le développement de vos projets en ligne.
+          Nous proposons du mentoring pour les développeurs web en formation, des audits de sites pour vous aider à améliorer l’existant, et des accompagnements canva pour gagner en autonomie et créer vos design.
+          Nous sommes là pour vous guider, avec simplicité, écoute et créativité !`}
         </h1>
       </div>
       <MarqueeHeader />

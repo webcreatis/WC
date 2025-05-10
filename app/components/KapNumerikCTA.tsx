@@ -70,7 +70,7 @@ export default function KapNumerikCTA() {
             }
           />
           <Button
-            text="Region Réunion"
+            text="En savoir +"
             bg="bg-darkWhite"
             color="text-black"
             onClick={() =>

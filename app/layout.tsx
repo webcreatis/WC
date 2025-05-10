@@ -22,7 +22,7 @@ const raleway = Raleway({
 // Metadata
 export const metadata: Metadata = {
   title:
-    "Webcreatis,Agence Digitale - La Réunion: Création site internet,Marketing Digital,Développement",
+    "Webcreatis,Agence Digitale - La Réunion: Création site internet, Développement web, web design",
   description:
     "Webcreatis, Agence digitale basée à La Réunion : Création site internet, marketing digital, développement, stratégies digitales, gestion des réseaux sociaux, webdesign.",
   other: {

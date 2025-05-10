@@ -124,49 +124,40 @@ export default function ServicesSection() {
         <ul className="w-3/4 m-auto pt-16 tablet:w-[85%]">
           <ServiceBloc
             title="website"
-            skills={["design", "développement", "seo"]}
+            skills={["Maquettage", "développement web", "seo"]}
             imagePath={websitePics.src}
           />
           <ServiceBloc
-            title="webdesign"
-            skills={["maquettage", "charte graphique", "branding board"]}
+            title="Design"
+            skills={["identité graphique", "logo", "branding board"]}
             imagePath={brandingBoardPics.src}
           />
           <ServiceBloc
-            title="design & print"
-            skills={["logo", "business card", "kakemono", "flyer"]}
+            title="print"
+            skills={["business card", "kakemono", "Plaquette commerciale"]}
             imagePath={kakemonoPics.src}
           />
           <ServiceBloc
-            title="social network"
-            skills={["managment", "design", "reels", "web editor"]}
+            title="Mentoring"
+            skills={["Canva", "Apprenant dev web"]}
             imagePath={socialNetworkPics.src}
           />
           <ServiceBloc
-            title="formation"
-            skills={["canva"]}
+            title="Audit"
+            skills={["Seo", "Performances", "sécurité", "UX/UI"]}
             imagePath={canvaPics.src}
           />
           <ServiceBloc
             title="presta"
             skills={[
               "development",
-              "maquettage",
-              "canva",
+              "formation canva",
               "Jury CDA - DWWM - Cléa Numérique - CIF",
             ]}
             imagePath={prestaPics.src}
           />
         </ul>
       </div>
-      {/* <div
-        ref={cursorRef}
-        className="cursor flex justify-center items-center w-[30px] h-[30px] rounded-full bg-black border-2 border-solid border-corail fixed pointer-events-none bg-contain bg-center z-[9999] transition-transform duration-500 ease-in-out"
-      >
-        <p className="arrow-cursor">
-          <MoveRight color="#e4e6ef" size={10} />
-        </p>
-      </div> */}
     </section>
   );
 }
