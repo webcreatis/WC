@@ -1,4 +1,5 @@
 import { TrafficCone } from "lucide-react";
+import runMysteryPics from "../assets/images/run-mystery-reunion.webp";
 import vivierPics from "../assets/images/site-dr-julien-vivier.webp";
 import lavalPics from "../assets/images/site-dr-laval.webp";
 import envergurePics from "../assets/images/site-envergure.webp";
@@ -17,9 +18,20 @@ export default function WorksSection() {
       <TitleSection icon={iconWorks} title="Works" />
       <ul className="w-full pt-16 xs:pt-2 tablet:pt-16">
         <CardWork
+          title="Run Mystery"
+          desc="Murder Party à la Réunion"
+          number="01"
+          titleMarquee="RUN MYSTERY"
+          link="https://runmystery.com/"
+          skillOne="Refonte"
+          skillTwo="Wordpress"
+          skillThree="Elementor"
+          pics={runMysteryPics}
+        />
+        <CardWork
           title="Docteur Julien Vivier"
           desc="Medicine & Aesthetics"
-          number="01"
+          number="02"
           titleMarquee="DR JULIEN VIVIER"
           link="https://drjulienvivier.fr/"
           skillOne="Wordpress"
@@ -29,7 +41,7 @@ export default function WorksSection() {
         <CardWork
           title="Sea Intense"
           desc="Diving & Cetaceans"
-          number="02"
+          number="03"
           titleMarquee="SEA INTENSE"
           link="https://www.seaintense.re/"
           skillOne="Astro JS"
@@ -42,7 +54,7 @@ export default function WorksSection() {
         <CardWork
           title="Envergure"
           desc="Training & Environment"
-          number="03"
+          number="04"
           titleMarquee="ENVERGURE"
           link="https://www.envergure.re/"
           skillOne="Astro JS"
@@ -55,7 +67,7 @@ export default function WorksSection() {
         <CardWork
           title="VILLA SURYA"
           desc="Massage & Hosting"
-          number="04"
+          number="05"
           titleMarquee="VILLA SURYA"
           link="https://sofiapiccirilli.com/"
           skillOne="Next JS"
@@ -67,7 +79,7 @@ export default function WorksSection() {
         <CardWork
           title="Docteur Valérie Laval"
           desc="Medicine & Aesthetics"
-          number="05"
+          number="06"
           titleMarquee="DR VALERIE LAVAL"
           link="https://lyon-esthetique-dr-laval.com/"
           skillOne="Wordpress"

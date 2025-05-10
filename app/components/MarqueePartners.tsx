@@ -7,6 +7,7 @@ import logoArianeFormationPics from "../assets/images/logo-ariane-formation.webp
 import logoDrJulienVivierPics from "../assets/images/logo-dr-julien-vivier.webp";
 import logoExpertNetPics from "../assets/images/logo-expert-net-reunion.webp";
 import logoReunionPortagePics from "../assets/images/logo-reunion-portage.webp";
+import logoRunMysteryPics from "../assets/images/Logo-Run-Mystery.webp";
 import logoSeaIntensePics from "../assets/images/logo-sea-intense-reunion.webp";
 import logoSimplonPics from "../assets/images/logo-simplon-reunion.webp";
 import logoValerieLavalPics from "../assets/images/Logo-valerie-laval.webp";
@@ -86,6 +87,13 @@ const partners = [
   },
   {
     id: 10,
+    link: "https://runmystery.com/",
+    img: logoRunMysteryPics.src,
+    enterprise: "Run Mystery",
+    bg: "bg-black",
+  },
+  {
+    id: 11,
     link: "https://www.electrile.re/",
     img: logoElectrilePics.src,
     enterprise: "Electr'ile",
