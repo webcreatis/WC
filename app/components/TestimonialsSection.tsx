@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoDrValerieLaval from "../assets/images/DR-LAVAL-VALERIE.webp";
 import logoEnvergure from "../assets/images/ENVERGURE.webp";
+import logoRunMystery from "../assets/images/logo-run-mystery-reunion.webp";
 import logoSeaIntense from "../assets/images/logo-sea-intense-reunion.webp";
 import stephaneMalhoPics from "../assets/images/stephane-malho.webp";
 import videvPics from "../assets/images/videv.webp";
@@ -22,6 +23,14 @@ import TitleSection from "./TitleSection";
 export default function TestimonialsSection() {
   const iconTestimonial = <Pen size={36} color="#7BE0AD" />;
   const testimonialArray = [
+    {
+      date: "3 Mai 2025",
+      texte: `J'ai fait appel à Patrick pour la mise à jour et l'amélioration de mon site web Wordpress et il a été de très bons conseils. 
+      Je suis très satisfaite de sa disponibilité, de son professionnalisme, ce qui est rare à La Réunion. Merci beaucoup`,
+      societe: "RUN MYSTERY - Charlotte.C",
+      avatar: logoRunMystery,
+      link: "https://runmystery.com/",
+    },
     {
       date: "5 novembre 2024",
       texte: `Un grand merci à Webcreatis pour leur excellent travail dans la création de notre portail web ainsi que pour la maintenance et mise à jour de notre site web. 
