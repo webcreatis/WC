@@ -5,7 +5,6 @@ import Script from "next/script";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
-//import CanvasTrail from "./ui/Cursor";
 
 // Fonts
 const jaapokkiSans = localFont({
@@ -22,9 +21,9 @@ const raleway = Raleway({
 // Metadata
 export const metadata: Metadata = {
   title:
-    "Webcreatis,Agence Digitale - La Réunion: Création site internet, Développement web, web design",
+    "Création Site Internet à La Réunion | Agence Web & Mentoring | Webcreatis",
   description:
-    "Webcreatis, Agence digitale basée à La Réunion : Création site internet, marketing digital, développement, stratégies digitales, gestion des réseaux sociaux, webdesign.",
+    "Webcreatis, agence web à La Réunion, vous accompagne dans la création de sites, mentoring, formations Canva et démarches Kap Numérik. Contactez-nous !",
   other: {
     "google-site-verification": "VfeRAKrEv3DMzCqWxIUaizKN_jvPxMS43bXa5Cclz-Q", // Balise meta pour Google
   },

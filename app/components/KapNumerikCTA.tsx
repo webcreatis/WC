@@ -3,83 +3,138 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import kapNumerikPics from "../assets/images/KAP-NUMERIK-2024-webcreatis.webp";
-import logoRegionReunion from "../assets/images/region-reunion-logo.webp";
 import Button from "../ui/Button";
 
+const faqData = [
+  {
+    question: "Quel est le montant maximal de l’aide Kap Numérik ?",
+    answer:
+      "La subvention Kap Numérik peut atteindre jusqu’à 3 200 € par entreprise pour financer vos projets numériques.",
+  },
+  {
+    question: "Qui peut bénéficier du Kap Numérik ?",
+    answer:
+      "Les TPE, PME et entrepreneurs basés à La Réunion, en création ou déjà établis, peuvent prétendre à cette aide.",
+  },
+  {
+    question: "Quels types de projets sont éligibles ?",
+    answer:
+      "La création ou refonte de sites vitrines ou e-commerce, le webdesign, la création de logos et visuels professionnels.",
+  },
+  {
+    question: "Combien de temps dure la procédure de demande ?",
+    answer:
+      "Avec un accompagnement comme celui de Webcreatis, la procédure est simplifiée et les délais réduits, mais cela dépend des services régionaux.",
+  },
+];
+
 export default function KapNumerikCTA() {
-  // Année en cours
   const currentYear = new Date().getFullYear();
 
   return (
     <section
       id="kap"
-      className="w-full flex justify-center items-center relative xs:flex-col-reverse xs:p-2 laptop:flex-row laptop:p-16 laptop:gap-10"
+      className="max-w-7xl mx-auto px-6 py-16 sm:py-24 space-y-20"
     >
-      <div className="flex w-full justify-center xs:w-full laptop:hidden">
-        <Image
-          src={logoRegionReunion}
-          alt="Logo de la région Réunion"
-          className="w-[200px] h-[200px] xs:w-[60%] xs:h-auto tablet:w-[45%]"
-        />
-      </div>
-      <div className="xs:w-[80%] xs:mt-12 tablet:w-[50%] laptop:w-[75%] l:w-[40%] h-auto shadow-[0_10px_20px_rgba(0,0,0,0.15),_0_6px_6px_rgba(0,0,0,0.1)] rounded-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+        {/* Image colonne gauche */}
         <motion.div
-          transition={{ duration: 0.3 }}
-          initial={{ boxShadow: "0px 0px #000", height: "0px" }}
-          whileInView={{ boxShadow: "10px 10px #000", height: "100%" }}
+          className="rounded-xl overflow-hidden shadow-md"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
           <Image
             src={kapNumerikPics}
-            alt="Publicité pour le kap Numerik à la réunion"
-            className="w-[100%] h-[100%] rounded-xl"
+            alt="Kap Numérik à La Réunion"
+            width={600}
+            height={400}
+            className="w-full h-auto object-cover rounded-xl"
+            priority
           />
         </motion.div>
+
+        {/* Description colonne droite */}
+        <article className="max-w-xl">
+          <h2 className="font-jaapokki uppercase text-3xl sm:text-4xl text-gray-900 mb-3">
+            Kap Numérik {currentYear}
+          </h2>
+          <h3 className="font-raleway text-lg text-gray-700 mb-6">
+            Une aide régionale pour booster la transition numérique des
+            entreprises réunionnaises
+          </h3>
+
+          <p className="font-raleway text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
+            Le <strong>Kap Numérik</strong>, anciennement{" "}
+            <em>Chèque Numérique Région Réunion</em>, est une subvention pouvant
+            atteindre <strong>3 200 €</strong> pour accompagner la{" "}
+            <strong>transition digitale</strong> des entreprises à La Réunion.
+          </p>
+
+          <ul className="list-disc list-inside font-raleway text-base sm:text-lg text-gray-700 mb-6 space-y-2">
+            <li>Création ou refonte de site vitrine / e-commerce</li>
+            <li>Webdesign, création de logo, visuels professionnels</li>
+          </ul>
+
+          <p className="font-raleway text-base sm:text-lg text-gray-700 mb-8 leading-relaxed">
+            <strong>Webcreatis</strong> vous guide dans les démarches et dépose
+            votre dossier auprès de la Région.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button
+              text="J'ai un projet"
+              bg="bg-green"
+              color="text-black"
+              ariaLabel="Contactez Webcreatis pour votre projet Kap Numérik"
+              onClick={() =>
+                (window.location.href = "mailto:contact.webcreatis@gmail.com")
+              }
+            />
+            <Button
+              text="En savoir +"
+              bg="bg-gray-100"
+              color="text-gray-900"
+              ariaLabel="Voir la page Kap Numérik sur le site de la Région Réunion"
+              onClick={() =>
+                window.open(
+                  "https://www.regionreunion.com/aides-services/article/le-kap-numerik-version-2023-programme-europeen-feder-2021-2027",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            />
+          </div>
+        </article>
       </div>
-      <div className="flex flex-col flex-grow p-16 xs:p-2">
-        <h2 className="font-jaapokki uppercase text-3xl pb-5 xs:pt-12 xs:Text-2xl mobile:text-3xl">
-          Kap Numérik {currentYear}
-        </h2>
-        <p className="font-raleway">
-          Le Kap Numérik, anciennement le Chèque Numérique Région Réunion, est
-          une aide proposée par la Région Réunion pour accompagner les
-          entreprises dans leur transition numérique.
-          <br />
-          Cette subvention, pouvant aller jusqu’à <b>3 200 €</b>, permet de
-          financer :
-        </p>
-        <ul className="flex flex-col font-raleway">
-          <li className="before:content-['.'] before:text-green before:text-4xl before:pr-2">
-            La création ou la refonte de sites vitrines ou e-commerce.
-          </li>
-          <li className="before:content-['.'] before:text-green before:text-4xl before:pr-2">
-            Le webdesign et la création de visuels comme des logos.
-          </li>
-        </ul>
-        <p className="pt-5 pb-10 font-raleway">
-          Que votre entreprise soit en création ou déjà établie, Webcreatis vous
-          accompagne dans toutes les démarches et prend en charge le dépôt de
-          votre dossier auprès de la Région Réunion.
-        </p>
-        <div className="flex justify-start items-center gap-5 xs:flex-col xs:w-full tablet:flex-row tablet:justify-center">
-          <Button
-            text="J'ai un projet"
-            bg="bg-green"
-            color="text-black"
-            onClick={() =>
-              (window.location.href = "mailto:contact.webcreatis@gmail.com")
-            }
-          />
-          <Button
-            text="En savoir +"
-            bg="bg-darkWhite"
-            color="text-black"
-            onClick={() =>
-              (window.location.href =
-                "https://www.regionreunion.com/aides-services/article/le-kap-numerik-version-2023-programme-europeen-feder-2021-2027")
-            }
-          />
+
+      {/* FAQ pleine largeur */}
+      <motion.section
+        aria-labelledby="faq-title"
+        className="border-t border-gray-200 pt-12"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <h3
+          id="faq-title"
+          className="text-2xl font-semibold text-gray-900 mb-8 text-center"
+        >
+          FAQ – Questions fréquentes
+        </h3>
+        <div className="max-w-4xl mx-auto">
+          <dl className="space-y-6">
+            {faqData.map(({ question, answer }, index) => (
+              <div key={index}>
+                <dt className="font-medium text-gray-800">{question}</dt>
+                <dd className="text-gray-600">{answer}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
-      </div>
+      </motion.section>
     </section>
   );
 }

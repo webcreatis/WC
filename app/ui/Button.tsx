@@ -8,6 +8,7 @@ type ButtonProps = {
   color: string;
   children?: JSX.Element;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  ariaLabel?: string;
 };
 
 export default function Button({
@@ -16,11 +17,10 @@ export default function Button({
   color,
   children,
   onClick,
+  ariaLabel,
 }: ButtonProps) {
-  // refs
   const childrenRef = useRef<HTMLDivElement | null>(null);
 
-  // Effet pour attacher les événements au chargement
   useEffect(() => {
     const currentChildrenRef = childrenRef.current;
     const dotsContainer = currentChildrenRef?.querySelector(".dots");
@@ -38,33 +38,26 @@ export default function Button({
     currentChildrenRef?.addEventListener("mouseenter", handleMouseEnter);
     currentChildrenRef?.addEventListener("mouseout", handleMouseOut);
 
-    // Nettoyage lors du démontage du composant
     return () => {
       currentChildrenRef?.removeEventListener("mouseenter", handleMouseEnter);
       currentChildrenRef?.removeEventListener("mouseout", handleMouseOut);
     };
   }, []);
 
-  // Affichage
   return (
-    <>
-      <button
-        onClick={onClick}
-        data-link="link"
-        className={`buttonAction relative flex justify-center xs:w-[135px] xs:h-[2.5em] xs:p-2 ipadPro:w-[130px] laptop:xs:h-[3.5em] items-center uppercase cursor-pointer p-[1.7em] rounded-md ${bg}`}
+    <button
+      onClick={onClick}
+      data-link="link"
+      aria-label={ariaLabel}
+      className={`buttonAction inline-flex items-center justify-center px-6 py-3 rounded-md transition-all duration-200 whitespace-nowrap text-center text-base font-semibold uppercase ${bg} hover:opacity-90`}
+    >
+      <div
+        ref={childrenRef}
+        className="flex items-center gap-2 overflow-hidden"
       >
-        <div
-          ref={childrenRef}
-          className="flex justify-center items-center overflow-hidden gap-[.625em]"
-        >
-          <span
-            className={`font-raleway font-semibold xs:text-sm ipadPro:text-sm lg:text-base ${color}`}
-          >
-            {text}
-          </span>
-          {children}
-        </div>
-      </button>
-    </>
+        <span className={`font-raleway font-semibold ${color}`}>{text}</span>
+        {children}
+      </div>
+    </button>
   );
 }

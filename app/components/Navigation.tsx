@@ -26,6 +26,7 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
         <ul className="flex flex-col items-center justify-center h-full gap-6 md:flex-row md:h-auto md:w-3/4 md:m-auto">
           {[
             { href: "/", label: "Home" },
+            { href: "#mentoring", label: "Mentoring" },
             {
               href: "/creation-site-internet",
               label: "Création site internet",
