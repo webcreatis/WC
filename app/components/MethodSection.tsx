@@ -37,7 +37,8 @@ export default function MethodSection() {
               bg="bg-green"
               color="text-black"
               onClick={() =>
-                (window.location.href = "mailto:contact.webcreatis@gmail.com")
+                (window.location.href =
+                  "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAooRbNxUQkJUMzlZUEpZMjJaV0xCSFg0NEZNWDVTMy4u&origin=QRCode&route=shorturl")
               }
             />
             <Button

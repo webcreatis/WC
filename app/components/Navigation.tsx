@@ -26,7 +26,7 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
         <ul className="flex flex-col items-center justify-center h-full gap-6 md:flex-row md:h-auto md:w-3/4 md:m-auto">
           {[
             { href: "/", label: "Home" },
-            { href: "#mentoring", label: "Mentoring" },
+            { href: "/#mentoring", label: "Mentoring" },
             {
               href: "/creation-site-internet",
               label: "Création site internet",
@@ -35,16 +35,15 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
           ].map((item, index) => (
             <li
               key={index}
-              className={`buttonAction font-jaapokki uppercase text-black transition-all 
-              w-full md:w-auto flex justify-center items-center`}
+              className="buttonAction font-jaapokki uppercase text-black transition-all w-full md:w-auto flex justify-center items-center"
             >
               <Link
                 aria-label={`Aller sur la page ${item.label}`}
                 href={item.href}
                 className="w-full h-full text-xl text-black flex justify-center items-center md:text-base lg:text-xl px-6 py-3"
-                onClick={handleCloseMenu}
+                scroll={true}
               >
-                {item.label}
+                <span onClick={handleCloseMenu}>{item.label}</span>
               </Link>
             </li>
           ))}
