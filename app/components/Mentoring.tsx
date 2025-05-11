@@ -229,7 +229,7 @@ export default function Mentoring() {
             <li>Structurer ton apprentissage (HTML, CSS, JS, React…)</li>
             <li>Avoir des retours sur tes projets</li>
             <li>Développer une vraie logique de développeur</li>
-            <li>Préparer les entretiens et l'examen</li>
+            <li>Préparer les entretiens et l&rsquo;examen</li>
             <li>Renforcer les bases techniques</li>
           </ul>
           <a
