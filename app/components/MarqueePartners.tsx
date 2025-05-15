@@ -2,6 +2,7 @@ import { Marquee } from "@/components/magicui/marquee";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import logoAfpar from "../assets/images/afpar-logo.webp";
 import logo6w2hPics from "../assets/images/logo-6w2h.webp";
 import logoArianeFormationPics from "../assets/images/logo-ariane-formation.webp";
 import logoDrJulienVivierPics from "../assets/images/logo-dr-julien-vivier.webp";
@@ -12,6 +13,7 @@ import logoSeaIntensePics from "../assets/images/logo-sea-intense-reunion.webp";
 import logoSimplonPics from "../assets/images/logo-simplon-reunion.webp";
 import logoValerieLavalPics from "../assets/images/Logo-valerie-laval.webp";
 import logoVillaSuryaPics from "../assets/images/logo-villa-surya-sophie-piccirilli-reunion.webp";
+import logoYogaDuRire from "../assets/images/Logo-yoga-du-rire.webp";
 import logoElectrilePics from "../assets/images/LOGO_ELECTRILE.webp";
 
 type propsCardType = {
@@ -99,6 +101,20 @@ const partners = [
     enterprise: "Electr'ile",
     bg: "",
   },
+  {
+    id: 12,
+    link: "https://afpar.re/",
+    img: logoAfpar.src,
+    enterprise: "Afpar",
+    bg: "",
+  },
+  {
+    id: 13,
+    link: "https://www.ahnolia.com/",
+    img: logoYogaDuRire.src,
+    enterprise: "Ahnolia",
+    bg: "",
+  },
 ];
 
 const PartnersCard = ({ img, link, enterprise, bg }: propsCardType) => {
@@ -116,9 +132,8 @@ const PartnersCard = ({ img, link, enterprise, bg }: propsCardType) => {
           <Image
             src={img}
             alt={`logo`}
-            className="w-full h-auto p-5 object-cover tablet:bottom-3 tablet:right-4 tablet:flex"
-            width={100}
-            height={100}
+            className="w-full h-auto p-5 object-contain tablet:bottom-3 tablet:right-4 tablet:flex"
+            fill
           />
         </Link>
       </CardContent>
