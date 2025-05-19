@@ -14,16 +14,16 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
     return (
       <nav
         ref={ref}
-        className={`w-full xs:h-screen sm:h-[150px] z-50 fixed top-0 left-0 bg-greenLight transition-transform duration-300 ease-in-out 
+        className={`w-full xs:h-screen z-auto fixed top-0 left-0 bg-greenLight transition-transform duration-300 ease-in-out 
         ${isMenuVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div
           onClick={handleCloseMenu}
-          className="w-full h-[50px] flex justify-end mt-5 pr-7 xs:mr-5"
+          className="absolute right-1 top-5 w-full h-[50px] flex justify-end"
         >
           <X size={36} color="black" />
         </div>
-        <ul className="flex flex-col items-center justify-center h-full gap-6 md:flex-row md:h-auto md:w-3/4 md:m-auto">
+        <ul className="flex flex-col justify-center items-left h-full gap-2 md:h-full">
           {[
             { href: "/", label: "Home" },
             { href: "/#mentoring", label: "Mentoring" },
@@ -36,15 +36,17 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
           ].map((item, index) => (
             <li
               key={index}
-              className="buttonAction font-jaapokki uppercase text-black transition-all w-full md:w-auto flex justify-center items-center"
+              className="buttonAction font-jaapokki uppercase text-black transition-all w-full flex justify-center items-center"
             >
               <Link
                 aria-label={`Aller sur la page ${item.label}`}
                 href={item.href}
-                className="w-full h-full text-xl text-black flex justify-center items-center md:text-base lg:text-xl px-6 py-3"
+                className="w-full h-full text-xl text-black flex justify-start items-center lg:text-xl px-6 py-3"
                 scroll={true}
               >
-                <span onClick={handleCloseMenu}>{item.label}</span>
+                <span onClick={handleCloseMenu} className="text-xl md:text-3xl">
+                  {item.label}
+                </span>
               </Link>
             </li>
           ))}
