@@ -27,6 +27,7 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
           {[
             { href: "/", label: "Home" },
             { href: "/#mentoring", label: "Mentoring" },
+            { href: "/kap-numerik", label: "Kap Numerik" },
             {
               href: "/creation-site-internet",
               label: "Création site internet",

@@ -28,6 +28,20 @@ const faqData = [
   },
 ];
 
+// Animation Motion des textes
+const textVariant = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (delay: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay,
+      duration: 0.8,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
+  }),
+};
+
 export default function KapNumerikCTA() {
   const currentYear = new Date().getFullYear();
 
@@ -36,7 +50,7 @@ export default function KapNumerikCTA() {
       id="kap"
       className="max-w-7xl mx-auto px-6 py-16 sm:py-24 space-y-20"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+      <div className="grid grid-cols-1 laptop:grid-cols-2 gap-14 items-start">
         {/* Image colonne gauche */}
         <motion.div
           className="rounded-xl overflow-hidden shadow-md"
@@ -50,39 +64,85 @@ export default function KapNumerikCTA() {
             alt="Kap Numérik à La Réunion"
             width={600}
             height={400}
-            className="w-full h-auto object-cover rounded-xl"
+            className="w-full h-auto object-cover rounded-xl md:w-2/3 md:m-auto lg:w-full"
             priority
           />
         </motion.div>
 
         {/* Description colonne droite */}
         <article className="max-w-xl">
-          <h2 className="font-jaapokki uppercase text-3xl sm:text-4xl text-gray-900 mb-3">
+          <motion.h1
+            className="font-jaapokki uppercase text-2xl md:text-3xl text-white mb-3 lg:text-4xl hdDesktop:text-5xl"
+            variants={textVariant}
+            custom={0}
+            initial="hidden"
+            animate="visible"
+          >
             Kap Numérik {currentYear}
-          </h2>
-          <h3 className="font-raleway text-lg text-gray-700 mb-6">
+          </motion.h1>
+          <motion.h2
+            className="font-raleway text-lg text-white mb-6 md:text-lg hdDesktop:text-2xl"
+            variants={textVariant}
+            custom={0.4}
+            initial="hidden"
+            animate="visible"
+          >
             Une aide régionale pour booster la transition numérique des
             entreprises réunionnaises
-          </h3>
+          </motion.h2>
 
-          <p className="font-raleway text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
+          <motion.p
+            className="font-raleway text-base sm:text-lg text-white leading-relaxed mb-6 hdDesktop:text-2xl"
+            variants={textVariant}
+            custom={0.5}
+            initial="hidden"
+            animate="visible"
+          >
             Le <strong>Kap Numérik</strong>, anciennement{" "}
             <em>Chèque Numérique Région Réunion</em>, est une subvention pouvant
             atteindre <strong>3 200 €</strong> pour accompagner la{" "}
             <strong>transition digitale</strong> des entreprises à La Réunion.
-          </p>
+          </motion.p>
 
-          <ul className="list-disc list-inside font-raleway text-base sm:text-lg text-gray-700 mb-6 space-y-2">
-            <li>Création ou refonte de site vitrine / e-commerce</li>
-            <li>Webdesign, création de logo, visuels professionnels</li>
+          <ul className="list-disc list-inside font-raleway text-base sm:text-lg text-white mb-6 space-y-2">
+            <motion.li
+              className="hdDesktop:text-xl"
+              variants={textVariant}
+              custom={0.6}
+              initial="hidden"
+              animate="visible"
+            >
+              Création ou refonte de site vitrine / e-commerce
+            </motion.li>
+            <motion.li
+              className="hdDesktop:text-xl"
+              variants={textVariant}
+              custom={0.7}
+              initial="hidden"
+              animate="visible"
+            >
+              Webdesign, création de logo, visuels professionnels
+            </motion.li>
           </ul>
 
-          <p className="font-raleway text-base sm:text-lg text-gray-700 mb-8 leading-relaxed">
+          <motion.p
+            className="font-raleway text-base sm:text-lg text-white mb-8 leading-relaxed hdDesktop:text-2xl"
+            variants={textVariant}
+            custom={0.8}
+            initial="hidden"
+            animate="visible"
+          >
             <strong>Webcreatis</strong> vous guide dans les démarches et dépose
             votre dossier auprès de la Région.
-          </p>
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4"
+            variants={textVariant}
+            custom={1}
+            initial="hidden"
+            animate="visible"
+          >
             <Button
               text="J'ai un projet"
               bg="bg-green"
@@ -105,7 +165,7 @@ export default function KapNumerikCTA() {
                 )
               }
             />
-          </div>
+          </motion.div>
         </article>
       </div>
 
@@ -120,7 +180,7 @@ export default function KapNumerikCTA() {
       >
         <h3
           id="faq-title"
-          className="text-2xl font-semibold text-gray-900 mb-8 text-center"
+          className="text-2xl font-semibold text-white mb-8 text-center font-jaapokki md:text-3xl laptop:text-4xl hdDesktop:text-5xl"
         >
           FAQ – Questions fréquentes
         </h3>
@@ -128,8 +188,12 @@ export default function KapNumerikCTA() {
           <dl className="space-y-6">
             {faqData.map(({ question, answer }, index) => (
               <div key={index}>
-                <dt className="font-medium text-gray-800">{question}</dt>
-                <dd className="text-gray-600">{answer}</dd>
+                <dt className="font-medium text-green font-raleway text-lg md:text-2xl hdDesktop:text-3xl">
+                  {question}
+                </dt>
+                <dd className="text-white pt-5 text-sm md:text-base laptop:text-lg hdDesktop:text-xl">
+                  {answer}
+                </dd>
               </div>
             ))}
           </dl>

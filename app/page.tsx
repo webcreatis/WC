@@ -2,7 +2,6 @@ import AboutSection from "./components/AboutSection";
 import ClientSection from "./components/ClientSection";
 import FormationsSection from "./components/FormationsSection";
 import HeroSection from "./components/HeroSection";
-import KapNumerikCTA from "./components/KapNumerikCTA";
 import Mentoring from "./components/Mentoring";
 import MethodSection from "./components/MethodSection";
 import ServicesSection from "./components/ServicesSection";
@@ -17,7 +16,6 @@ export default function Home() {
       <CanvasTrail />
       <main>
         <HeroSection />
-        <KapNumerikCTA />
         <Mentoring />
         <WorksSection />
         <ServicesSection />
