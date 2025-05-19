@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section
       id="top"
-      className="hero-section w-full h-screen flex flex-col justify-center items-center"
+      className="hero-section w-full min-h-screen flex flex-col justify-center items-center pt-10 s:pt-28"
     >
       <h2 className="text-9xl uppercase font-bold tracking-wide text-white font-jaapokki animate-fadeIn xs:mt-32 s:mt-16">
         <div className="flex space-x-1">
@@ -45,7 +45,7 @@ export default function HeroSection() {
         </div>
       </h2>
       <div className="hero-subtitle w-3/4 caption-timeline text-white pt-10 xs:p-7 xs:w-full tablet:w-3/4 lg:w-[65%] animate-fadeIn transition-all duration-1000 ease-in-out">
-        <h1 className="xs:text-sm xs:text-left tablet:text-sm ipadPro:text-lg laptop:text-center">
+        <h1 className="text-sm text-center tablet:text-sm ipadPro:text-lg laptop:text-center">
           {`Nous sommes deux passionnés du web & du digital basés à La Réunion.
           Nous vous accompagnons dans la création de votre site internet, de votre identité visuelle et dans le développement de vos projets en ligne.
           Nous proposons du mentoring pour les développeurs web en formation, des audits de sites pour vous aider à améliorer l’existant, et des accompagnements canva pour gagner en autonomie et créer vos design.
@@ -53,34 +53,34 @@ export default function HeroSection() {
         </h1>
       </div>
       <MarqueeHeader />
-      <div className="mt-14 flex gap-5 xs:mt-10 xs:gap-1 xs:mb-10 s:gap-2 mobile:gap-3 laptop:mt-14">
+      <div className="mt-14 flex flex-col w-full items-center gap-5 mb-10 s:gap-2 mobile:gap-3 md:flex-row md:px-10 laptop:mt-14 laptop:gap-1 laptop:w-3/5 lg:w-[30%] lg:pt-10">
         <Link
           href="https://calendly.com/contact-webcreatis/30min"
           data-link="link"
-          className="buttonAction z-50 flex justify-center xs:w-[100px] xs:h-[2.5em] xs:p-2 ipadPro:w-[130px] laptop:xs:h-[3.5em] items-center uppercase cursor-pointer p-[1.7em] rounded-md bg-corail xs:text-xs mobile:text-sm mobile:w-[120px]"
+          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-corail mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em]"
         >
           RDV en ligne
         </Link>
         <Link
           href="/contact"
           data-link="link"
-          className="buttonAction z-50 flex justify-center xs:w-[100px] xs:h-[2.5em] xs:p-2 ipadPro:w-[130px] laptop:xs:h-[3.5em] items-center uppercase cursor-pointer p-[1.7em] rounded-md bg-white xs:text-xs mobile:text-sm mobile:w-[120px]"
+          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em]"
         >
           contact
         </Link>
         <Link
           href="#projects"
           data-link="link"
-          className="buttonAction z-50 flex justify-center xs:w-[100px] xs:h-[2.5em] xs:p-2 ipadPro:w-[130px] laptop:xs:h-[3.5em] items-center uppercase cursor-pointer p-[1.7em] rounded-md bg-white xs:text-xs mobile:text-sm mobile:w-[120px]"
+          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em]"
         >
           Réalisations
         </Link>
       </div>
 
-      <div className="absolute bottom-5 flex w-full justify-between p-5">
+      <div className="flex w-full justify-between items-center p-2 mobile:mt-10 md:mt-20 lg:mt-28 lg:p-5">
         <CrossIcon />
         <CrossIcon />
-        <span className="uppercase text-white font-raleway">
+        <span className="uppercase text-white font-raleway text-xs md:text-base lg:text-2xl">
           scroll to explore
         </span>
         <CrossIcon />

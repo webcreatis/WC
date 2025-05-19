@@ -55,7 +55,9 @@ export default function Button({
         ref={childrenRef}
         className="flex items-center gap-2 overflow-hidden"
       >
-        <span className={`font-raleway font-semibold ${color}`}>{text}</span>
+        <span className={`font-raleway font-semibold ${color} text-xs`}>
+          {text}
+        </span>
         {children}
       </div>
     </button>

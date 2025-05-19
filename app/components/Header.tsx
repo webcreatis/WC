@@ -99,7 +99,7 @@ export default function Header() {
             animate={{ y: 10, opacity: 1 }}
             initial={{ y: 0, opacity: 0 }}
             transition={{ duration: 0.3, delay: 0.8, ease: "linear" }}
-            className="mr-5 xs:mr-1 laptop:mr-5"
+            className="mr-1 laptop:mr-5"
           >
             <Button
               text="Menu"
