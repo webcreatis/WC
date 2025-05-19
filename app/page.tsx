@@ -16,6 +16,7 @@ export default function Home() {
       <CanvasTrail />
       <main>
         <HeroSection />
+        <div className="h-14 w-full gradient-halo-behind-image -mb-5 -mt-3"></div>
         <Mentoring />
         <WorksSection />
         <ServicesSection />

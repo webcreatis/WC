@@ -352,6 +352,6 @@ html {
 }
 
 .gradient-halo-behind-image {
-  background: linear-gradient(180deg, #7be0ad, #99020200);
-  filter: blur(25px);
+  background: linear-gradient(180deg, rgba(35, 78, 67, 1) 90%, #99020200);
+  filter: blur(45px);
 }

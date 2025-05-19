@@ -1,101 +1,3 @@
-// import { GraduationCap } from "lucide-react";
-// import Image from "next/image";
-// import mentoringPics from "../assets/images/presta-webcreatis.webp";
-// import TitleSection from "./TitleSection";
-
-// const packs = [
-//   {
-//     title: "Forfait préparation examen (2 mois avant)",
-//     price: "à partir de 600€",
-//     description:
-//       "1 ou 2 sessions/semaine (2h au total). Diagnostic initial, Préparation technique, Relecture projet, Entraînement à l’oral & examen blanc.",
-//   },
-//   {
-//     title: "Forfait accompagnement formation (3 à 8 mois)",
-//     price: "à partir de 1150€",
-//     description:
-//       "1 ou 2 sessions/semaine (2h au total). Accompagnement complet sur l'ensemble de la formation suivi + préparation à l'examen.",
-//   },
-//   {
-//     title: "Forfait projet de fin de formation",
-//     price: "à partir de 400€",
-//     description:
-//       "Accompagnement complet sur le projet de fin de formation (à partir de 10h). Relecture du dossier projet, aide à la structuration, débogage ou améliorations techniques.",
-//   },
-// ];
-
-// export default function Mentoring() {
-//   const graduationCapIcon = <GraduationCap color="#7BE0AD" size={36} />;
-//   return (
-//     <section
-//       id="mentoring"
-//       className="relative px-6 py-16 max-w-7xl mx-auto mt-14 mb-14"
-//     >
-//       <div className="h-10 w-11/12 mx-auto gradient-halo-behind-image -mb-5 absolute top-0"></div>
-//       <TitleSection
-//         icon={graduationCapIcon}
-//         title="Mentoring"
-//         color="text-black"
-//         textSize="text-5xl"
-//       />
-//       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start pt-10">
-//         {/* Colonne 1 : Image */}
-//         <div className="w-full max-w-md mx-auto lg:mx-0">
-//           <Image
-//             src={mentoringPics}
-//             alt="Mentoring pour développeur web en formation"
-//             className="rounded-xl shadow-md w-full h-auto object-cover"
-//             priority
-//           />
-//         </div>
-
-//         {/* Colonne 2 : Contenu central */}
-//         <div className="space-y-6">
-//           <h3 className="text-xl text-gray-600">
-//             Progresser plus vite, avec un accompagnement humain et structuré
-//           </h3>
-//           <p className="text-gray-700 text-base sm:text-lg">
-//             Tu suis une formation <strong>CDA</strong> ou <strong>DWWM</strong>{" "}
-//             et tu veux un mentor pour :
-//           </p>
-//           <ul className="list-disc list-inside text-gray-700 text-base sm:text-lg space-y-1">
-//             <li>Structurer ton apprentissage (HTML, CSS, JS, React…)</li>
-//             <li>Avoir des retours sur tes projets</li>
-//             <li>Développer une vraie logique de développeur</li>
-//             <li>Préparer les entretiens et l&rsquo;examen</li>
-//             <li>Renforcer les bases techniques</li>
-//           </ul>
-//           <a
-//             href="https://forms.office.com/r/k0zkgBAFJ1?origin=lprLink"
-//             aria-label="Demander un accompagnement en mentoring web"
-//             className="buttonAction inline-block bg-green text-black font-semibold px-6 py-3 rounded-md hover:opacity-90 transition"
-//           >
-//             Je veux un mentor !
-//           </a>
-//         </div>
-
-//         {/* Colonne 3 : Packs */}
-//         <div className="space-y-6">
-//           {packs.map((pack, idx) => (
-//             <div
-//               key={idx}
-//               className="rounded-xl bg-white shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300"
-//             >
-//               <h4 className="text-lg font-bold text-green-700 mb-2">
-//                 {pack.title}
-//               </h4>
-//               <p className="text-sm text-gray-600 mb-3">{pack.price}</p>
-//               <p className="text-gray-700 text-sm leading-relaxed">
-//                 {pack.description}
-//               </p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import { GraduationCap } from "lucide-react";
 import Image from "next/image";
 import mentoringPics from "../assets/images/presta-webcreatis.webp";
@@ -132,7 +34,6 @@ export default function Mentoring() {
       id="mentoring"
       className="relative px-6 py-16 max-w-7xl mx-auto mt-14 mb-14"
     >
-      <div className="h-10 w-11/12 mx-auto gradient-halo-behind-image -mb-5 absolute top-0"></div>
       <TitleSection
         icon={graduationCapIcon}
         title="Mentoring"
