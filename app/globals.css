@@ -355,3 +355,8 @@ html {
   background: linear-gradient(180deg, rgba(35, 78, 67, 1) 90%, #99020200);
   filter: blur(45px);
 }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #7be0ad;
+}

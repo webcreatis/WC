@@ -4,8 +4,8 @@ import FormationsSection from "./components/FormationsSection";
 import HeroSection from "./components/HeroSection";
 import Mentoring from "./components/Mentoring";
 import MethodSection from "./components/MethodSection";
+import ReviewsSection from "./components/ReviewsSection";
 import ServicesSection from "./components/ServicesSection";
-import TestimonialsSection from "./components/TestimonialsSection";
 import WorksSection from "./components/WorkSection";
 import CanvasTrail from "./ui/Cursor";
 import CustomCursor from "./ui/CustomCursor";
@@ -24,7 +24,7 @@ export default function Home() {
         <MethodSection />
         <FormationsSection />
         <ClientSection />
-        <TestimonialsSection />
+        <ReviewsSection />
       </main>
       <CustomCursor />
     </>
