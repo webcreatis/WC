@@ -34,7 +34,9 @@ html {
 .marquee,
 .creasite,
 .contact,
-.mentor {
+.mentor,
+.blog,
+.article {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,

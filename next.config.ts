@@ -1,21 +1,14 @@
-import type { NextConfig } from "next";
-import { withNextVideo } from "next-video/process";
+import createMDX from "@next/mdx";
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  images: {
-    localPatterns: [
-      {
-        pathname: '/assets/images/**',
-        search: '',
-      },
-      {
-        // Permet toutes les images dans /public/images/
-        // Ajuste le chemin selon ton projet
-        pathname: '/images/**',
-      },
-    ],
-  },
+  // Configure `pageExtensions` to include markdown and MDX files
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
-export default withNextVideo(nextConfig);
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+});
+
+// Merge MDX config with Next.js config
+export default withMDX(nextConfig);

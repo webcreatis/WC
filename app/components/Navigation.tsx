@@ -32,6 +32,7 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
               href: "/creation-site-internet",
               label: "Création site internet",
             },
+            { href: "/blog", label: "Blog" },
             { href: "/contact", label: "Contact" },
           ].map((item, index) => (
             <li
