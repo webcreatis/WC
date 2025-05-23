@@ -1,8 +1,8 @@
 import { posts } from "@/app/datas/blog/posts";
 
 type Props = {
-  params: { slug: string };
   children: React.ReactNode;
+  params: { slug: string };
 };
 
 export async function generateMetadata({
@@ -38,6 +38,6 @@ export async function generateMetadata({
   };
 }
 
-export default function PostLayout({ children }: Props) {
+export default async function PostLayout({ children }: Props) {
   return <section>{children}</section>;
 }
