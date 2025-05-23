@@ -2,7 +2,6 @@ import { posts } from "@/app/datas/blog/posts";
 
 type Props = {
   children: React.ReactNode;
-  params: { slug: string };
 };
 
 export async function generateMetadata({
