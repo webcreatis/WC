@@ -61,35 +61,37 @@ export default function Page() {
       </div>
 
       {/* Pagination */}
-      <div className="flex justify-center items-center gap-2 pb-20">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          className="px-4 py-2 text-white bg-gray-700 rounded hover:bg-gray-600 transition disabled:opacity-50"
-          disabled={currentPage === 1}
-        >
-          Précédent
-        </button>
-        {Array.from({ length: totalPages }, (_, idx) => (
+      {posts.length > 6 && (
+        <div className="flex justify-center items-center gap-2 pb-20">
           <button
-            key={idx}
-            onClick={() => handlePageChange(idx + 1)}
-            className={`px-3 py-2 rounded ${
-              currentPage === idx + 1
-                ? "bg-green text-white"
-                : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-            } transition`}
+            onClick={() => handlePageChange(currentPage - 1)}
+            className="px-4 py-2 text-white bg-gray-700 rounded hover:bg-gray-600 transition disabled:opacity-50"
+            disabled={currentPage === 1}
           >
-            {idx + 1}
+            Précédent
           </button>
-        ))}
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          className="px-4 py-2 text-white bg-gray-700 rounded hover:bg-gray-600 transition disabled:opacity-50"
-          disabled={currentPage === totalPages}
-        >
-          Suivant
-        </button>
-      </div>
+          {Array.from({ length: totalPages }, (_, idx) => (
+            <button
+              key={idx}
+              onClick={() => handlePageChange(idx + 1)}
+              className={`px-3 py-2 rounded ${
+                currentPage === idx + 1
+                  ? "bg-green text-white"
+                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+              } transition`}
+            >
+              {idx + 1}
+            </button>
+          ))}
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            className="px-4 py-2 text-white bg-gray-700 rounded hover:bg-gray-600 transition disabled:opacity-50"
+            disabled={currentPage === totalPages}
+          >
+            Suivant
+          </button>
+        </div>
+      )}
 
       <CustomCursor />
     </section>
