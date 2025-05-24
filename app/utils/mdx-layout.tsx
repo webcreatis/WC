@@ -1,4 +1,3 @@
-import React, { Suspense } from "react";
 import CustomCursor from "../ui/CustomCursor";
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
@@ -11,7 +10,7 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
   prose-li:text-white prose-li:text-base prose-li:font-raleway
   prose-img:rounded-lg prose-img:mx-auto"
       >
-        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+        {children}
         <CustomCursor />
       </article>
     </main>
