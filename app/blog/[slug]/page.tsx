@@ -1,22 +1,35 @@
-export default async function Page({
-  params,
-}: {
+import { Metadata } from "next";
+
+type Props = {
   params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
+};
 
-  console.log("slug", slug);
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
+  const slug = (await params).slug;
 
-  const { default: Post } = await import(`@/content/${slug}.mdx`);
+  return {
+    title: `Article: ${slug}`,
+    description: `Découvrez l'article ${slug} sur notre blog.`,
+    openGraph: {
+      title: slug,
+      description: `Découvrez l'article ${slug} sur notre blog.`,
+      url: `https://webcreatis.re/blog/${slug}`,
+      type: "article",
+    },
+  };
+};
 
-  return <Post />;
+export default async function PostDetails({ params }: Props) {
+  const slug = (await params).slug;
+
+  try {
+    const { default: Post } = await import(`@/content/${slug}.mdx`);
+    return <Post />;
+  } catch (error) {
+    // Si l'article est introuvable
+    console.log(error);
+    return <div>Article introuvable.</div>;
+  }
 }
-
-export function generateStaticParams() {
-  return [
-    { slug: "activer-fluid-compute-cloud-scalabilite-performance" },
-    { slug: "about" },
-  ];
-}
-
-export const dynamicParams = false;
