@@ -34,11 +34,6 @@
       "source": "/testimonials",
       "destination": "https://www.webcreatis.fr",
       "permanent": true
-    },
-    {
-      "source": "/error-404",
-      "destination": "/",
-      "permanent": true
     }
   ]
 }
