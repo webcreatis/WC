@@ -1,0 +1,83 @@
+import Link from "next/link";
+import { posts } from "../datas/blog/posts";
+import CustomCursor from "../ui/CustomCursor";
+
+export default function PlanDeSite() {
+  return (
+    <section className="flex flex-col justify-center plan w-full h-full p-8 text-white pt-48">
+      <h1 className="text-3xl font-bold mb-6">Plan du site</h1>
+
+      <h2 className="text-xl font-semibold mt-4 pb-10">Pages principales</h2>
+      <ul className="flex flex-col gap-5 list-disc pl-6">
+        <li>
+          <Link href="/" data-link="link" className="buttonAction">
+            Accueil
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/creation-site-internet"
+            data-link="link"
+            className="buttonAction"
+          >
+            Création de site internet
+          </Link>
+        </li>
+        <li>
+          <Link href="/#mentoring" data-link="link" className="buttonAction">
+            Mentoring
+          </Link>
+        </li>
+        <li>
+          <Link href="/kap-numerik" data-link="link" className="buttonAction">
+            Kap Numerik
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog" data-link="link" className="buttonAction">
+            Le Blog
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" data-link="link" className="buttonAction">
+            Contact
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/mentions-legales"
+            data-link="link"
+            className="buttonAction"
+          >
+            Mentions légales
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/politique-de-confidentialite"
+            data-link="link"
+            className="buttonAction"
+          >
+            Politique de confidentialité
+          </Link>
+        </li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mt-6">Articles de blog</h2>
+      <ul className="list-disc pl-6 space-y-1 pt-10">
+        {posts.map(({ slug, title }) => (
+          <li key={slug}>
+            <Link
+              href={`/blog/${slug}`}
+              data-link="link"
+              className="buttonAction"
+            >
+              {title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <CustomCursor />
+    </section>
+  );
+}

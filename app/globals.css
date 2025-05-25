@@ -39,7 +39,8 @@ html {
 .article,
 .mdx,
 .mentions,
-.politique {
+.politique,
+.plan {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,
