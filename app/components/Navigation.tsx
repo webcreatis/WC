@@ -42,10 +42,13 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
               <Link
                 aria-label={`Aller sur la page ${item.label}`}
                 href={item.href}
-                className="w-full h-full text-xl text-black flex justify-start items-center lg:text-xl px-6 py-3"
+                className="w-full h-full flex justify-center items-center px-6 py-2 md:py-4"
                 scroll={true}
               >
-                <span onClick={handleCloseMenu} className="text-xl md:text-3xl">
+                <span
+                  onClick={handleCloseMenu}
+                  className="text-xl md:text-4xl xl:text-6xl text-green font-bold"
+                >
                   {item.label}
                 </span>
               </Link>

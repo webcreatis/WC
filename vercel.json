@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/creation-site-internet/",
+      "destination": "https://www.webcreatis.fr/creation-site-internet/",
+      "permanent": true
+    },
+    {
+      "source": "/gestion-de-vos-reseaux-sociaux/",
+      "destination": "https://www.webcreatis.fr/",
+      "permanent": true
+    },
+    {
+      "source": "/web-design/",
+      "destination": "https://www.webcreatis.fr/",
+      "permanent": true
+    },
+    {
+      "source": "/creation-de-logo/",
+      "destination": "https://www.webcreatis.fr/",
+      "permanent": true
+    },
+    {
+      "source": "/design-print/",
+      "destination": "https://www.webcreatis.fr/",
+      "permanent": true
+    }
+  ]
+}
