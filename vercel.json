@@ -1,37 +1,37 @@
 {
   "redirects": [
     {
-      "source": "/creation-site-internet/",
+      "source": "/creation-site-internet",
       "destination": "https://www.webcreatis.fr/creation-site-internet/",
       "permanent": true
     },
     {
-      "source": "/gestion-de-vos-reseaux-sociaux/",
+      "source": "/gestion-de-vos-reseaux-sociaux",
       "destination": "https://www.webcreatis.fr",
       "permanent": true
     },
     {
-      "source": "/web-design/",
+      "source": "/web-design",
       "destination": "https://www.webcreatis.fr",
       "permanent": true
     },
     {
-      "source": "/creation-de-logo/",
+      "source": "/creation-de-logo",
       "destination": "https://www.webcreatis.fr",
       "permanent": true
     },
     {
-      "source": "/design-print/",
+      "source": "/design-print",
       "destination": "https://www.webcreatis.fr",
       "permanent": true
     },
     {
-      "source": "/the-blog/",
+      "source": "/the-blog",
       "destination": "https://www.webcreatis.fr/blog",
       "permanent": true
     },
     {
-      "source": "/testimonials/",
+      "source": "/testimonials",
       "destination": "https://www.webcreatis.fr",
       "permanent": true
     }

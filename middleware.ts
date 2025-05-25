@@ -19,6 +19,8 @@ export function middleware(request: NextRequest) {
     "/design-print",
     "/testimonials/",
     "/testimonials",
+    "/consultante-digitale/",
+    "/consultante-digitale",
   ];
 
   if (legacyRoutes.includes(pathname)) {
