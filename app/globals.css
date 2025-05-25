@@ -37,7 +37,9 @@ html {
 .mentor,
 .blog,
 .article,
-.mdx {
+.mdx,
+.mentions,
+.politique {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,

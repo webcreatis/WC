@@ -67,15 +67,22 @@ export default function Footer() {
                 />
               </div>
               <div className="w-1/2 flex flex-col justify-center items-center xs:items-start xs:pl-5">
-                <span className="text-white font-raleway text-xl xs:text-base">
+                <span className="text-white font-raleway text-sm laptop:text-base">
                   {currentYear} All Rights Reserved
                 </span>
                 <Link
                   href="/mentions-legales"
-                  className="text-white buttonAction font-raleway text-xl xs:text-base"
+                  className="text-white buttonAction font-raleway text-sm laptop:text-base"
                   aria-label={`Allez sur la page des mentions légales de webcreatis`}
                 >
                   Mentions légales
+                </Link>
+                <Link
+                  href="/politique-de-confidentialite"
+                  className="text-white buttonAction font-raleway text-sm laptop:text-base"
+                  aria-label={`Allez sur la page de la politique de confidentialité de webcreatis`}
+                >
+                  Politique de confidentialité
                 </Link>
                 <div className="flex justify-center items-center">
                   <Link
