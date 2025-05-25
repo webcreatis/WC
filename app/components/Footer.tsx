@@ -84,6 +84,13 @@ export default function Footer() {
                 >
                   Politique de confidentialité
                 </Link>
+                <Link
+                  href="/plan-de-site"
+                  className="text-white buttonAction font-raleway text-sm laptop:text-base"
+                  aria-label={`Allez sur la page du plan de site de webcreatis`}
+                >
+                  Plan de site
+                </Link>
                 <div className="flex justify-center items-center">
                   <Link
                     href="/"
