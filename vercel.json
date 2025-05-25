@@ -7,22 +7,32 @@
     },
     {
       "source": "/gestion-de-vos-reseaux-sociaux/",
-      "destination": "https://www.webcreatis.fr/",
+      "destination": "https://www.webcreatis.fr",
       "permanent": true
     },
     {
       "source": "/web-design/",
-      "destination": "https://www.webcreatis.fr/",
+      "destination": "https://www.webcreatis.fr",
       "permanent": true
     },
     {
       "source": "/creation-de-logo/",
-      "destination": "https://www.webcreatis.fr/",
+      "destination": "https://www.webcreatis.fr",
       "permanent": true
     },
     {
       "source": "/design-print/",
-      "destination": "https://www.webcreatis.fr/",
+      "destination": "https://www.webcreatis.fr",
+      "permanent": true
+    },
+    {
+      "source": "/the-blog/",
+      "destination": "https://www.webcreatis.fr/blog",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials/",
+      "destination": "https://www.webcreatis.fr",
       "permanent": true
     }
   ]
