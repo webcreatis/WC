@@ -29,6 +29,16 @@
       "source": "/testimonials",
       "destination": "https://www.webcreatis.fr",
       "permanent": true
+    },
+    {
+      "source": "/astro-js-la-revolution-des-performances-web",
+      "destination": "https://www.webcreatis.fr/archives",
+      "permanent": true
+    },
+    {
+      "source": "/comment-installer-une-custom-font-en-locale-avec-next-js-14-et-tailwind-css",
+      "destination": "https://www.webcreatis.fr/archives",
+      "permanent": true
     }
   ]
 }
