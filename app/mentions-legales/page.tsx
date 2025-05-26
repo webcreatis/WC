@@ -33,10 +33,10 @@ export default function MentionsLegales() {
       <p className="text-base md:text-lg xl:text-xl">
         Contact :{" "}
         <a
-          href="mailto:contact.webcreatis@gmail.fr"
+          href="mailto:contact.webcreatis@gmail.com"
           className="text-base md:text-lg xl:text-xl"
         >
-          contact.webcreatis@gmail.fr
+          contact.webcreatis@gmail.com
         </a>
       </p>
       <p className="text-base md:text-lg xl:text-xl">

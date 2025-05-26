@@ -28,7 +28,7 @@ export default function AboutSection() {
           </div>
           <div className="flex flex-col w-full items-center gap-8 tablet:pb-10">
             <p className="text-white pt-10 font-raleway text-2xl xs:text-xl tablet:text-2xl l:text-xl">
-              Création de site Web sur mesure
+              Création de site Web sur mesure | Audit de site | Mentoring Dev
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
               <Button
@@ -93,7 +93,7 @@ export default function AboutSection() {
           </div>
           <div className="flex flex-col w-full items-center gap-8 tablet:pb-10">
             <p className="text-white pt-10 font-raleway text-2xl xs:text-xl xs:p-2 xs:pt-5 tablet:text-2xl l:pt-0 l:text-xl">
-              Création digitale | Print | Réseaux sociaux | Formation Canva
+              Création digitale | Print | Audit Graphique | Mentoring Canva
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
               <Button
@@ -137,11 +137,10 @@ export default function AboutSection() {
           title="Patricia - Web Design & Com Digitale"
           text="Pour moi chaque design, chaque couleurs se doivent d’être à votre
             image. Je vous accompagne afin d’améliorer votre présence digitale
-            avec la création de votre logo, charte graphique, la gestions de vos
-            réseaux sociaux ou la création de vos tunnels de vente. Je suis là
+            avec la création de votre logo et de votre identité graphique. Je suis là
             pour vous aider dans la confection de l’ensemble de vos supports
-            imprimés : carte de visite, flyers, kakémono... Ou vous former à
-            utiliser CANVA pour créer vos propres réalisations et support de
+            imprimés : carte de visite, flyers, kakémono... Ou vous accompagner
+            sur CANVA pour créer vos propres réalisations et support de
             communication."
         />
       </div>

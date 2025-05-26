@@ -5,24 +5,39 @@ import TitleSection from "./TitleSection";
 
 const packs = [
   {
-    title: "Forfait préparation examen",
-    price: "à partir de 600€",
+    title: "Crea’Start : Mentoring solopreneurs",
+    price: "à partir de 240€ HT",
+    public:
+      "Public : Artisans, commerçants, coachs, thérapeutes, freelances, indépendants, micro-entrepreneurs.",
     description:
-      "1 ou 2 sessions/semaine (2h au total). Diagnostic initial, Préparation technique, Relecture projet, Entraînement à l’oral & examen blanc.",
-    time: "2 mois avant",
+      "Prise en main de Canva et création de vos premiers outils de communication visuelle : templates de posts, carte de visite, bannière, signature mail… Le tout sur-mesure, prêt à l’emploi et réutilisable.",
+    time: "Durée : 6 heures réparties sur 3/4 semaines",
   },
   {
-    title: "Forfait accompagnement formation",
-    price: "à partir de 1150€",
+    title: "Crea’Team : Mentoring entreprises",
+    price: "à partir de 360€ HT",
+    public:
+      "Public : TPE, PME, startups, associations, cabinets médicaux, agences immobilières, etc.",
     description:
-      "1 ou 2 sessions/semaine (2h au total). Accompagnement complet sur l'ensemble de la formation suivi + préparation à l'examen.",
-    time: "3 à 8 mois",
+      "Création de templates personnalisés pour vos supports internes et externes, mise en place d’une bibliothèque partagée, harmonisation visuelle et structuration complète de votre communication dans Canva.",
+    time: "Durée : 8 heures réparties sur 4/5 semaines",
   },
   {
-    title: "Forfait projet de fin de formation",
-    price: "à partir de 400€",
+    title:
+      "Offre d’accompagnement mensuel solopreneurs (option après le mentoring)",
+    price: `90 € HT / mois`,
+    public:
+      "2h/mois de suivi personnalisé (co-création, creation ou ajustement)",
     description:
-      "Accompagnement complet sur le projet de fin de formation (à partir de 10h). Relecture du dossier projet, aide à la structuration, débogage ou améliorations techniques.",
+      "Un accompagnement créatif chaque mois : conseils, adaptation de visuels selon votre actualité, ajustement de vos contenus Canva et envoi de nouveaux templates.",
+  },
+  {
+    title:
+      "Offre d’accompagnement mensuel entreprises (option après le mentoring)",
+    price: `180 € HT / mois`,
+    public: "4h/mois d’intervention (réunions, création, MAJ templates, suivi)",
+    description:
+      "Un suivi mensuel pour maintenir une communication claire, alignée et professionnelle : mises à jour des visuels, évolution des templates, soutien à l’organisation et cohérence d’équipe.",
   },
 ];
 
@@ -32,9 +47,8 @@ export default function MentoringCanva() {
   return (
     <section
       id="mentoringCanva"
-      className="relative px-6 py-16 max-w-7xl mx-auto mt-14 mb-14"
+      className="relative px-6 py-16 max-w-7xl mx-auto mb-14"
     >
-      <div className="h-14 w-full gradient-halo-behind-image -mb-20 -mt-3"></div>
       <TitleSection
         icon={graduationCapIcon}
         title="Mentoring Canva"
@@ -47,26 +61,29 @@ export default function MentoringCanva() {
         {/* Description à droite */}
         <div className="space-y-6">
           <h3 className="text-lg text-black font-raleway font-bold">
-            Apprends à maîtriser Canva comme un pro ✨
+            Apprends à maîtriser Canva comme un pro
           </h3>
           <p className="text-gray-700 text-base sm:text-base font-raleway">
-            Tu suis une formation <strong>CDA</strong> ou <strong>DWWM</strong>{" "}
-            et tu veux un mentor pour :
+            Accompagner les professionnels à devenir autonomes sur Canva, <br />
+            tout en co-créant leurs outils de communication
           </p>
           <ul className="list-disc list-inside text-gray-700 text-base sm:text-lg space-y-1 font-raleway">
-            <li>Ateliers adaptés à tous niveaux</li>
-            <li>Exemples concrets d’entreprise</li>
-            <li>Accompagnement individuel ou en petit groupe</li>
+            <li>Autonomie rapides, gain de temps</li>
+            <li>Templates réutilisables</li>
+            <li>Création de kits de communication</li>
+            <li>Identité visuelle cohérente entre les supports</li>
+            <li>Professionnalisation de la communication interne et externe</li>
           </ul>
           <p className="font-raleway text-base text-gray-700 ">
-            Découvre notre accompagnement pour créer des visuels impactants, des
-            présentations professionnelles, et des supports de communication qui
-            captent l’attention.
+            Découvrez mes offres de mentoring Canva : un accompagnement
+            sur-mesure pour créer vos outils de communication et maîtriser Canva
+            en toute autonomie. 👉 Pour les solopreneurs et les entreprises,
+            c’est le moment de passer au niveau supérieur !
           </p>
           <p></p>
           <a
-            href="https://forms.office.com/r/k0zkgBAFJ1?origin=lprLink"
-            aria-label="Demander un accompagnement en mentoring web"
+            href="mailto:contact.webcreatis@gmail.com"
+            aria-label="Demander un accompagnement dans la maitrise de Canva"
             className="buttonAction inline-block bg-green text-black font-semibold px-6 py-3 rounded-md hover:opacity-90 transition font-raleway"
           >
             Je veux un accompagnement !
@@ -84,7 +101,7 @@ export default function MentoringCanva() {
       </div>
 
       {/* Section basse : 3 blocs côte à côte */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {packs.map((pack, idx) => (
           <div
             key={idx}
@@ -102,6 +119,9 @@ export default function MentoringCanva() {
                   {pack.time}
                 </li>
               ) : null}
+              <li className="text-gray-700 text-sm leading-relaxed font-raleway">
+                {pack.public}
+              </li>
               <li className="text-gray-700 text-sm leading-relaxed font-raleway">
                 {pack.description}
               </li>

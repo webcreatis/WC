@@ -5,8 +5,6 @@ import { NextResponse } from "next/server";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  console.log("pathname--------------", pathname);
-
   // Liste des anciennes URLs à rediriger vers la racine
   const legacyRoutes = [
     "/web-design/",

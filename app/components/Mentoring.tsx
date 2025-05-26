@@ -6,21 +6,21 @@ import TitleSection from "./TitleSection";
 const packs = [
   {
     title: "Forfait préparation examen",
-    price: "à partir de 600€",
+    price: "à partir de 600€ HT",
     description:
       "1 ou 2 sessions/semaine (2h au total). Diagnostic initial, Préparation technique, Relecture projet, Entraînement à l’oral & examen blanc.",
     time: "2 mois avant",
   },
   {
     title: "Forfait accompagnement formation",
-    price: "à partir de 1150€",
+    price: "à partir de 1150€ HT",
     description:
       "1 ou 2 sessions/semaine (2h au total). Accompagnement complet sur l'ensemble de la formation suivi + préparation à l'examen.",
     time: "3 à 8 mois",
   },
   {
     title: "Forfait projet de fin de formation",
-    price: "à partir de 400€",
+    price: "à partir de 400€ HT",
     description:
       "Accompagnement complet sur le projet de fin de formation (à partir de 10h). Relecture du dossier projet, aide à la structuration, débogage ou améliorations techniques.",
   },
@@ -32,7 +32,7 @@ export default function Mentoring() {
   return (
     <section
       id="mentoring"
-      className="relative px-6 py-16 max-w-7xl mx-auto mt-14 mb-14"
+      className="relative px-6 py-16 max-w-7xl mx-auto mt-14"
     >
       <TitleSection
         icon={graduationCapIcon}
@@ -89,7 +89,7 @@ export default function Mentoring() {
       </div>
 
       {/* Section basse : 3 blocs côte à côte */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 pb-10">
         {packs.map((pack, idx) => (
           <div
             key={idx}
@@ -114,6 +114,7 @@ export default function Mentoring() {
           </div>
         ))}
       </div>
+      <div className="h-[1px] w-full bg-darkGreen mt-5"></div>
     </section>
   );
 }

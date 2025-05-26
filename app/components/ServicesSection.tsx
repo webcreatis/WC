@@ -4,7 +4,7 @@ import { Laptop } from "lucide-react";
 //import { useCallback, useEffect, useRef } from "react";
 import brandingBoardPics from "../assets/images/Branding-board-webcreatis.webp";
 import kakemonoPics from "../assets/images/Envergure-Kakemono.webp";
-import canvaPics from "../assets/images/logo-canva.webp";
+import patriciaAuditPics from "../assets/images/patricia-accompagnement-canva-webcreatis.webp";
 import prestaPics from "../assets/images/presta-webcreatis.webp";
 import websitePics from "../assets/images/site-seaintense.webp";
 import socialNetworkPics from "../assets/images/social-network-webcreatis.webp";
@@ -14,7 +14,6 @@ import TitleSection from "./TitleSection";
 export default function ServicesSection() {
   // state
   const iconService = <Laptop color="#7BE0AD" size={36} />;
-  // Affichage
   return (
     <section
       id="services"
@@ -51,7 +50,7 @@ export default function ServicesSection() {
           <ServiceBloc
             title="Audit"
             skills={["Site", "Supports de communication", "Identité visuelle"]}
-            imagePath={canvaPics.src}
+            imagePath={patriciaAuditPics.src}
           />
           <ServiceBloc
             title="presta"
