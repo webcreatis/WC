@@ -20,7 +20,12 @@ export default function ServicesSection() {
       id="services"
       className="w-full h-auto flex-col justify-start items-start bg-white"
     >
-      <TitleSection icon={iconService} title="Services" color="text-black" />
+      <TitleSection
+        icon={iconService}
+        title="Services"
+        color="text-black"
+        textSize="text-4xl"
+      />
       <div className="w-full h-auto pb-32">
         <ul className="w-3/4 m-auto pt-16 tablet:w-[85%]">
           <ServiceBloc
@@ -45,7 +50,7 @@ export default function ServicesSection() {
           />
           <ServiceBloc
             title="Audit"
-            skills={["Seo", "Performances", "sécurité", "UX/UI"]}
+            skills={["Site", "Supports de communication", "Identité visuelle"]}
             imagePath={canvaPics.src}
           />
           <ServiceBloc

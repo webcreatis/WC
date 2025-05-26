@@ -9,12 +9,17 @@ export default function MethodSection() {
   const iconMethod = <Layers3 color="#7BE0AD" size={36} />;
   return (
     <section className="w-full flex flex-col">
-      <TitleSection icon={iconMethod} title="Methods" color="text-black" />
+      <TitleSection
+        icon={iconMethod}
+        title="Methods"
+        color="text-black"
+        textSize="text-4xl"
+      />
       <div className="w-full flex pt-16 pb-36 justify-between xs:flex-col lg:flex-row">
         <div className="w-[50%] flex flex-col items-start p-10 xs:w-full md:mb-14 lg:w-[50%] lg:mb-0">
-          <h2 className="text-4xl font-semibold font-jaapokki text-green pb-10 xs:text-xl tablet:text-2xl lg:text-3xl">
+          <h3 className="font-semibold font-jaapokki text-green pb-10 text-xl md:text-2xl lg:text-3xl">
             Notre processus de création de site internet : <br />
-          </h2>
+          </h3>
           <p className="font-raleway text-justify pb-10 xs:text-base tablet:text-base">
             Spécialisés dans les sites sur-mesure, on vous accompagne de la
             première idée jusqu’à la mise en ligne.

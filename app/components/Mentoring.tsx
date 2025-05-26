@@ -36,9 +36,9 @@ export default function Mentoring() {
     >
       <TitleSection
         icon={graduationCapIcon}
-        title="Mentoring"
+        title="Mentoring Dev"
         color="text-black"
-        textSize="text-5xl"
+        textSize="text-4xl"
       />
 
       {/* Section haute : Image + Description */}

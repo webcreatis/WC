@@ -41,7 +41,8 @@ html {
 .mentions,
 .politique,
 .plan,
-.archive {
+.archive,
+.canva {
   background: rgb(20, 20, 20);
   background: radial-gradient(
     circle,

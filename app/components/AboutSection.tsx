@@ -15,7 +15,7 @@ export default function AboutSection() {
       id="about"
       className="about w-full h-auto flex flex-col pb-28 xs:pb-10"
     >
-      <TitleSection icon={iconTeam} title="Team" />
+      <TitleSection icon={iconTeam} title="Team" textSize="text-4xl" />
       <div className="flex w-full pt-16 xs:flex-col l:flex-row">
         <div className="flex flex-col justify-between xs:w-full l:w-[50%]">
           <div className="h-[650px] flex justify-center overflow-hidden hover:blur-none transition-all duration-300 ease-in-out xs:blur-none ipadPro:blur-sm">

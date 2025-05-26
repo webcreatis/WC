@@ -9,8 +9,13 @@ export default function ClientSection() {
       id="customers"
       className="w-full h-auto flex flex-col justify-center bg-darkWhite"
     >
-      <TitleSection icon={iconRef} title="References" color="text-black" />
-      <h3 className="text-3xl text-black font-raleway text-center pb-10 xs:text-xl tablet:text-2xl">
+      <TitleSection
+        icon={iconRef}
+        title="References"
+        color="text-black"
+        textSize="text-4xl"
+      />
+      <h3 className=" text-black font-raleway text-center pb-10 text-xl md:text-2xl">
         Ils nous font confiance
       </h3>
       <MarqueeDemo />

@@ -29,8 +29,9 @@ export default function ReviewsSection() {
         icon={iconTestimonial}
         title="Testimonials"
         color="text-black"
+        textSize="text-4xl"
       />
-      <h3 className="text-3xl text-black font-raleway text-center pb-10 xs:text-xl tablet:text-2xl">
+      <h3 className="text-black font-raleway text-center pb-10 text-xl md:text-2xl">
         Ils parlent de nous
       </h3>
 

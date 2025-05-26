@@ -1,8 +1,9 @@
 import AboutSection from "./components/AboutSection";
+import AuditSection from "./components/AuditSection";
 import ClientSection from "./components/ClientSection";
-import FormationsSection from "./components/FormationsSection";
 import HeroSection from "./components/HeroSection";
 import Mentoring from "./components/Mentoring";
+import MentoringCanva from "./components/MentoringCanva";
 import MethodSection from "./components/MethodSection";
 import ReviewsSection from "./components/ReviewsSection";
 import ServicesSection from "./components/ServicesSection";
@@ -16,13 +17,13 @@ export default function Home() {
       <CanvasTrail />
       <main>
         <HeroSection />
-        <div className="h-14 w-full gradient-halo-behind-image -mb-5 -mt-3"></div>
         <Mentoring />
+        <MentoringCanva />
         <WorksSection />
         <ServicesSection />
         <AboutSection />
         <MethodSection />
-        <FormationsSection />
+        <AuditSection />
         <ClientSection />
         <ReviewsSection />
       </main>

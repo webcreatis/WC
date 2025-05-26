@@ -26,7 +26,8 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
         <ul className="flex flex-col justify-center items-left h-full gap-2 md:h-full">
           {[
             { href: "/", label: "Home" },
-            { href: "/#mentoring", label: "Mentoring" },
+            { href: "/#mentoring", label: "Mentoring Dev" },
+            { href: "/#mentoringCanva", label: "Mentoring Canva" },
             { href: "/kap-numerik", label: "Kap Numerik" },
             {
               href: "/creation-site-internet",
@@ -47,7 +48,7 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
               >
                 <span
                   onClick={handleCloseMenu}
-                  className="text-xl md:text-4xl xl:text-6xl text-green font-bold"
+                  className="text-xl md:text-6xl xl:text-7xl text-green font-bold"
                 >
                   {item.label}
                 </span>

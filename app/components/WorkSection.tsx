@@ -15,7 +15,7 @@ export default function WorksSection() {
       className="works w-full h-auto flex-col justify-start items-start"
       id="projects"
     >
-      <TitleSection icon={iconWorks} title="Works" />
+      <TitleSection icon={iconWorks} title="Works" textSize="text-4xl" />
       <ul className="w-full pt-16 xs:pt-2 tablet:pt-16">
         <CardWork
           title="Run Mystery"

@@ -9,23 +9,23 @@ export default function TitleSection({
   icon,
   title,
   color,
-  textSize = "text-5xl",
+  textSize,
 }: TitleSectionProps): JSX.Element {
   return (
-    <div className="flex justify-center items-center pt-10 pb-5">
+    <div className="flex justify-center items-center pt-10 pb-2">
       {icon}
       <h2>
         <span
           className={`${
             color ? color : "text-white"
-          } font-raleway italic text-6xl pr-3 xs:text-3xl mobile:text-3xl tablet:${textSize}`}
+          } font-raleway italic pr-2 pl-2 text-lg md:${textSize} lg:text-6xl`}
         >
           Our
         </span>
         <span
           className={`${
             color ? color : "text-white"
-          } font-jaapokki font-bold uppercase xs:text-3xl mobile:text-3xl tablet:${textSize}`}
+          } font-jaapokki font-bold uppercase text-lg md:${textSize} lg:text-6xl`}
         >
           {title}
         </span>
