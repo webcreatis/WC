@@ -1,4 +1,42 @@
+import { Metadata } from "next";
 import CustomCursor from "../ui/CustomCursor";
+
+// Metadata
+export const metadata: Metadata = {
+  title: "Mentions Légales Protections et Droits | Webcreatis",
+  description:
+    "Mentions légales : droits d’auteur, protection des données personnelles et informations sur le contenu du site.",
+  alternates: {
+    canonical: "https://www.webcreatis.fr/mentions-legales",
+  },
+  openGraph: {
+    title: "Consultez notre politique de confidentialité | Webcreatis",
+    description:
+      "Mentions légales : droits d’auteur, protection des données personnelles et informations sur le contenu du site.",
+    url: "https://www.webcreatis.fr/mentions-legales",
+    siteName: "Webcreatis",
+    type: "website",
+    locale: "fr_FR",
+    images: [
+      {
+        url: "https://www.webcreatis.fr/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Webcreatis - Mentions legales",
+      },
+    ],
+  },
+  other: {
+    "instagram:creator": "@webcreatis",
+    "instagram:site": "@webcreatis",
+    "article:author": "https://www.instagram.com/webcreatis/",
+  },
+  authors: [{ name: "Webcreatis", url: "https://www.webcreatis.fr" }],
+  category: "technology",
+  creator: "Webcreatis",
+  publisher: "Webcreatis",
+  metadataBase: new URL("https://www.webcreatis.fr"),
+};
 
 export default function MentionsLegales() {
   return (

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://webcreatis.re/kap-numerik",
+    canonical: "https://webcreatis.fr/kap-numerik",
   },
 };
 

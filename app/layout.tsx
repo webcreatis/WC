@@ -20,10 +20,6 @@ const raleway = Raleway({
 
 // Metadata
 export const metadata: Metadata = {
-  title:
-    "Création Site Internet à La Réunion | Agence Web & Mentoring | Webcreatis",
-  description:
-    "Webcreatis, agence web à La Réunion, vous accompagne dans la création de sites, mentoring, formations Canva et démarches Kap Numérik. Contactez-nous !",
   other: {
     "google-site-verification": "VfeRAKrEv3DMzCqWxIUaizKN_jvPxMS43bXa5Cclz-Q", // Balise meta pour Google
   },

@@ -1,4 +1,42 @@
+import type { Metadata } from "next";
 import CustomCursor from "../ui/CustomCursor";
+
+// Metadata
+export const metadata: Metadata = {
+  title: "Consultez notre politique de confidentialité | Webcreatis",
+  description:
+    "La protection de vos données est notre priorité. Pour toute question, notre équipe est à votre écoute.",
+  alternates: {
+    canonical: "https://www.webcreatis.fr/politique-de-confidentialite",
+  },
+  openGraph: {
+    title: "Consultez notre politique de confidentialité | Webcreatis",
+    description:
+      "La protection de vos données est notre priorité. Pour toute question, notre équipe est à votre écoute.",
+    url: "https://www.webcreatis.fr/politique-de-confidentialite",
+    siteName: "Webcreatis",
+    type: "website",
+    locale: "fr_FR",
+    images: [
+      {
+        url: "https://www.webcreatis.fr/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Webcreatis - Politique de confidentialité",
+      },
+    ],
+  },
+  other: {
+    "instagram:creator": "@webcreatis",
+    "instagram:site": "@webcreatis",
+    "article:author": "https://www.instagram.com/webcreatis/",
+  },
+  authors: [{ name: "Webcreatis", url: "https://www.webcreatis.fr" }],
+  category: "technology",
+  creator: "Webcreatis",
+  publisher: "Webcreatis",
+  metadataBase: new URL("https://www.webcreatis.fr"),
+};
 
 export default function PolitiqueConfidentialite() {
   return (
