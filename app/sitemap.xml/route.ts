@@ -35,24 +35,35 @@ export async function GET(): Promise<Response> {
     },
   ];
 
-  const dynamicBlogRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `https://www.webcreatis.fr/blog/${post.slug}`,
-    lastModified: post.date,
-    changeFrequency: "weekly",
-    priority: 0.5,
-  }));
+  const dynamicBlogRoutes: MetadataRoute.Sitemap = posts.map((post) => {
+    const [day, month, year] = post.date.split("-");
+    const isoDate = new Date(`${year}-${month}-${day}`).toISOString();
+
+    return {
+      url: `https://www.webcreatis.fr/blog/${post.slug}`,
+      lastModified: isoDate,
+      changeFrequency: "weekly",
+      priority: 0.5,
+    };
+  });
 
   const allRoutes = [...staticRoutes, ...dynamicBlogRoutes];
 
   const body = allRoutes
     .map(
       (route) => `
-  <url>
-    <loc>${route.url}</loc>
-    <lastmod>${route.lastModified}</lastmod>
-    <changefreq>${route.changeFrequency}</changefreq>
-    <priority>${route.priority}</priority>
-  </url>`
+<url>
+  <loc>${route.url}</loc>
+  <lastmod>${
+    route.lastModified
+      ? route.lastModified instanceof Date
+        ? route.lastModified.toISOString()
+        : new Date(route.lastModified).toISOString()
+      : ""
+  }</lastmod>
+  <changefreq>${route.changeFrequency}</changefreq>
+  <priority>${route.priority}</priority>
+</url>`
     )
     .join("");
 
