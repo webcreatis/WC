@@ -1,6 +1,6 @@
+import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
-import typography from "@tailwindcss/typography";
 
 const config: Config = {
   darkMode: ["class"],
@@ -210,6 +210,7 @@ const config: Config = {
         green: "#7BE0AD",
         greenLight: "#E4F2E7",
         darkGreen: "#234E42",
+        grey: "#3F3F46",
         white: "#F9F9F9",
         darkWhite: "#F8F8F8",
         bg_card: "#E4E5DE",

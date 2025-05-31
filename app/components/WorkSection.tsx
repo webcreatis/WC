@@ -17,77 +17,89 @@ export default function WorksSection() {
     >
       <TitleSection icon={iconWorks} title="Works" textSize="text-4xl" />
       <ul className="w-full pt-16 xs:pt-2 tablet:pt-16">
-        <CardWork
-          title="Run Mystery"
-          desc="Murder Party à la Réunion"
-          number="01"
-          titleMarquee="RUN MYSTERY"
-          link="https://runmystery.com/"
-          skillOne="Refonte"
-          skillTwo="Wordpress"
-          skillThree="Elementor"
-          pics={runMysteryPics}
-        />
-        <CardWork
-          title="Docteur Julien Vivier"
-          desc="Medicine & Aesthetics"
-          number="02"
-          titleMarquee="DR JULIEN VIVIER"
-          link="https://drjulienvivier.fr/"
-          skillOne="Wordpress"
-          skillTwo="Elementor"
-          pics={vivierPics}
-        />
-        <CardWork
-          title="Sea Intense"
-          desc="Diving & Cetaceans"
-          number="03"
-          titleMarquee="SEA INTENSE"
-          link="https://www.seaintense.re/"
-          skillOne="Astro JS"
-          skillTwo="Tailwind CSS"
-          skillThree="Directus CMS"
-          skillFour="Logo"
-          skillFive="Maquettage"
-          pics={seaIntensePics}
-        />
-        <CardWork
-          title="Envergure"
-          desc="Training & Environment"
-          number="04"
-          titleMarquee="ENVERGURE"
-          link="https://www.envergure.re/"
-          skillOne="Astro JS"
-          skillTwo="Tailwind CSS"
-          skillThree="Kakemono"
-          skillFour="Flyer"
-          skillFive="Maquettage"
-          pics={envergurePics}
-        />
-        <CardWork
-          title="VILLA SURYA"
-          desc="Massage & Hosting"
-          number="05"
-          titleMarquee="VILLA SURYA"
-          link="https://sofiapiccirilli.com/"
-          skillOne="Next JS"
-          skillTwo="Tailwind CSS"
-          skillThree="Directus CMS"
-          skillFour="Maquettage"
-          pics={sofiaPics}
-        />
-        <CardWork
-          title="Docteur Valérie Laval"
-          desc="Medicine & Aesthetics"
-          number="06"
-          titleMarquee="DR VALERIE LAVAL"
-          link="https://lyon-esthetique-dr-laval.com/"
-          skillOne="Wordpress"
-          skillTwo="Elementor"
-          skillThree="Carte de visite"
-          skillFour="Logo"
-          pics={lavalPics}
-        />
+        <li>
+          <CardWork
+            title="Run Mystery"
+            desc="Murder Party à la Réunion"
+            number="01"
+            titleMarquee="RUN MYSTERY"
+            link="https://runmystery.com/"
+            skillOne="Refonte"
+            skillTwo="Wordpress"
+            skillThree="Elementor"
+            pics={runMysteryPics}
+          />
+        </li>
+        <li>
+          <CardWork
+            title="Docteur Julien Vivier"
+            desc="Medicine & Aesthetics"
+            number="02"
+            titleMarquee="DR JULIEN VIVIER"
+            link="https://drjulienvivier.fr/"
+            skillOne="Wordpress"
+            skillTwo="Elementor"
+            pics={vivierPics}
+          />
+        </li>
+        <li>
+          <CardWork
+            title="Sea Intense"
+            desc="Diving & Cetaceans"
+            number="03"
+            titleMarquee="SEA INTENSE"
+            link="https://www.seaintense.re/"
+            skillOne="Astro JS"
+            skillTwo="Tailwind CSS"
+            skillThree="Directus"
+            skillFour="Logo"
+            skillFive="Maquettage"
+            pics={seaIntensePics}
+          />
+        </li>
+        <li>
+          <CardWork
+            title="Envergure"
+            desc="Training & Environment"
+            number="04"
+            titleMarquee="ENVERGURE"
+            link="https://www.envergure.re/"
+            skillOne="Astro JS"
+            skillTwo="Tailwind CSS"
+            skillThree="Kakemono"
+            skillFour="Flyer"
+            skillFive="Maquettage"
+            pics={envergurePics}
+          />
+        </li>
+        <li>
+          <CardWork
+            title="VILLA SURYA"
+            desc="Massage & Hosting"
+            number="05"
+            titleMarquee="VILLA SURYA"
+            link="https://sofiapiccirilli.com/"
+            skillOne="Next JS"
+            skillTwo="Tailwind CSS"
+            skillThree="Directus CMS"
+            skillFour="Maquettage"
+            pics={sofiaPics}
+          />
+        </li>
+        <li>
+          <CardWork
+            title="Docteur Valérie Laval"
+            desc="Medicine & Aesthetics"
+            number="06"
+            titleMarquee="DR VALERIE LAVAL"
+            link="https://lyon-esthetique-dr-laval.com/"
+            skillOne="Wordpress"
+            skillTwo="Elementor"
+            skillThree="Carte de visite"
+            skillFour="Logo"
+            pics={lavalPics}
+          />
+        </li>
       </ul>
     </section>
   );

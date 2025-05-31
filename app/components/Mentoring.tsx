@@ -31,7 +31,7 @@ export default function Mentoring() {
 
   return (
     <section
-      id="mentoring"
+      id="mentoring-dev"
       className="relative px-6 py-16 max-w-7xl mx-auto mt-14"
     >
       <TitleSection
@@ -95,19 +95,19 @@ export default function Mentoring() {
             key={idx}
             className="rounded-xl bg-white shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300"
           >
-            <h4 className="text-base font-normal mb-2 font-jaapokki uppercase text-green">
+            <h4 className="text-base font-normal mb-2 font-jaapokki uppercase text-black">
               {pack.title}
             </h4>
             <ul className="list-disc">
-              <li className="text-gray-700 text-sm leading-relaxed font-raleway">
+              <li className="text-grey text-sm leading-relaxed font-raleway">
                 {pack.price}
               </li>
               {pack.time ? (
-                <li className="text-gray-700 text-sm leading-relaxed font-raleway">
+                <li className="text-grey text-sm leading-relaxed font-raleway">
                   {pack.time}
                 </li>
               ) : null}
-              <li className="text-gray-700 text-sm leading-relaxed font-raleway">
+              <li className="text-grey text-sm leading-relaxed font-raleway">
                 {pack.description}
               </li>
             </ul>
