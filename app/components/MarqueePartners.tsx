@@ -127,13 +127,15 @@ const PartnersCard = ({ img, link, enterprise, bg }: propsCardType) => {
           data-link="link"
           href={link}
           aria-label={`Visitez le site de ${enterprise}`}
-          className="buttonAction"
+          className="buttonAction relative"
         >
           <Image
             src={img}
             alt={`logo`}
-            className="w-full h-auto p-5 object-contain tablet:bottom-3 tablet:right-4 tablet:flex"
-            fill
+            className="p-10 object-contain"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            width={200}
+            height={100}
           />
         </Link>
       </CardContent>

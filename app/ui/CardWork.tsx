@@ -88,9 +88,8 @@ export default function CardWork({
             <Image
               src={pics}
               alt={`image du site ${title}`}
-              className="rounded-xl transition ease-out group-hover:scale-110 group-hover:animate-scalePics"
+              className="h-auto rounded-xl transition ease-out group-hover:scale-110 group-hover:animate-scalePics"
               width={450}
-              height={450}
             />
           </div>
         </li>

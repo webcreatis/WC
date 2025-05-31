@@ -4,7 +4,6 @@ import { AtSign, Github, Instagram, Linkedin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import copyrightIcon from "../assets/images/icon-copyrights.webp";
-import webcreatisLogo from "../assets/images/logo-transparent-webcreatis-reunion.webp";
 import Button from "../ui/Button";
 import CardFooter from "../ui/CardFooter";
 import Meteo from "../ui/Meteo";
@@ -66,9 +65,9 @@ export default function Footer() {
                   placeholder="blur"
                 />
               </div>
-              <div className="w-1/2 flex flex-col justify-center items-center xs:items-start xs:pl-5">
+              <div className="w-1/2 flex flex-col justify-center items-center xs:items-start xs:pl-5 gap-2">
                 <span className="text-white font-raleway text-sm laptop:text-base">
-                  {currentYear} All Rights Reserved
+                  {currentYear} Webcreatis | Ile de La Réunion
                 </span>
                 <Link
                   href="/mentions-legales"
@@ -91,7 +90,7 @@ export default function Footer() {
                 >
                   Plan de site
                 </Link>
-                <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
                   <Link
                     href="/"
                     className="text-white buttonAction"
@@ -106,7 +105,7 @@ export default function Footer() {
                       placeholder="blur"
                     />
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="flex w-full place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-5">
