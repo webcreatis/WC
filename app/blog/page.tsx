@@ -30,7 +30,11 @@ export default function Page() {
       </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-20 gap-6 px-6 md:px-20">
         {currentPosts.map((post, idx) => (
-          <Link key={idx} href={`/blog/${post.slug}`} className="buttonAction">
+          <Link
+            key={idx}
+            href={`/blog/${post.slug}`}
+            className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+          >
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
                 <div className="w-full flex justify-center items-center">

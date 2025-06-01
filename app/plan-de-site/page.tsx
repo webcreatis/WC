@@ -13,7 +13,11 @@ export default function PlanDeSite() {
         <h2 className="text-xl font-semibold mt-4 pb-10">Pages principales</h2>
         <ul className="flex flex-col gap-5 list-disc pl-6">
           <li>
-            <Link href="/" data-link="link" className="buttonAction">
+            <Link
+              href="/"
+              data-link="link"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+            >
               Accueil
             </Link>
           </li>
@@ -21,28 +25,44 @@ export default function PlanDeSite() {
             <Link
               href="/creation-site-internet"
               data-link="link"
-              className="buttonAction"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
             >
               Création de site internet
             </Link>
           </li>
           <li>
-            <Link href="/#mentoring" data-link="link" className="buttonAction">
+            <Link
+              href="/#mentoring"
+              data-link="link"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+            >
               Mentoring
             </Link>
           </li>
           <li>
-            <Link href="/kap-numerik" data-link="link" className="buttonAction">
+            <Link
+              href="/kap-numerik"
+              data-link="link"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+            >
               Kap Numerik
             </Link>
           </li>
           <li>
-            <Link href="/blog" data-link="link" className="buttonAction">
+            <Link
+              href="/blog"
+              data-link="link"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+            >
               Le Blog
             </Link>
           </li>
           <li>
-            <Link href="/contact" data-link="link" className="buttonAction">
+            <Link
+              href="/contact"
+              data-link="link"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+            >
               Contact
             </Link>
           </li>
@@ -50,7 +70,7 @@ export default function PlanDeSite() {
             <Link
               href="/mentions-legales"
               data-link="link"
-              className="buttonAction"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
             >
               Mentions légales
             </Link>
@@ -59,7 +79,7 @@ export default function PlanDeSite() {
             <Link
               href="/politique-de-confidentialite"
               data-link="link"
-              className="buttonAction"
+              className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
             >
               Politique de confidentialité
             </Link>
@@ -73,7 +93,7 @@ export default function PlanDeSite() {
               <Link
                 href={`/blog/${slug}`}
                 data-link="link"
-                className="buttonAction"
+                className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
               >
                 {title}
               </Link>

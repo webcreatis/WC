@@ -17,17 +17,20 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
         className={`w-full xs:h-screen z-auto fixed top-0 left-0 bg-greenLight transition-transform duration-300 ease-in-out 
         ${isMenuVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div
+        <button
           onClick={handleCloseMenu}
-          className="absolute right-1 top-5 w-full h-[50px] flex justify-end"
+          aria-label="Fermer le menu"
+          data-link="link"
+          className="w-10 absolute buttonAction right-5 top-5 h-[50px] flex justify-end items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
         >
           <X size={36} color="black" />
-        </div>
+        </button>
+
         <ul className="flex flex-col justify-center items-left h-full gap-2 md:h-full">
           {[
             { href: "/", label: "Home" },
-            { href: "/#mentoring", label: "Mentoring Dev" },
-            { href: "/#mentoringCanva", label: "Mentoring Canva" },
+            { href: "/#mentoring-dev", label: "Mentoring Dev" },
+            { href: "/#mentoring-canva", label: "Mentoring Canva" },
             { href: "/kap-numerik", label: "Kap Numerik" },
             {
               href: "/creation-site-internet",
@@ -45,11 +48,9 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
                 href={item.href}
                 className="w-full h-full flex justify-center items-center px-6 py-2 md:py-4"
                 scroll={true}
+                onClick={handleCloseMenu}
               >
-                <span
-                  onClick={handleCloseMenu}
-                  className="text-xl md:text-6xl xl:text-7xl text-green font-bold"
-                >
+                <span className="text-xl md:text-6xl xl:text-7xl text-green font-bold">
                   {item.label}
                 </span>
               </Link>

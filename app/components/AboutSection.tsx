@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,54 +30,43 @@ export default function AboutSection() {
               Création de site Web sur mesure | Audit de site | Mentoring Dev
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
-              <Button
-                variant="outline"
-                className="w-[150px] font-jaapokki buttonAction"
+              <Link
+                href="tel:+262693514439"
                 data-link="link"
+                aria-label="Contactez Patrick au 0693 51 44 39"
+                className="inline-flex items-center justify-center w-[150px] font-jaapokki buttonAction border border-input bg-background hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail rounded-md px-4 py-2 text-sm font-medium transition-colors"
               >
-                <Link
-                  href="tel:+262693514439"
-                  aria-label={`Contactez Patrick au 0693514439`}
-                >
-                  Contactez-moi
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                className="w-[150px] font-jaapokki buttonAction"
+                Contactez-moi
+              </Link>
+              <Link
+                href="/CV-Patrick-Perroudon.pdf"
                 data-link="link"
+                aria-label="Télécharger le CV de Patrick, développeur web chez Webcreatis"
+                download="CV-Patrick-Perroudon.pdf"
+                className="inline-flex items-center justify-center w-[150px] font-jaapokki buttonAction border border-input bg-background hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail rounded-md px-4 py-2 text-sm font-medium transition-colors"
               >
-                <Link
-                  href="/CV-Patrick-Perroudon.pdf"
-                  aria-label={`Télécharger le CV de Patrick développeur web chez webcreatis`}
-                >
-                  Download CV
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                className="w-[150px] font-jaapokki buttonAction"
+                Download CV
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/patrick-perroudon/"
                 data-link="link"
+                aria-label="Visitez la page LinkedIn de Patrick, développeur chez Webcreatis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-[150px] font-jaapokki buttonAction border border-input bg-background hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail rounded-md px-4 py-2 text-sm font-medium transition-colors"
               >
-                <Link
-                  href="https://www.linkedin.com/in/patrick-perroudon/"
-                  aria-label={`Visitez la page linkedin de patrick développeur chez webcreatis`}
-                >
-                  Linkedin
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                className="w-[150px] font-jaapokki xs:mb-7 tablet:mb-0 buttonAction"
+                LinkedIn
+              </Link>
+              <Link
+                href="https://github.com/webcreatis"
+                aria-label="Visitez la page GitHub de Webcreatis"
                 data-link="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-[150px] font-jaapokki xs:mb-7 tablet:mb-0 buttonAction border border-input bg-background hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail rounded-md px-4 py-2 text-sm font-medium transition-colors"
               >
-                <Link
-                  href="https://github.com/webcreatis"
-                  aria-label={`Visitez la page github de webcreatis`}
-                >
-                  Github
-                </Link>
-              </Button>
+                GitHub
+              </Link>
             </div>
           </div>
         </div>
@@ -96,30 +84,24 @@ export default function AboutSection() {
               Création digitale | Print | Audit Graphique | Mentoring Canva
             </p>
             <div className="w-full flex gap-5 xs:flex-col xs:items-center tablet:flex-row tablet:justify-center">
-              <Button
-                variant="outline"
-                className="w-[150px] font-jaapokki buttonAction"
+              <Link
+                href="tel:+262693844876"
                 data-link="link"
+                aria-label="Contactez Patricia au 0693844876"
+                className="inline-flex items-center justify-center w-[150px] font-jaapokki buttonAction border border-input bg-background hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail rounded-md px-4 py-2 text-sm font-medium transition-colors"
               >
-                <Link
-                  href="tel:+262693844876"
-                  aria-label={`Contactez Patricia au 0693844876`}
-                >
-                  Contactez-moi
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                className="w-[150px] font-jaapokki buttonAction"
+                Contactez-moi
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/patriciaperroudon/"
+                aria-label="Visitez la page LinkedIn de Patricia, webdesign chez Webcreatis"
                 data-link="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-[150px] font-jaapokki buttonAction border border-input bg-background hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail rounded-md px-4 py-2 text-sm font-medium transition-colors"
               >
-                <Link
-                  href="https://www.linkedin.com/in/patriciaperroudon/"
-                  aria-label={`Visitez la page linkedin de patricia webdesign chez webcreatis`}
-                >
-                  Linkedin
-                </Link>
-              </Button>
+                LinkedIn
+              </Link>
             </div>
           </div>
         </div>

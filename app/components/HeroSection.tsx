@@ -57,21 +57,24 @@ export default function HeroSection() {
         <Link
           href="https://calendly.com/contact-webcreatis/30min"
           data-link="link"
-          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-corail mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em]"
+          tabIndex={0}
+          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-corail mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
         >
           RDV en ligne
         </Link>
         <Link
           href="/contact"
           data-link="link"
-          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em]"
+          tabIndex={0}
+          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
         >
           contact
         </Link>
         <Link
           href="#projects"
           data-link="link"
-          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em]"
+          tabIndex={0}
+          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
         >
           Réalisations
         </Link>

@@ -49,7 +49,7 @@ export default function Button({
       onClick={onClick}
       data-link="link"
       aria-label={ariaLabel}
-      className={`buttonAction inline-flex items-center justify-center px-6 py-3 rounded-md transition-all duration-200 whitespace-nowrap text-center text-base font-semibold uppercase ${bg} hover:opacity-90`}
+      className={`buttonAction inline-flex items-center justify-center px-6 py-3 rounded-md transition-all duration-200 whitespace-nowrap text-center text-base font-semibold uppercase ${bg} hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail`}
     >
       <div
         ref={childrenRef}

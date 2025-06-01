@@ -127,7 +127,7 @@ const PartnersCard = ({ img, link, enterprise, bg }: propsCardType) => {
           data-link="link"
           href={link}
           aria-label={`Visitez le site de ${enterprise}`}
-          className="buttonAction relative"
+          className="buttonAction relative focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
         >
           <Image
             src={img}

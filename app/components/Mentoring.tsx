@@ -81,7 +81,7 @@ export default function Mentoring() {
           <a
             href="https://forms.office.com/r/k0zkgBAFJ1?origin=lprLink"
             aria-label="Demander un accompagnement en mentoring web"
-            className="buttonAction inline-block bg-green text-black font-semibold px-6 py-3 rounded-md hover:opacity-90 transition font-raleway"
+            className="buttonAction inline-block bg-green text-black font-semibold px-6 py-3 rounded-md hover:opacity-90 transition font-raleway focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
           >
             Je veux un mentor !
           </a>

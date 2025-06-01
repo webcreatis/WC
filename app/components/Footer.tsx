@@ -66,26 +66,29 @@ export default function Footer() {
                 />
               </div>
               <div className="w-1/2 flex flex-col justify-center items-center xs:items-start xs:pl-5 gap-2">
-                <span className="text-white font-raleway text-sm laptop:text-base">
+                <span className="text-white font-raleway text-sm laptop:text-base p-2 w-full">
                   {currentYear} Webcreatis | Ile de La Réunion
                 </span>
                 <Link
                   href="/mentions-legales"
-                  className="text-white buttonAction font-raleway text-sm laptop:text-base"
+                  data-link="link"
+                  className="text-white buttonAction font-raleway text-sm laptop:text-base p-2 w-full flex h-12 items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
                   aria-label={`Allez sur la page des mentions légales de webcreatis`}
                 >
                   Mentions légales
                 </Link>
                 <Link
                   href="/politique-de-confidentialite"
-                  className="text-white buttonAction font-raleway text-sm laptop:text-base"
+                  data-link="link"
+                  className="text-white buttonAction font-raleway text-sm laptop:text-base p-2 w-full flex h-12 items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
                   aria-label={`Allez sur la page de la politique de confidentialité de webcreatis`}
                 >
                   Politique de confidentialité
                 </Link>
                 <Link
                   href="/plan-de-site"
-                  className="text-white buttonAction font-raleway text-sm laptop:text-base"
+                  data-link="link"
+                  className="text-white buttonAction font-raleway text-sm laptop:text-base p-2 w-full flex h-12 items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
                   aria-label={`Allez sur la page du plan de site de webcreatis`}
                 >
                   Plan de site
