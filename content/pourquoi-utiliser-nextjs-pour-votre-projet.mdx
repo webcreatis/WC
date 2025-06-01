@@ -1,0 +1,94 @@
+import MdxLayout from "../app/utils/mdx-layout"
+import Image from "next/image";
+import Link from "next/link";
+
+<MdxLayout>
+
+[Retour aux articles](/blog)
+
+<div className="w-full h-28 flex justify-center my-8">
+  <Image 
+    src="/images/thumbnails/pourquoi-nextjs.webp" 
+    alt="Pourquoi utiliser Next.js" 
+    width={1200} 
+    height={300} 
+    className="object-cover rounded-lg"
+  />
+</div>
+
+
+  # Pourquoi utiliser Next.js pour votre projet ?
+
+
+<div className="text-white text-base md:text-lg mb-6">
+  Next.js est devenu l’un des frameworks les plus populaires pour construire des applications full stack modernes. Malgré qu'il soit basé sur la librairie javascript React est-il vraiment adapté à *tous* les projets ? faisons le point ensemble.
+</div>
+
+---
+
+## ✅ Avantages de Next.js
+
+<ul className="text-white text-base md:text-lg space-y-4 pl-5 list-disc">
+<li>
+    <b className="text-green">Une bonne structure de base</b> Tout est déja intégrée dans Next.
+  </li>
+  <li>
+    <b className="text-green">Rendu hybride (SSR, SSG)</b> : Next.js prend en charge plusieurs stratégies de rendu qui permetent de générer du HTML à partir des composants React.
+  </li>
+  <li>
+    <b className="text-green">ISR (Incremental Static Regeneration)</b> : Permet à Next.js de générer des pages statiques à la volée après le déploiement, sans un rebuild complet du site.
+  </li>
+  <li>
+    <b className="text-green">Routage simplifié (File based routing)</b> : Un dossier = une route. Pas besoin de configurer manuellement chaque route, tout est basé sur l’arborescence.
+  </li>
+  <li>
+    <b className="text-green">Support API intégré</b> : Inutile de créer un backend séparé. Tu peux définir tes API directement dans le projet.
+  </li>
+  <li>
+    <b className="text-green">Performance par défaut</b> : Gestion des images, lazy loading, prefetching, optimisation des bundles... tout est pensé pour être rapide.
+  </li>
+  <li>
+    <b className="text-green">Déploiement facile avec Vercel</b> : Next.js est créé par Vercel, donc le déploiement est parfaitement intégré, rapide et scalable.
+  </li>
+</ul>
+
+---
+
+## ❌ Inconvénients de Next.js
+
+<ul className="text-white text-base md:text-lg space-y-4 pl-5 list-disc">
+<li>
+    <strong>Duplication des données entre SSR et hydratation</strong> : Le fonctionnement de Next.js, qui combine rendu côté serveur (SSR) et hydratation côté client, implique que les données soient injectées à la fois dans le HTML rendu et dans le JSON transmis au client. Cette redondance entraîne un doublement de la charge utile, alourdissant les pages et allongeant les temps de chargement initiaux — un problème particulièrement sensible sur les connexions à faible bande passante. Ce compromis remet en question les bénéfices souvent associés au SSR et souligne la nécessité d’évaluer soigneusement cette approche dans le cadre d’applications riches en contenu.
+  </li>
+  <li>
+    <strong>Complexité pour les débutants</strong> : bien que React soit simple à prendre en main, l’ajout du SSR, ISR, Edge Middleware peut être intimidant.
+  </li>
+  <li>
+    <strong>Taille du bundle</strong> : un rendu universel mal optimisé peut faire gonflé le code client et nuire du coup aux performances de l'application.
+  </li>
+  <li>
+    <strong>Overkill pour les petits projets</strong> : Pour un site vitrine ou une page statique simple, Next.js peut s’avérer excessif. Des solutions plus légères comme [Astro JS](https://astro.build/) sont souvent mieux adaptées à ces cas d’usage.
+  </li>
+</ul>
+
+---
+
+## 🛠️ Idéal pour quels types de projets ?
+
+<ul className="text-white text-base md:text-lg space-y-3 list-disc pl-5">
+  <li>Sites e-commerce avec SEO fort (SSR + ISR)</li>
+  <li>Dashboards, SaaS, back-offices internes</li>
+  <li>Applications avec besoin d’API légère intégrée</li>
+  <li>Blog ou documentation avec génération statique</li>
+</ul>
+
+---
+
+## 🚀 Conclusion
+
+<div className="text-white text-base md:text-lg mb-10">
+  Next.js est un outil incroyablement complet, capable de répondre aux besoins des développeurs frontend comme backend. Si ton projet est appelé à évoluer, à accueillir du trafic, ou nécessite un bon référencement naturel — c’est un excellent choix.  
+  Toutefois, pense toujours à adapter l’outil à la taille et aux ambitions de ton projet.
+</div>
+
+</MdxLayout>

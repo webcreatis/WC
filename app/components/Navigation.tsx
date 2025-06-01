@@ -50,7 +50,7 @@ const MenuNavigation = forwardRef<HTMLElement, MenuNavigationPropsTypes>(
                 scroll={true}
                 onClick={handleCloseMenu}
               >
-                <span className="text-xl md:text-6xl xl:text-7xl text-green font-bold">
+                <span className="text-xl md:text-5xl lg:text-6xl xl:text-7xl text-green font-bold">
                   {item.label}
                 </span>
               </Link>

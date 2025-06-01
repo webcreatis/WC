@@ -49,7 +49,7 @@ export default function Page() {
                 <p className="text-sm bg-gray-700 font-semibold my-4 w-fit px-2 py-1 rounded-sm text-white">
                   {post.category}
                 </p>
-                <CardTitle className="text-2xl leading-7 font-bold font-raleway py-3 line-clamp-2">
+                <CardTitle className="text-2xl leading-7 font-bold font-raleway py-3 truncate">
                   {post.title}
                 </CardTitle>
               </CardHeader>

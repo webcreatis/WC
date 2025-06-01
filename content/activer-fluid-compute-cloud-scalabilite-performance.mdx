@@ -4,15 +4,9 @@ import Link from "next/link";
 
 <MdxLayout>
 
-<Link
-  href="/blog"
-  className="bg-green w-full flex justify-center p-1 buttonAction rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
-  data-link="link"
->
-  Retour aux articles
-</Link>
+[Retour aux articles](/blog)
 
-<div className='w-full flex justify-center'>
+<div className="w-full h-28 flex justify-center my-8">
 <Image 
   src="/images/thumbnails/fluid-compute-by-vercel.webp" 
   alt="Illustration de Fluid Compute" 
@@ -22,14 +16,14 @@ import Link from "next/link";
 />
 </div>
 
-<h1 className="text-white text-xl sm:text-2xl md:text-4xl font-jaapokki my-10">Qu’est-ce que Vercel Fluid Compute ?</h1>
+# Qu’est-ce que Vercel Fluid Compute ?
 
 
 <p>Vercel Fluid Compute est une technologie d’allocation dynamique des ressources qui permet à vos applications de s’ajuster automatiquement à la charge en temps réel, sans intervention manuelle.
 Une solution simple et efficace pour optimiser les performances… tout en réduisant les coûts d’hébergement sur Vercel.</p>
 ---
 
-<h2 className="text-white text-xl sm:text-2xl md:text-4xl font-jaapokki my-8">Pourquoi l’activer ?</h2>
+## Pourquoi l’activer ?
 
 - ✅ **<span className="text-green font-bold pl-5">Évolutivité automatique</span>** : alloue plus de CPU/RAM à la volée quand le trafic augmente.
 - ✅  **<span className="text-green font-bold pl-5">Optimisation des coûts</span>** : libère les ressources inutilisées quand la demande chute.
@@ -38,17 +32,17 @@ Une solution simple et efficace pour optimiser les performances… tout en rédu
 
 ---
 
-<h3 className="text-white text-xl sm:text-2xl md:text-4xl font-jaapokki my-8">Étapes pour activer Fluid Compute sur vercel</h3>
+### Étapes pour activer Fluid Compute sur vercel
 
 <Image 
   src="/images/thumbnails/fluid-compute-vercel-etape-1.webp" 
   alt="Étape 1 : Accéder au dashboard cloud" 
-  width={1200} 
-  height={850} 
-  className='w-full object-cover'
+  width={1100} 
+  height={300} 
+  className="object-cover rounded-lg pt-5"
 />
 
-### <span className="text-white text-2xl font-raleway">1. Accédez à votre dashboard vercel de votre projet</span>
+### 1. Accédez à votre dashboard vercel de votre projet
 
 - Activez l’option **<span className="text-green font-bold">“Fluid Compute”</span>** à partir de l'onglet overview.
 - Ou allez sur l'onglet settings de votre projet puis sélectionnez **<span className="text-green font-bold">“Functions”</span>**.
@@ -65,7 +59,7 @@ Une solution simple et efficace pour optimiser les performances… tout en rédu
 />
 
 
-### <span className="text-white text-2xl font-raleway">2. Redéployez votre application</span>
+### 2. Redéployez votre application
 
 
   <div className="flex space-x-2 items-center gap-5">
@@ -79,7 +73,7 @@ Une solution simple et efficace pour optimiser les performances… tout en rédu
 ---
 
 
-## <span className="text-white text-2xl font-raleway">Conclusion</span>
+### Conclusion
 
 **<span className="text-green font-bold text-base">Fluid Compute</span>**, c’est un peu comme passer de la trottinette au jetpack.
 En quelques minutes, votre app gagne en réactivité, vos users en confort. Bref : tout le monde y gagne.

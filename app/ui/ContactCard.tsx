@@ -24,7 +24,7 @@ export default function ContactCard({
       <Link
         data-link="link"
         href={link}
-        className="relative touch-manipulation buttonAction w-full md:flex-1 text-2xl md:text-3xl flex items-center overflow-hidden group"
+        className="relative touch-manipulation buttonAction w-full md:flex-1 text-2xl md:text-3xl flex items-center overflow-hidden group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
       >
         {/* background anim hover */}
         <span className="absolute inset-0 bg-corail scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 z-0 pointer-events-none" />
