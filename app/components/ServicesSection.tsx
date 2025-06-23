@@ -6,7 +6,7 @@ import brandingBoardPics from "../assets/images/Branding-board-webcreatis.webp";
 import kakemonoPics from "../assets/images/Envergure-Kakemono.webp";
 import patriciaAuditPics from "../assets/images/patricia-accompagnement-canva-webcreatis.webp";
 import prestaPics from "../assets/images/presta-webcreatis.webp";
-import websitePics from "../assets/images/site-seaintense.webp";
+import websitePics from "../assets/images/run-mystery-reunion.webp";
 import socialNetworkPics from "../assets/images/social-network-webcreatis.webp";
 import ServiceBloc from "../ui/ServiceBloc";
 import TitleSection from "./TitleSection";

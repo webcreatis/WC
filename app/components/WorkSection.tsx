@@ -3,7 +3,6 @@ import runMysteryPics from "../assets/images/run-mystery-reunion.webp";
 import vivierPics from "../assets/images/site-dr-julien-vivier.webp";
 import lavalPics from "../assets/images/site-dr-laval.webp";
 import envergurePics from "../assets/images/site-envergure.webp";
-import seaIntensePics from "../assets/images/site-seaintense.webp";
 import sofiaPics from "../assets/images/site-sofia-piccirilli.webp";
 import CardWork from "../ui/CardWork";
 import TitleSection from "./TitleSection";
@@ -42,7 +41,7 @@ export default function WorksSection() {
             pics={vivierPics}
           />
         </li>
-        <li>
+        {/* <li>
           <CardWork
             title="Sea Intense"
             desc="Diving & Cetaceans"
@@ -56,7 +55,7 @@ export default function WorksSection() {
             skillFive="Maquettage"
             pics={seaIntensePics}
           />
-        </li>
+        </li> */}
         <li>
           <CardWork
             title="Envergure"
