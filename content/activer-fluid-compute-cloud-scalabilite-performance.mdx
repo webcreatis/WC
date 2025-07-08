@@ -1,10 +1,12 @@
-import MdxLayout from "../app/utils/mdx-layout"
 import Image from "next/image";
 import Link from "next/link";
+import MdxLayout from "../app/utils/mdx-layout";
 
 <MdxLayout>
 
-[Retour aux articles](/blog)
+<a href="https://www.webcreatis.fr/blog" className="buttonAction">
+    Retour aux articles
+</a>
 
 <div className="w-full h-28 flex justify-center my-8">
 <Image 
@@ -65,7 +67,9 @@ Une solution simple et efficace pour optimiser les performances… tout en rédu
   <div className="flex space-x-2 items-center gap-5">
     <span className="text-2xl">⚠️</span>
       <div className='font-raleway font-normal'>
-        Après avoir activé [Fluid Compute](https://vercel.com/fluid), vous devez impérativement <strong className="text-green font-bold text-base">redéployer votre application</strong>. 
+        Après avoir activé <a href="https://vercel.com/fluid" className="buttonAction">
+    Fluid Compute
+</a>vous devez impérativement <strong className="text-green font-bold text-base">redéployer votre application</strong>. 
         Sans cela, les nouvelles fonctions serverless pourraient ne pas s’activer correctement et certaines requêtes pourraient échouer temporairement.
       </div>
 

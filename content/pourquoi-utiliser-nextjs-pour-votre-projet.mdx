@@ -1,10 +1,12 @@
-import MdxLayout from "../app/utils/mdx-layout"
 import Image from "next/image";
 import Link from "next/link";
+import MdxLayout from "../app/utils/mdx-layout";
 
 <MdxLayout>
 
-[Retour aux articles](/blog)
+<a href="https://www.webcreatis.fr/blog" className="buttonAction">
+    Retour aux articles
+</a>
 
 <div className="w-full h-28 flex justify-center my-8">
   <Image 
@@ -67,7 +69,9 @@ import Link from "next/link";
     <strong>Taille du bundle</strong> : un rendu universel mal optimisé peut faire gonflé le code client et nuire du coup aux performances de l'application.
   </li>
   <li>
-    <strong>Overkill pour les petits projets</strong> : Pour un site vitrine ou une page statique simple, Next.js peut s’avérer excessif. Des solutions plus légères comme [Astro JS](https://astro.build/) sont souvent mieux adaptées à ces cas d’usage.
+    <strong>Overkill pour les petits projets</strong> : Pour un site vitrine ou une page statique simple, Next.js peut s’avérer excessif. Des solutions plus légères comme <a href="https://astro.build/" className="buttonAction">
+    Astro JS
+</a> sont souvent mieux adaptées à ces cas d’usage.
   </li>
 </ul>
 
