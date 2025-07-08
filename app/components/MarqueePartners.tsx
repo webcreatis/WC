@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoAfpar from "../assets/images/afpar-logo.webp";
 import logo6w2hPics from "../assets/images/logo-6w2h.webp";
+import logoAexis from "../assets/images/logo-aexis.webp";
 import logoArianeFormationPics from "../assets/images/logo-ariane-formation.webp";
 import logoDrJulienVivierPics from "../assets/images/logo-dr-julien-vivier.webp";
 import logoExpertNetPics from "../assets/images/logo-expert-net-reunion.webp";
@@ -113,6 +114,13 @@ const partners = [
     link: "https://www.ahnolia.com/",
     img: logoYogaDuRire.src,
     enterprise: "Ahnolia",
+    bg: "bg-black_ariane",
+  },
+  {
+    id: 14,
+    link: "https://www.aexis.com/",
+    img: logoAexis.src,
+    enterprise: "Aexis",
     bg: "",
   },
 ];

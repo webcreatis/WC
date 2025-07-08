@@ -95,9 +95,9 @@ export default function ReviewsSection() {
                     data-link="link"
                   >
                     <Image
-                      alt={review.name}
+                      alt={review.title}
                       src={review.avatar}
-                      className="mx-auto size-20 rounded-full border-4 border-green"
+                      className={`mx-auto size-20 rounded-full border-4 border-green ${review.title == "RUN MYSTERY" ? "object-conver" : "object-contain"}`}
                       width={58}
                       height={58}
                     />

@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoDrValerieLaval from "../assets/images/DR-LAVAL-VALERIE.webp";
 import logoEnvergure from "../assets/images/ENVERGURE.webp";
+import logoAexis from "../assets/images/logo-aexis.webp";
 import logoRunMystery from "../assets/images/logo-run-mystery-reunion.webp";
 import logoSeaIntense from "../assets/images/logo-sea-intense-reunion.webp";
 import stephaneMalhoPics from "../assets/images/stephane-malho.webp";
@@ -23,6 +24,14 @@ import TitleSection from "./TitleSection";
 export default function TestimonialsSection() {
   const iconTestimonial = <Pen size={36} color="#7BE0AD" />;
   const testimonialArray = [
+    {
+      date: "8 juillet 2025",
+      texte: `J'ai fait appel à webcreatis pour des audit et évolutions pour le site web de mon entreprise et les designs de tous les contenus et je suis extrêmement satisfaite de la créativité, du professionnalisme, 
+      de la réactivité et de la sympathie de l'équipe. Le projet se déroule mieux que prévu. Je recommande !!`,
+      societe: "AEXIS - g b (Gayia)",
+      avatar: logoAexis,
+      link: "https://aexis.com/",
+    },
     {
       date: "3 Mai 2025",
       texte: `J'ai fait appel à Patrick pour la mise à jour et l'amélioration de mon site web Wordpress et il a été de très bons conseils. 
