@@ -108,7 +108,7 @@ export const posts: PostType[] = [
     title: "7 erreurs à éviter quand on crée son site web",
     slug: "7-erreurs-a-eviter-creation-site-web",
     author: "Webcreatis",
-    date: "2025-09-24",
+    date: "24-09-2025",
     category: "Création de site web",
     thumbnail: "/images/thumbnails/erreurs-creation-site-internet.webp",
     tags: [
