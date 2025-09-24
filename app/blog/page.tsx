@@ -7,6 +7,7 @@ import { useState } from "react";
 import { posts } from "../datas/blog/posts";
 import CustomCursor from "../ui/CustomCursor";
 import TextAnimated from "../ui/TextAnimated";
+import { parseDate } from "../utils/parseDate";
 
 const POSTS_PER_PAGE = 6;
 
@@ -17,7 +18,7 @@ export default function Page() {
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
   const sortedPosts = [...posts].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    (a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime()
   );
   const currentPosts = sortedPosts.slice(startIndex, endIndex);
 
