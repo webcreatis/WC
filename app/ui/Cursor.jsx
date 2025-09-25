@@ -116,7 +116,7 @@ const CanvasTrail = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute top-0 left-0 w-full h-screen"
+      className="hidden md:flex md:absolute md:top-0 md:left-0 md:w-full md:h-screen"
     ></canvas>
   );
 };

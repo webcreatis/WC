@@ -15,7 +15,7 @@ export default function MarqueeHeader() {
   ];
 
   return (
-    <div className="flex place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-10 xs:h-[50px] xs:w-full xs:rounded-none xs:mt-5 laptop:w-2/4 laptop:mt-16 animate-fadeIn transition-all duration-1200 ease-in-out">
+    <div className="flex place-items-center h-[100px] border-solid border-[1px] border-[#3f3f46] rounded-xl mt-10 xs:h-[50px] xs:w-full xs:rounded-none xs:mt-5 laptop:w-2/4 laptop:mt-6 animate-fadeIn transition-all duration-1200 ease-in-out">
       <Marquee pauseOnHover className="[--duration:40s]">
         {words.map((word, index) => (
           <span

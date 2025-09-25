@@ -1,6 +1,10 @@
 "use client";
 
+import { BoxReveal } from "@/components/ui/box-reveal";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
+import Image from "next/image";
 import Link from "next/link";
+import kapMumPics from "../assets/images/KAP-NUMERIK.webp";
 import CrossIcon from "../ui/CrossIcon";
 import MarqueeHeader from "../ui/MarqueeHeader";
 
@@ -44,49 +48,83 @@ export default function HeroSection() {
           </span>
         </div>
       </h2>
-      <h1 className="text-base font-bold text-white text-center pt-10 pb-5 font-raleway md:text-lg lg:text-2xl xl:text-3xl">
-        Création de site internet à La Réunion – Webdesign UX/UI, Mentoring &
-        Accompagnement Canva
-      </h1>
-      <div className="hero-subtitle w-3/4 caption-timeline text-white pt-10 xs:p-7 xs:w-full tablet:w-3/4 lg:w-[65%] animate-fadeIn transition-all duration-1000 ease-in-out">
-        <p className="text-sm text-center ipadPro:text-lg laptop:text-center xl:text-xl">
-          {`Webcreatis, agence digitale à La Réunion, vous accompagne dans votre stratégie de communication digitale à travers la création ou la refonte de sites internet professionnels sur mesure.
-           Nous allions UX/UI design, développement web, identité visuelle et SEO pour bâtir une présence en ligne cohérente et performante. Mentoring développeurs, 
-           accompagnement Canva et aide Kap Numérik de la Région Réunion disponibles pour concrétiser votre projet.`}
-        </p>
-      </div>
       <MarqueeHeader />
-      <div className="mt-14 flex flex-col w-full items-center gap-5 mb-10 s:gap-2 mobile:gap-3 md:flex-row md:px-10 laptop:mt-14 laptop:gap-1 laptop:w-3/5 lg:w-[30%] lg:pt-10">
-        <Link
-          href="https://calendly.com/contact-webcreatis/30min"
-          data-link="link"
-          tabIndex={0}
-          role="button"
-          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-corail mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
-        >
-          RDV en ligne
-        </Link>
-        <Link
-          href="/contact"
-          data-link="link"
-          tabIndex={0}
-          role="button"
-          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
-        >
-          contact
-        </Link>
-        <Link
-          href="#projects"
-          data-link="link"
-          tabIndex={0}
-          role="button"
-          className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md bg-white mobile:text-sm mobile:w-2/3 mobile:m-auto laptop:w-[150px] laptop:xs:h-[3.5em] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
-        >
-          Réalisations
-        </Link>
+      {/* CTA HEADER */}
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white w-full mt-5">
+        <div className="max-w-7xl mx-auto px-6 py-10 gap-10 flex flex-col lg:flex-row items-center lg:items-center justify-between">
+          {/* Texte */}
+          <div className="flex-1 text-center lg:text-left lg:max-w-xl flex flex-col justify-center">
+            <BoxReveal boxColor="#5FC593" width="100%" duration={0.4}>
+              <h1 className="text-2xl text-left p-5 md:text-center md:text-3xl lg:text-left lg:p-0 font-bold mb-4 animate-fadeIn tracking-[-1]">
+                <strong className="text-corail text-2xl md:text-3xl md:pr-1">
+                  C
+                </strong>
+                réation de sites internet à La Réunion
+                <br />
+                <strong className="text-corail text-2xl md:text-3xl md:pr-1">
+                  R
+                </strong>
+                efonte & Audit de site Web <br />
+                <strong className="text-corail text-2xl md:text-3xl md:pr-1">
+                  U
+                </strong>
+                X/UI Design & Mentoring Canva
+                <br />
+                <strong className="text-corail text-2xl md:text-3xl md:pr-1">
+                  D
+                </strong>
+                éveloppement Mobile & Formations
+              </h1>
+            </BoxReveal>
+            <BoxReveal boxColor="#5FC593" duration={0.6}>
+              <p className="p-5 text-lg text-left md:text-xl opacity-90 mb-6 animate-fadeIn md:p-5 lg:p-0">
+                Webcreatis, agence digitale à La Réunion, conçoit et refond des
+                sites web professionnels sur mesure. Nous associons design
+                UX/UI, développement, identité visuelle et SEO pour booster
+                votre visibilité locale. Mentoring, accompagnement Canva et aide
+                Kap Numérik pour concrétiser votre projet.
+              </p>
+            </BoxReveal>
+
+            {/* Boutons CTA */}
+            <BoxReveal boxColor="#5FC593" width="100%" duration={0.8}>
+              <div className="mt-5 flex flex-col items-center gap-5 md:flex-row md:justify-center lg:justify-start md:w-full">
+                <InteractiveHoverButton className="bg-[#8AE4B6] border-transparent rounded-sm">
+                  <Link
+                    href="/contact"
+                    className="animate-fadeIn buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer text-black hover:text-white mobile:text-sm laptop:w-[150px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+                  >
+                    Devis gratuit
+                  </Link>
+                </InteractiveHoverButton>
+                <InteractiveHoverButton className="border-transparent rounded-sm">
+                  <Link
+                    href="https://calendly.com/contact-webcreatis/30min"
+                    className="buttonAction z-20 flex justify-center w-[200px] h-[3rem] p-2 text-xs items-center uppercase cursor-pointer rounded-md  text-[#5FC593] mobile:text-sm laptop:w-[150px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
+                  >
+                    RDV en ligne
+                  </Link>
+                </InteractiveHoverButton>
+              </div>
+            </BoxReveal>
+          </div>
+
+          {/* Illustration */}
+          <BoxReveal boxColor="#5FC593" duration={0.6}>
+            <div className="flex-none flex justify-center animate-fadeIn">
+              <Image
+                src={kapMumPics}
+                alt="Illustration WebCreatis"
+                width={500}
+                height={350}
+                className="mx-auto object-cover rounded-md sm:hidden md:flex md: pt-8"
+              />
+            </div>
+          </BoxReveal>
+        </div>
       </div>
 
-      <div className="flex w-full justify-between items-center p-2 mobile:mt-10 md:mt-20 lg:mt-24 lg:p-5">
+      <div className="flex w-full justify-between items-center p-2 mobile:mt-10 md:mt-20 lg:-mt-1 lg:p-5">
         <CrossIcon />
         <CrossIcon />
         <span className="uppercase text-white font-raleway text-xs md:text-base lg:text-2xl">
