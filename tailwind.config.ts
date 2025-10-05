@@ -51,8 +51,14 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll: "scroll 20s linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        "scroll-dot": "scrollDot 1.5s ease-in-out infinite",
       },
       keyframes: {
+        scrollDot: {
+          "0%": { transform: "translate(-50%, 0)", opacity: "1" },
+          "50%": { transform: "translate(-50%, 12px)", opacity: "0.5" },
+          "100%": { transform: "translate(-50%, 0)", opacity: "1" },
+        },
         SlideDownDeform: {
           "0%": {
             transform: "translateY(-250px) scaleY(0.8)",

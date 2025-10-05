@@ -5,14 +5,14 @@ import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button
 import Image from "next/image";
 import Link from "next/link";
 import kapMumPics from "../assets/images/KAP-NUMERIK.webp";
-import CrossIcon from "../ui/CrossIcon";
 import MarqueeHeader from "../ui/MarqueeHeader";
+import ScrollIndicator from "./ScrollIndicator";
 
 export default function HeroSection() {
   return (
     <section
       id="top"
-      className="hero-section w-full min-h-screen flex flex-col justify-center items-center pt-10 s:pt-28"
+      className="hero-section w-full min-h-screen 2xl:h-screen flex flex-col justify-center items-center pt-10 s:pt-28"
     >
       <h2 className="text-9xl uppercase font-bold tracking-wide text-white font-jaapokki animate-fadeIn xs:mt-32 s:mt-16">
         <div className="flex space-x-1">
@@ -123,8 +123,7 @@ export default function HeroSection() {
           </BoxReveal>
         </div>
       </div>
-
-      <div className="flex w-full justify-between items-center p-2 mobile:mt-10 md:mt-20 lg:-mt-1 lg:p-5">
+      {/* <div className="flex w-full justify-between items-center p-2 mobile:mt-10 md:mt-20 lg:-mt-1 lg:p-5">
         <CrossIcon />
         <CrossIcon />
         <span className="uppercase text-white font-raleway text-xs md:text-base lg:text-2xl">
@@ -132,7 +131,9 @@ export default function HeroSection() {
         </span>
         <CrossIcon />
         <CrossIcon />
-      </div>
+      </div> */}
+
+      <ScrollIndicator />
     </section>
   );
 }
