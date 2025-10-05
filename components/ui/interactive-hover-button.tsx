@@ -1,10 +1,10 @@
-import React from "react"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react";
+import React from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
-interface InteractiveHoverButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+type InteractiveHoverButtonProps =
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const InteractiveHoverButton = React.forwardRef<
   HTMLButtonElement,
@@ -30,7 +30,7 @@ export const InteractiveHoverButton = React.forwardRef<
         <ArrowRight />
       </div>
     </button>
-  )
-})
+  );
+});
 
-InteractiveHoverButton.displayName = "InteractiveHoverButton"
+InteractiveHoverButton.displayName = "InteractiveHoverButton";
