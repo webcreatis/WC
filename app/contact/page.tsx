@@ -27,7 +27,7 @@ export default function ContactPage() {
       <CanvasTrail />
       <TextAnimated title="contact us" />
       <div className="h-auto py-12 px-4 sm:px-6 lg:px-8 xs:py-8">
-        <h1 className="w-full flex justify-center xs:text-xl xs:pb-10 xs:pl-3 mobile:text-center md:text-3xl md:leading-10 lg:p-20 lg:text-5xl lg:leading-relaxed xl:text-7xl xl:pb-28">
+        <h1 className="w-full flex justify-center xs:text-xl xs:pb-10 xs:pl-3 mobile:text-center md:text-3xl md:leading-10 lg:p-20 lg:text-4xl lg:leading-relaxed xl:text-7xl xl:pb-28">
           Vous avez un projet digital ou une idée de collaboration ? Parlons-en.
         </h1>
         <div className="w-full flex flex-col items-center gap-5 pb-52 xs:pb-14">

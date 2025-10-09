@@ -39,24 +39,27 @@ export default function Page() {
             href={`/blog/${post.slug}`}
             className="buttonAction focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-corail"
           >
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between min-h-[480px] sm:min-h-[500px] lg:min-h-[520px]">
               <CardHeader>
-                <div className="w-full flex justify-center items-center">
+                <div className="w-full relative overflow-hidden rounded-lg mb-4 h-48 sm:h-56 lg:h-72">
                   <Image
                     src={post.thumbnail}
                     alt={post.title}
-                    width={600}
-                    height={300}
-                    className="rounded-lg mb-4 hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
+
                 <p className="text-sm bg-gray-700 font-semibold my-4 w-fit px-2 py-1 rounded-sm text-white">
                   {post.category}
                 </p>
-                <CardTitle className="text-2xl leading-7 font-bold font-raleway py-3 truncate">
+
+                <CardTitle className="text-2xl leading-7 font-bold font-raleway py-3 line-clamp-2">
                   {post.title}
                 </CardTitle>
               </CardHeader>
+
               <CardFooter className="w-full flex text-gray-500 text-base justify-between">
                 <p className="uppercase text-green font-bold font-jaapokki">
                   {post.author}
