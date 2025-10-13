@@ -1,0 +1,141 @@
+import Image from "next/image";
+import Link from "next/link";
+import MdxLayout from "../app/utils/mdx-layout";
+
+<MdxLayout>
+
+<Link data-link="link" href="https://www.webcreatis.fr/blog" className="buttonAction">
+    Retour aux articles
+</Link>
+
+<div className="w-full h-28 flex justify-center my-8">
+<Image 
+  src="/images/thumbnails/accessibilite-web-rgaa-2025.webp" 
+  alt="Illustration Accessibilité web : les nouvelles règles RGAA 2025" 
+  width={1300} 
+  height={300} 
+  className='w-full object-cover rounded-lg'
+/>
+</div>
+
+# Accessibilité web : ce que changent les nouvelles règles RGAA 2025  
+
+Tu crois que l’accessibilité numérique, c’est juste une histoire de contraste ou de taille de texte ? 
+Spoiler : en 2025, les nouvelles règles <Link data-link="link" href="https://accessibilite.numerique.gouv.fr/" className="buttonAction">**RGAA (Référentiel Général d’Amélioration de l’Accessibilité)** </Link>vont beaucoup plus loin.  
+
+Si ton site ne s’y conforme pas, tu risques non seulement de **perdre des utilisateurs**, mais aussi de **te mettre hors la loi**.  
+Voici ce qu’il faut savoir pour rester dans les clous — et surtout, pour offrir une **expérience web inclusive** à tous.  
+
+---
+
+## ♿ C’est quoi exactement le RGAA ?  
+
+Le RGAA, c’est **le cadre officiel français** qui définit comment rendre un site web accessible à toutes les personnes, y compris celles en situation de handicap (visuel, auditif, moteur, cognitif…).  
+Il s’appuie sur les normes internationales **WCAG (Web Content Accessibility Guidelines)**, adaptées au contexte français.  
+En clair : c’est **la “checklist” de l’accessibilité** que ton site doit respecter.  
+
+---
+
+## 🚨 Qui est concerné par le RGAA en 2025 ?  
+
+À partir du **28 juin 2025**, l’obligation d’accessibilité numérique ne se limite plus aux seuls services publics. Certaines entreprises privées doivent désormais se conformer aux règles du RGAA si elles offrent des **services considérés comme essentiels** :  
+
+- Services bancaires et financiers  
+- Sites et applications de e-commerce  
+- Télécommunications  
+- Transports de personnes  
+- Médias audiovisuels  
+
+Deux conditions déterminent si une organisation est concernée :  
+
+- un **chiffre d’affaires supérieur à 2 millions d’euros**, ou  
+- un **effectif dépassant 10 salariés**  
+
+> Les très petites structures — moins de 10 employés et un chiffre d’affaires inférieur à 2 millions d’euros — restent exemptées, sauf si elles interviennent pour le compte d’une entité publique ou en délégation de service public.  
+> Les associations, fondations et autres organismes à but non lucratif dépassant ces seuils doivent également respecter ces obligations.
+
+### Cas particuliers
+- Les contrats conclus avant le 28 juin 2025 bénéficient d’une **période transitoire** : ils peuvent rester valides jusqu’au 28 juin 2030.  
+- Les services existants doivent être **accessibles dès le 29 juin 2025**, même si le site ou l’application existait avant.  
+
+---
+
+## 🛠 Les nouvelles obligations d’accessibilité numériques  
+
+Pour que votre site ou application respecte le RGAA 2025, il faut une **démarche complète et organisée** :  
+
+### Étapes clés :  
+1. **Audit d’accessibilité numérique**  
+   - Analyse des supports digitaux (site, application mobile, intranet…) selon les **106 critères RGAA**  
+   - Identification des points de non-conformité  
+
+2. **Déclaration d’accessibilité**  
+   - Document officiel précisant le **niveau de conformité**  
+   - Publication d’un **schéma pluriannuel** décrivant la stratégie d’amélioration sur 3 ans  
+
+3. **Structuration interne**  
+   - Nommer un **référent accessibilité** pour piloter la démarche  
+   - Former les équipes : développeurs, designers, rédacteurs, chefs de projet  
+
+4. **Plan d’action et suivi**  
+   - Prioriser les corrections selon l’impact utilisateur  
+   - Suivi régulier pour garantir l’évolution continue de la conformité  
+
+---
+
+## Focus technique et expérience utilisateur  
+
+- L’accessibilité concerne **sites web, applications mobiles, intranets et extranets**.  
+- Test des interfaces tactiles, navigation vocale, compatibilité avec lecteurs d’écran.  
+- Expérience utilisateur au centre : lisibilité, compréhension des formulaires, navigation fluide au clavier, cohérence des interactions.  
+
+### Outils utiles  
+- <Link href={'https://wave.webaim.org/'} data-link="link" className="buttonAction text-green font-bold hover:underline">**WAVE**</Link> : suite d’outils qui aide à rendre le contenu web accessible, en détectant les erreurs de conformité aux WCAG.
+- <Link href={'https://www.nvda.fr/'} data-link="link" className="buttonAction text-green font-bold hover:underline">**NVDA (Windows)**</Link> : logiciel de lecture d’écran gratuit, idéal pour les tests rapides.
+- <Link href={'https://support.apple.com/fr-fr/guide/voiceover/welcome/mac'} data-link="link" className="buttonAction text-green font-bold hover:underline">**VOICEOVER (MacOs & IOS)**</Link> : Lecteur intégré gratuit sur tous les appareils Apple.
+- <Link href={'https://coolors.co/contrast-checker/112a46-acc8e5'} data-link="link" className="buttonAction text-green font-bold hover:underline">**Color Contrast Checker**</Link> : vérification des contrastes de couleurs entre le texte et l’arrière-plan. 
+
+> Ces outils sont pratiques, mais **ne remplacent pas l’expertise humaine**.  
+
+---
+
+## ⚖️ Sanctions et organismes de contrôle  
+
+- **Organismes publics** : amende jusqu’à **50 000 €** par service non conforme, renouvelable tous les six mois  
+- **Secteur privé** : amende jusqu’à **25 000 €** pour défaut de déclaration, jusqu’à 3 000 € par jour en cas de manquements répétés (plafond 300 000 €)  
+
+**Organismes de contrôle** :  
+- <Link href={'https://www.economie.gouv.fr/dgccrf'} data-link="link" className="buttonAction text-green font-bold hover:underline">DGCCRF</Link> : Vérifie les exigences d’accessibilité des produits et services. 
+- <Link href={'https://www.arcep.fr/'} data-link="link" className="buttonAction text-green font-bold hover:underline">ARCEP</Link> : Assure la régulation des infrastructures numériques.  
+- <Link href={'https://www.arcom.fr/'} data-link="link" className="buttonAction text-green font-bold hover:underline">ARCOM</Link> : Contrôle des services de médias audiovisuels  
+- <Link href={'https://www.numerique.gouv.fr/numerique-etat/dinum/'} data-link="link" className="buttonAction text-green font-bold hover:underline">DINUM</Link> : : Direction interministérielle du numérique.
+- <Link href={'https://acpr.banque-france.fr/fr'} data-link="link" className="buttonAction text-green font-bold hover:underline">ACPR</Link> : Supervise les services bancaires.
+
+---
+
+## Pourquoi se mettre en conformité dès maintenant ?   
+
+- **Éviter les risques juridiques et financiers** liés à la non-conformité.  
+- **Transformer l’accessibilité en avantage stratégique** : améliorer l’expérience utilisateur, toucher un public plus large, optimiser votre référencement naturel (SEO) et augmenter les conversions et la fidélisation.  
+- **Intégrer l’accessibilité dès la conception** de vos sites et applications, pour des projets plus fluides et sans surcoût ultérieur.    
+
+---
+
+## 💬 En résumé  
+
+L’accessibilité numérique devient incontournable en 2025.  
+Se mettre en conformité, c’est :  
+- **Respecter la loi**,  
+- **Améliorer l’expérience utilisateur**,  
+- **Accroître la performance globale de votre site ou application**,  
+- **Rendre le web plus inclusif et responsable**.  
+
+---
+
+📈 Tu veux savoir si ton site respecte les critères du RGAA 2025 ?  
+Nous pouvons t’aider à **auditer, corriger et certifier** ton site.  
+👉 <Link href="/contact" data-link="link" className="buttonAction text-green font-bold hover:underline">Contacte-nous</Link> dès maintenant pour un **audit complet de ton site**.  
+
+*Parce qu’un web inclusif, c’est un web plus humain.* 💚  
+
+</MdxLayout>
