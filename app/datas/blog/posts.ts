@@ -140,7 +140,7 @@ export const posts: PostType[] = [
     title: "Accessibilité Web : les nouvelles règles 2025",
     slug: "accessibilite-web-RGAA-2025",
     author: "Webcreatis",
-    date: "10-10-2025",
+    date: "13-10-2025",
     category: "Accessibilité web",
     thumbnail: "/images/thumbnails/accessibilite-web-rgaa-2025.webp",
     tags: [
