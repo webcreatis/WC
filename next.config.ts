@@ -2,7 +2,7 @@ import createMDX from "@next/mdx";
 import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Configure `pageExtensions` to include markdown and MDX files
+  trailingSlash: true,
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   images: {
     domains: ["via.placeholder.com"],

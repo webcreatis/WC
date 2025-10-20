@@ -7,19 +7,19 @@ export const metadata: Metadata = {
   description:
     "La protection de vos données est notre priorité. Pour toute question, notre équipe est à votre écoute.",
   alternates: {
-    canonical: "https://www.webcreatis.fr/politique-de-confidentialite",
+    canonical: "https://webcreatis.fr/politique-de-confidentialite/",
   },
   openGraph: {
     title: "Consultez notre politique de confidentialité | Webcreatis",
     description:
       "La protection de vos données est notre priorité. Pour toute question, notre équipe est à votre écoute.",
-    url: "https://www.webcreatis.fr/politique-de-confidentialite",
+    url: "https://webcreatis.fr/politique-de-confidentialite/",
     siteName: "Webcreatis",
     type: "website",
     locale: "fr_FR",
     images: [
       {
-        url: "https://www.webcreatis.fr/images/logo.png",
+        url: "https://webcreatis.fr/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Webcreatis - Politique de confidentialité",
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     "instagram:site": "@webcreatis",
     "article:author": "https://www.instagram.com/webcreatis/",
   },
-  authors: [{ name: "Webcreatis", url: "https://www.webcreatis.fr" }],
+  authors: [{ name: "Webcreatis", url: "https://webcreatis.fr" }],
   category: "technology",
   creator: "Webcreatis",
   publisher: "Webcreatis",
-  metadataBase: new URL("https://www.webcreatis.fr"),
+  metadataBase: new URL("https://webcreatis.fr"),
 };
 
 export default function PolitiqueConfidentialite() {
