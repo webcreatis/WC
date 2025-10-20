@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.webcreatis.fr/mentions-legales",
   },
   openGraph: {
-    title: "Consultez notre politique de confidentialité | Webcreatis",
+    title: "Mentions Légales Protections et Droits | Webcreatis",
     description:
       "Mentions légales : droits d’auteur, protection des données personnelles et informations sur le contenu du site.",
     url: "https://www.webcreatis.fr/mentions-legales",
