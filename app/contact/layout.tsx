@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Contactez Webcreatis - Agence digitale à La Réunion",
     description:
       "Besoin d’un site web, d’une stratégie SEO ou d’un accompagnement digital ? Contactez l’équipe Webcreatis à La Réunion.",
-    url: "https://webcreatis.fr/contact",
+    url: "https://www.webcreatis.fr/contact",
     siteName: "Webcreatis",
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://webcreatis.fr/contact/",
+    canonical: "https://webcreatis.fr/contact",
   },
   other: {
     "instagram:creator": "@webcreatis",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   category: "technology",
   creator: "Webcreatis",
   publisher: "Webcreatis",
-  metadataBase: new URL("https://webcreatis.fr"),
+  metadataBase: new URL("https://www.webcreatis.fr"),
 };
 
 export default function ContactLayout({

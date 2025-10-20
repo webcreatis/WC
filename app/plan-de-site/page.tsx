@@ -1,38 +1,6 @@
-import { Metadata } from "next";
 import Link from "next/link";
 import { posts } from "../datas/blog/posts";
 import CustomCursor from "../ui/CustomCursor";
-
-export const metadata: Metadata = {
-  title: "Plan du site - Webcreatis",
-  description:
-    "Explorez le plan du site Webcreatis : pages principales, articles de blog et ressources pour découvrir tous nos services.",
-  alternates: {
-    canonical: "https://webcreatis.fr/plan-de-site/",
-  },
-  openGraph: {
-    title: "Plan du site - Webcreatis",
-    description:
-      "Explorez le plan du site Webcreatis : pages principales, articles de blog et ressources pour découvrir tous nos services.",
-    url: "https://webcreatis.fr/plan-de-site/",
-    siteName: "Webcreatis",
-    type: "website",
-    locale: "fr_FR",
-    images: [
-      {
-        url: "https://webcreatis.fr/images/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Webcreatis - Plan du site",
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  metadataBase: new URL("https://webcreatis.fr"),
-};
 
 export default function PlanDeSite() {
   return (

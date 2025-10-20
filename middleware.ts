@@ -3,18 +3,12 @@ import { NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
   const { pathname, hostname } = request.nextUrl;
-  const url = request.nextUrl.clone();
 
   // Redirection globale de .re vers .fr
   if (hostname.endsWith(".re")) {
+    const url = request.nextUrl.clone();
     url.hostname = hostname.replace(".re", ".fr");
     return NextResponse.redirect(url, 308); // redirection permanente
-  }
-
-  // 2️⃣ Redirection www → non-www
-  if (hostname.startsWith("www.")) {
-    url.hostname = hostname.replace("www.", "");
-    return NextResponse.redirect(url, 308);
   }
 
   // Liste des anciennes URLs à rediriger vers la racine
@@ -39,6 +33,5 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
-  // 5️⃣ Si rien à rediriger, continuer
   return NextResponse.next();
 }
