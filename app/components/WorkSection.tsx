@@ -1,4 +1,5 @@
 import { TrafficCone } from "lucide-react";
+import kolibrizPics from "../assets/images/kolibriz-site.webp";
 import runMysteryPics from "../assets/images/run-mystery-reunion.webp";
 import vivierPics from "../assets/images/site-dr-julien-vivier.webp";
 import lavalPics from "../assets/images/site-dr-laval.webp";
@@ -16,6 +17,18 @@ export default function WorksSection() {
     >
       <TitleSection icon={iconWorks} title="Works" textSize="text-4xl" />
       <ul className="w-full pt-16 xs:pt-2 tablet:pt-16">
+        <li>
+          <CardWork
+            title="Kolibriz"
+            desc="Massage et Bien-être à la Réunion"
+            number="01"
+            titleMarquee="KOLIBRIZ"
+            link="https://www.kolibriz.com/"
+            skillOne="Migration"
+            skillTwo="Wordpress"
+            pics={kolibrizPics}
+          />
+        </li>
         <li>
           <CardWork
             title="Run Mystery"
