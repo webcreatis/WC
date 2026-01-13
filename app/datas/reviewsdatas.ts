@@ -1,5 +1,6 @@
 import logoDrValerieLaval from "../assets/images/DR-LAVAL-VALERIE.webp";
 import logoEnvergure from "../assets/images/ENVERGURE.webp";
+import logoKolibriz from "../assets/images/kolibriz-logo.webp";
 import logoAexis from "../assets/images/logo-aexis.webp";
 import logoRunMystery from "../assets/images/logo-run-mystery-reunion.webp";
 import logoSeaIntense from "../assets/images/logo-sea-intense-reunion.webp";
@@ -8,6 +9,16 @@ import videvPics from "../assets/images/videv.webp";
 import logoSurya from "../assets/images/VILLA-SURYA-SOPHIE-PICCIRILLI.webp";
 
 export const reviews = [
+  {
+    date: "13 janvier 2026",
+    quote: `Un grand merci pour votre professionnalisme, votre gentillesse et votre écoute pour mon site.
+            Patrick est très disponible, joignable pour la moindre question.
+            Je recommande avec une grande sincérité`,
+    name: "Céline Renaut",
+    title: "KOLIBRIZ",
+    avatar: logoKolibriz,
+    link: "https://www.kolibriz.com/",
+  },
   {
     date: "8 juillet 2025",
     quote: `J'ai fait appel à webcreatis pour des audit et évolutions pour le site web de mon entreprise et les designs de tous les contenus et je suis extrêmement satisfaite de la créativité, du professionnalisme, 
