@@ -11,6 +11,28 @@ type PostType = {
 
 export const posts: PostType[] = [
   {
+    title: "Votre site web est-il prêt pour 2026 ?",
+    slug: "site-web-optimise-2026",
+    author: "Webcreatis",
+    date: "13-01-2026",
+    category: "Développement web",
+    thumbnail: "/images/thumbnails/site-web-optimise-2026.webp",
+    tags: [
+      "site web 2026",
+      "optimisation site web",
+      "performance web",
+      "SEO 2026",
+      "référencement web",
+      "accessibilité web",
+      "responsive design",
+      "WebCreatis",
+      "freelance web",
+      "refonte site internet",
+    ],
+    description:
+      "Découvrez comment préparer votre site web pour 2026 : performance, sécurité, référencement et expérience utilisateur. Un site optimisé n’est plus une option, c’est une nécessité.",
+  },
+  {
     title: "Qu’est-ce que le Generative Engine Optimization (GEO) ?",
     slug: "qu-est-ce-que-le-generative-engine-optimization-geo",
     author: "Webcreatris",
