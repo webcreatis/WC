@@ -208,6 +208,7 @@ const config: Config = {
         raleway: ["var(--font-raleway)"],
       },
       colors: {
+        blue_intense: "#272E61",
         red: "#E5194E",
         orange: "#E96F32",
         black_ariane: "#000000",

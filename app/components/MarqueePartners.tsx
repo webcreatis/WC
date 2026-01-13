@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import logoAfpar from "../assets/images/afpar-logo.webp";
+import logoKolibriz from "../assets/images/kolibriz-logo.webp";
 import logo6w2hPics from "../assets/images/logo-6w2h.webp";
 import logoAexis from "../assets/images/logo-aexis.webp";
 import logoArianeFormationPics from "../assets/images/logo-ariane-formation.webp";
@@ -122,6 +123,13 @@ const partners = [
     img: logoAexis.src,
     enterprise: "Aexis",
     bg: "",
+  },
+  {
+    id: 15,
+    link: "https://www.kolibriz.com/",
+    img: logoKolibriz.src,
+    enterprise: "Kolibriz",
+    bg: "bg-blue_intense",
   },
 ];
 
